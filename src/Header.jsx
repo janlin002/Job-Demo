@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 function Header(){
   return (
     <div>
@@ -13,9 +12,10 @@ function Header(){
       <button>
         <Link to="/reacttable">React-table</Link>
       </button>
-      
+      <button>
+        <Link to="/reactintl">React-intl</Link>
+      </button>
     </div>
   )
 }
-
 export default Header

@@ -2,14 +2,12 @@ import React from 'react'
 // import { Link } from 'react-router-dom'
 // import { Button } from 'antd'
 import { Formik } from 'formik'
-
 function Formiks(){
   return (
     <div>
       {/* <Button type="primary">
         <Link to="/">Home</Link>
       </Button> */}
-
       <div>
         <h1>formik練習</h1>
         <Formik
@@ -65,7 +63,6 @@ function Formiks(){
                 />
                 {errors.password && touched.password && errors.password}
               </div>
-              
               <button type="submit" disabled={isSubmitting}>
              Submit
               </button>
@@ -73,9 +70,7 @@ function Formiks(){
           )}
         </Formik>
       </div>
-      
     </div>
   )
 }
-
 export default Formiks
