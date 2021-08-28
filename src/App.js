@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import Formik from './Demo/Formik-Yup/Formik'
+import ReactTable from './Demo/ReactTable'
+import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
+import Header from './Header'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Header />
+        {/* <Link to="/xxx">xxx</Link> */}
+        <Switch>
+          <Route path="/formik" exact component={Formik}></Route>
+          <Route path="/formikyup" exact component={FormikYup}></Route>
+          <Route path="/reacttable" exact component={ReactTable}></Route>
+        </Switch>
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

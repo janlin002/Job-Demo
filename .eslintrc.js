@@ -1,0 +1,33 @@
+module.exports = {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "amd": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    // semi: ["error", "never"],
+    "semi": "off",
+    "react/react-in-jsx-scope": "off", // 縮排限制
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "indent": [
+      "error",
+      2
+    ], // 縮排限制
+    "object-curly-spacing": ["error", "always"] // 大括號空白
+  }
+}
