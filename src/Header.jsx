@@ -15,6 +15,9 @@ function Header(){
       <button>
         <Link to="/reactintl">React-intl</Link>
       </button>
+      <button>
+        <Link to="/chart">Chart</Link>
+      </button>
     </div>
   )
 }

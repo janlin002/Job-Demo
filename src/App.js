@@ -8,6 +8,7 @@ import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
 import Header from './Header'
 import ReactIntl from './Demo/React-intl/react-intl'
 import { useSelector } from 'react-redux'
+import Chart from './Demo/Chart/chart'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -28,6 +29,7 @@ function App() {
             <Route path="/formikyup" exact component={FormikYup}></Route>
             <Route path="/reacttable" exact component={ReactTable}></Route>
             <Route path="/reactintl" exact component={ReactIntl}></Route>
+            <Route path="/chart" exact component={Chart}></Route>
           </Switch>
         </Router>
       </IntlProvider>
