@@ -6,7 +6,7 @@
 
 #### 目錄
 
-|  專案名稱  | 使用技術 | NPM |   連結  |
+|  專案名稱  | 使用技術 | NPM |   實作連結  |
 |-----------|--------|--------|-------|
 |formik+yup|formik, yup|[formik](https://www.npmjs.com/package/formik), [yup](https://www.npmjs.com/package/yup)|[Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/Formik-Yup)
 |react-table|react-table|[react-table](https://www.npmjs.com/package/react-table)|[Link]()
