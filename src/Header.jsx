@@ -18,6 +18,9 @@ function Header(){
       <button>
         <Link to="/chart">Chart</Link>
       </button>
+      <button>
+        <Link to="/colspan">colspan</Link>
+      </button>
     </div>
   )
 }
