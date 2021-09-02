@@ -12,4 +12,4 @@
 | react-table | react-table   | [react-table](https://www.npmjs.com/package/react-table)                                 | [Link]()                                                                      |
 | react-intl  | react-intl    | [react-intl](https://www.npmjs.com/package/react-intl)                                   | [Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/React-intl) |
 | chart       | chart.js      | [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2)                         | [Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/Chart)      |
-| colspan     | css - colspam | 無                                                                                       | [Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/colspan)                                                                      |
+| colspan     | css - colspan | 無                                                                                       | [Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/colspan)                                                                      |
