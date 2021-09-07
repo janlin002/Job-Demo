@@ -10,6 +10,7 @@ import ReactIntl from './Demo/React-intl/react-intl'
 import { useSelector } from 'react-redux'
 import Chart from './Demo/Chart/chart'
 import Colspan from './Demo/colspan/colspan';
+import Saga from './Demo/checkSaga'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -32,6 +33,7 @@ function App() {
             <Route path="/reactintl" exact component={ReactIntl}></Route>
             <Route path="/chart" exact component={Chart}></Route>
             <Route path="/colspan" exact component={Colspan}></Route>
+            <Route path="/saga" exact component={Saga}></Route>
           </Switch>
         </Router>
       </IntlProvider>

@@ -21,6 +21,9 @@ function Header(){
       <button>
         <Link to="/colspan">colspan</Link>
       </button>
+      <button>
+        <Link to="/saga">saga</Link>
+      </button>
     </div>
   )
 }

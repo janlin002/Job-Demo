@@ -1,7 +1,8 @@
-import { CHANGE_LANG } from './actionType'
+import { CHANGE_LANG, FETCH_DATA_SUCCESS } from './actionType'
 
 const defaultState = {
-  localeLanguage: 'en'
+  localeLanguage: 'en',
+  data: {}
 }
 
 export default (state = defaultState,action)=>{
@@ -9,6 +10,13 @@ export default (state = defaultState,action)=>{
   case CHANGE_LANG:{
     const value = action.payload
     return { ...state,  localeLanguage: value }
+  }
+  case FETCH_DATA_SUCCESS:{
+    console.log('hello')
+    return {
+      ...state,
+      data: action.payload.data,
+    };
   }
     
   default:
