@@ -1,5 +1,11 @@
 # Job-Demo
 
+<div>
+  <img src="https://img.shields.io/badge/made%20by-janlin002-green" />
+  <img src="https://img.shields.io/badge/project%20name-JOB--DEMO-blue" />
+</div>
+
+
 主要是實驗工作上遇到的問題，或是新的套件練習，會以路由為區分的依據，或是可以在右側的 releases 找到指定的內容
 
 如果覺得寫得不錯，或是覺得有趣，會放到[個人部落格](https://janlin002.github.io/)
