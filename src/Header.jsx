@@ -24,6 +24,9 @@ function Header(){
       <button>
         <Link to="/saga">saga</Link>
       </button>
+      <button>
+        <Link to="/jsx-control">jsx-control</Link>
+      </button>
     </div>
   )
 }

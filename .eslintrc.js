@@ -3,11 +3,13 @@ module.exports = {
     "browser": true,
     "es2021": true,
     "amd": true,
-    "node": true
+    "node": true,
+    "jsx-control-statements/jsx-control-statements": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    // "plugin:react/recommended"
+    "plugin:jsx-control-statements/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -30,6 +32,13 @@ module.exports = {
     ], // 縮排限制
     "object-curly-spacing": ["error", "always"], // 大括號空白
     "no-multiple-empty-lines": [1, { "max": 1 }], // 空行最多0行
-    "no-unused-vars":"off" //未使用提示關閉
+    "no-unused-vars":"off", //未使用提示關閉
+  //   "react/jsx-no-undef": [
+  //     2,
+  //     {
+  //         "allowGlobals": true
+  //     }
+  // ],
+  "react/jsx-no-undef": [true, { "allowGlobals": true }]
   }
 }

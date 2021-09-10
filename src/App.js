@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux'
 import Chart from './Demo/Chart/chart'
 import Colspan from './Demo/colspan/colspan';
 import Saga from './Demo/checkSaga'
+import JsxControl from './Demo/jsx-control-statements'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -34,6 +35,7 @@ function App() {
             <Route path="/chart" exact component={Chart}></Route>
             <Route path="/colspan" exact component={Colspan}></Route>
             <Route path="/saga" exact component={Saga}></Route>
+            <Route path="/jsx-control" exact component={JsxControl}></Route>
           </Switch>
         </Router>
       </IntlProvider>
