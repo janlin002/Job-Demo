@@ -12,6 +12,7 @@ import Chart from './Demo/Chart/chart'
 import Colspan from './Demo/colspan/colspan';
 import Saga from './Demo/checkSaga'
 import JsxControl from './Demo/jsx-control-statements'
+import DayJs from './Demo/Dayjs'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -36,6 +37,7 @@ function App() {
             <Route path="/colspan" exact component={Colspan}></Route>
             <Route path="/saga" exact component={Saga}></Route>
             <Route path="/jsx-control" exact component={JsxControl}></Route>
+            <Route path="/day-js" exact component={DayJs}></Route>
           </Switch>
         </Router>
       </IntlProvider>

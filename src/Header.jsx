@@ -27,6 +27,9 @@ function Header(){
       <button>
         <Link to="/jsx-control">jsx-control</Link>
       </button>
+      <button>
+        <Link to="/day-js">Day.Js</Link>
+      </button>
     </div>
   )
 }
