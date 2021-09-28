@@ -20,4 +20,4 @@
 | colspan                | css - colspam            | 無                                                                                                                 | [Link]()                                                                        |
 | saga-check             | redux-saga, redux-logger | [redux-logger](https://www.npmjs.com/package/redux-logger), [redux-saga](https://www.npmjs.com/package/redux-saga) | [Link](https://github.com/janlin002/Job-Demo/blob/master/src/Demo/checkSaga.js) |
 | jsx-control-statements | jsx-control-statements   | [jsx-control-statements](https://www.npmjs.com/package/jsx-control-statements)                                     | [Link]()                                                                        |
-| Day.js|Day.js|[Dayjs](https://www.npmjs.com/package/dayjs)|
+| Day.js|Day.js|[Dayjs](https://www.npmjs.com/package/dayjs)|[Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/Dayjs)
