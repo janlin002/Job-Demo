@@ -13,6 +13,7 @@ import Colspan from './Demo/colspan/colspan';
 import Saga from './Demo/checkSaga'
 import JsxControl from './Demo/jsx-control-statements'
 import DayJs from './Demo/Dayjs'
+import Formik2 from './Demo/Formik-Yup/Formik2.js'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -38,6 +39,7 @@ function App() {
             <Route path="/saga" exact component={Saga}></Route>
             <Route path="/jsx-control" exact component={JsxControl}></Route>
             <Route path="/day-js" exact component={DayJs}></Route>
+            <Route path="/formik-2" exact component={Formik2}></Route>
           </Switch>
         </Router>
       </IntlProvider>
