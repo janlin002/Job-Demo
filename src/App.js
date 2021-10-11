@@ -14,6 +14,8 @@ import Saga from './Demo/checkSaga'
 import JsxControl from './Demo/jsx-control-statements'
 import DayJs from './Demo/Dayjs'
 import Formik2 from './Demo/Formik-Yup/Formik2.js'
+import Formik20 from './Demo/formik2.0'
+import FormikResult from './Demo/formik2.0/result'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -40,6 +42,8 @@ function App() {
             <Route path="/jsx-control" exact component={JsxControl}></Route>
             <Route path="/day-js" exact component={DayJs}></Route>
             <Route path="/formik-2" exact component={Formik2}></Route>
+            <Route path="/formik-20" exact component={Formik20}></Route>
+            <Route path="/formik-next" exact component={FormikResult}></Route>
           </Switch>
         </Router>
       </IntlProvider>

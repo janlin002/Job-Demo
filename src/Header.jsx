@@ -31,7 +31,10 @@ function Header(){
         <Link to="/day-js">Day.Js</Link>
       </button>
       <button>
-        <Link to="/formik-2">formik 2.0</Link>
+        <Link to="/formik-2">formik 2.0 草稿</Link>
+      </button>
+      <button>
+        <Link to="/formik-20">formik 2.0</Link>
       </button>
     </div>
   )
