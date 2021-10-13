@@ -36,6 +36,9 @@ function Header(){
       <button>
         <Link to="/formik-20">formik 2.0</Link>
       </button>
+      <button>
+        <Link to="/react-modal">React-modal</Link>
+      </button>
     </div>
   )
 }
