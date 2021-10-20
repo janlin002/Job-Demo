@@ -17,6 +17,7 @@ import Formik2 from './Demo/Formik-Yup/Formik2.js'
 import Formik20 from './Demo/formik2.0'
 import FormikResult from './Demo/formik2.0/result'
 import ReactModal from './Demo/React-modal'
+import SelectorTest from './Demo/SelectorTest'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -46,6 +47,7 @@ function App() {
             <Route path="/formik-20" exact component={Formik20}></Route>
             <Route path="/formik-next" exact component={FormikResult}></Route>
             <Route path="/react-modal" exact component={ReactModal}></Route>
+            <Route path="/selector-test" exact component={SelectorTest}></Route>
           </Switch>
         </Router>
       </IntlProvider>

@@ -39,6 +39,9 @@ function Header(){
       <button>
         <Link to="/react-modal">React-modal</Link>
       </button>
+      <button>
+        <Link to="/selector-test">React-modal</Link>
+      </button>
     </div>
   )
 }
