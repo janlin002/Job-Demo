@@ -42,6 +42,9 @@ function Header(){
       <button>
         <Link to="/selector-test">React-modal</Link>
       </button>
+      <button>
+        <Link to="/react-dnd">React-dnd</Link>
+      </button>
     </div>
   )
 }

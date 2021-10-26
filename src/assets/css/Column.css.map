@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../Demo/React-dnd/component/Column.scss"
+    ],
+    "names": [],
+    "file": "Column.css"
+}
