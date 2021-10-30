@@ -45,6 +45,9 @@ function Header(){
       <button>
         <Link to="/react-dnd">React-dnd</Link>
       </button>
+      <button>
+        <Link to="/rt-job">React-table-job</Link>
+      </button>
     </div>
   )
 }

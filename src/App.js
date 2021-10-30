@@ -19,6 +19,7 @@ import FormikResult from './Demo/formik2.0/result'
 import ReactModal from './Demo/React-modal'
 import SelectorTest from './Demo/SelectorTest'
 import ReactDnd from './Demo/React-dnd'
+import ReactTableJob from './Demo/React-table-job'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -50,6 +51,7 @@ function App() {
             <Route path="/react-modal" exact component={ReactModal}></Route>
             <Route path="/selector-test" exact component={SelectorTest}></Route>
             <Route path="/react-dnd" exact component={ReactDnd}></Route>
+            <Route path="/rt-job" exact component={ReactTableJob}></Route>
           </Switch>
         </Router>
       </IntlProvider>
