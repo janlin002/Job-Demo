@@ -22,7 +22,7 @@ const ReactTable=()=>{
     () => [
       {
         Header: 'Column 1',
-        accessor: 'col1', // accessor is the "key" in the data
+        accessor: 'col1',
       },
       {
         Header: 'Column 2',
@@ -54,7 +54,6 @@ const ReactTable=()=>{
                   color: 'black',
                   fontWeight: 'bold',
                 }}
-                
               >
                 {column.render('Header')}
               </th>
