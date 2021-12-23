@@ -48,6 +48,9 @@ function Header(){
       <button>
         <Link to="/rt-job">React-table-job</Link>
       </button>
+      <button>
+        <Link to="/js-saga">job-style-saga</Link>
+      </button>
     </div>
   )
 }

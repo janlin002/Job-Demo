@@ -1,8 +1,14 @@
-import { CHANGE_LANG, FETCH_DATA_SUCCESS } from './actionType'
+import { 
+  CHANGE_LANG,
+  FETCH_DATA_SUCCESS,
+  GTE_SAGA_TEST,
+  GTE_SAGA_TEST_SUCCESS
+} from './actionType'
 
 const defaultState = {
   localeLanguage: 'en',
-  data: {}
+  data: {},
+  content: {}
 }
 
 export default (state = defaultState,action)=>{
@@ -18,7 +24,18 @@ export default (state = defaultState,action)=>{
       data: action.payload.data,
     };
   }
-    
+  case GTE_SAGA_TEST: {
+    return {
+      ...state,
+      content: {}
+    }
+  }
+  case GTE_SAGA_TEST_SUCCESS: {
+    return {
+      ...state,
+      content: action.payload
+    }
+  }
   default:
     return state
   }

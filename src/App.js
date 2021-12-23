@@ -20,6 +20,7 @@ import ReactModal from './Demo/React-modal'
 import SelectorTest from './Demo/SelectorTest'
 import ReactDnd from './Demo/React-dnd'
 import ReactTableJob from './Demo/React-table-job'
+import JobStyleSaga from './Demo/Job-style-saga'
  
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -52,6 +53,7 @@ function App() {
             <Route path="/selector-test" exact component={SelectorTest}></Route>
             <Route path="/react-dnd" exact component={ReactDnd}></Route>
             <Route path="/rt-job" exact component={ReactTableJob}></Route>
+            <Route path="/js-saga" exact component={JobStyleSaga}></Route>
           </Switch>
         </Router>
       </IntlProvider>
