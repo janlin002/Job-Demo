@@ -21,7 +21,8 @@ import SelectorTest from './Demo/SelectorTest'
 import ReactDnd from './Demo/React-dnd'
 import ReactTableJob from './Demo/React-table-job'
 import JobStyleSaga from './Demo/Job-style-saga'
- 
+import SVG from './Demo/SVG'
+
 function App() {
   const [locale, setLocale] = useState(undefined)
   const lang = useSelector(state=>state.localeLanguage)
@@ -54,6 +55,7 @@ function App() {
             <Route path="/react-dnd" exact component={ReactDnd}></Route>
             <Route path="/rt-job" exact component={ReactTableJob}></Route>
             <Route path="/js-saga" exact component={JobStyleSaga}></Route>
+            <Route path="/svg" exact component={SVG}></Route>
           </Switch>
         </Router>
       </IntlProvider>

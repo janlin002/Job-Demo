@@ -51,6 +51,9 @@ function Header(){
       <button>
         <Link to="/js-saga">job-style-saga</Link>
       </button>
+      <button>
+        <Link to="/svg">svg</Link>
+      </button>
     </div>
   )
 }
