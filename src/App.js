@@ -22,6 +22,7 @@ import ReactDnd from './Demo/React-dnd'
 import ReactTableJob from './Demo/React-table-job'
 import JobStyleSaga from './Demo/Job-style-saga'
 import SVG from './Demo/SVG'
+import ReactSlick from './Demo/React-slick'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -56,6 +57,7 @@ function App() {
             <Route path="/rt-job" exact component={ReactTableJob}></Route>
             <Route path="/js-saga" exact component={JobStyleSaga}></Route>
             <Route path="/svg" exact component={SVG}></Route>
+            <Route path="/react-slick" exact component={ReactSlick}></Route>
           </Switch>
         </Router>
       </IntlProvider>

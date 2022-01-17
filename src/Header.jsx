@@ -54,6 +54,9 @@ function Header(){
       <button>
         <Link to="/svg">svg</Link>
       </button>
+      <button>
+        <Link to="/react-slick">react-slick</Link>
+      </button>
     </div>
   )
 }
