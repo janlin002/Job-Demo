@@ -57,6 +57,9 @@ function Header(){
       <button>
         <Link to="/react-slick">react-slick</Link>
       </button>
+      <button>
+        <Link to="/qrcode">react-qrcode</Link>
+      </button>
     </div>
   )
 }
