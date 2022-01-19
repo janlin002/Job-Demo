@@ -25,5 +25,9 @@
 | useSelector 集中管理   | useSelector              | [react-redux](https://www.npmjs.com/package/react-redux)                                                           | [Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/SelectorTest)               |
 | SVG                    | SVG                      | 無                                                                                                                 | [Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/SVG)                        |
 | Proxy                  | Proxy                    | [http-proxy-middleware](https://www.npmjs.com/package/http-proxy-middleware)                                       | 無                                                                                            |
+<<<<<<< HEAD
 | react-qrcode           | react-qrcode             | [qrcode.react](https://www.npmjs.com/package/qrcode.react)                                                         | [Link]()                                                                                      |
 | GOjs                   | Gojs                     | [Gojs](https://www.npmjs.com/package/gojs)                                                                         | 無                                                                                            |
+=======
+| react-qrcode           | react-qrcode             | [qrcode.react](https://www.npmjs.com/package/qrcode.react)                                                         | [Link](https://github.com/janlin002/Job-Demo/tree/master/src/Demo/QRCode)                                                                                      |
+>>>>>>> 1f4d90215771186c791894954ea88f625a7657bb
