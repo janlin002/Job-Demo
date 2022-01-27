@@ -60,6 +60,9 @@ function Header(){
       <button>
         <Link to="/qrcode">react-qrcode</Link>
       </button>
+      <button>
+        <Link to="/print">Print</Link>
+      </button>
     </div>
   )
 }

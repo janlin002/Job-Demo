@@ -24,6 +24,7 @@ import JobStyleSaga from './Demo/Job-style-saga'
 import SVG from './Demo/SVG'
 import ReactSlick from './Demo/React-slick'
 import QrCode from './Demo/QRCode'
+import Print from './Demo/Print'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -60,6 +61,7 @@ function App() {
             <Route path="/svg" exact component={SVG}></Route>
             <Route path="/react-slick" exact component={ReactSlick}></Route>
             <Route path="/qrcode" exact component={QrCode}></Route>
+            <Route path="/print" exact component={Print}></Route>
           </Switch>
         </Router>
       </IntlProvider>
