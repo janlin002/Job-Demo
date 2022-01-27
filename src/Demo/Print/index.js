@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import photo from '../../assets/image/photo1.png'
 
 const Print = () =>{
   const [photoInfo, setPhotoInfo] = useState('')
-  //   const [file, setFile] = useState('')
   const handlePrintClick = ()=>{
     window.print()
   }
-
-  //   useEffect(()=>{
-  //     setFile(photoInfo)
-  //   }, [photoInfo])
-
-  //   console.log(file, 'file')
 
   function getBase64(event) {
     const reader = new FileReader();
@@ -21,7 +14,6 @@ const Print = () =>{
     // reader.readAsDataURL(file);
 
     if(file){
-      console.log('hello')
       reader.readAsDataURL(file);
     }
 
@@ -50,9 +42,9 @@ const Print = () =>{
           選取檔案
         </label>
         
-        {/* <a href={photoInfo} download>
-          <button>列印圖片</button>
-        </a> */}
+        {/* <a href={photoInfo} download> */}
+        <button onClick={()=>window.print()}>列印圖片</button>
+        {/* </a> */}
         <a download="圖片.png" href={photoInfo}>Download</a>
 
       </div>
@@ -63,3 +55,5 @@ const Print = () =>{
 }
 
 export default Print
+
+// ! 列印圖片待補
