@@ -3,11 +3,12 @@ import photo from '../../assets/image/photo1.png'
 
 const Print = () =>{
   const [photoInfo, setPhotoInfo] = useState('')
+  const [photoBlob, setPhotoBlob] = useState({})
   const handlePrintClick = ()=>{
     window.print()
   }
 
-  function getBase64(event) {
+  const getBase64 = async(event)=> {
     const reader = new FileReader();
     const file = event.target.files[0];
     
@@ -20,7 +21,11 @@ const Print = () =>{
     reader.onload = function (e) {
       setPhotoInfo(e.target.result)
     };
-    
+
+    const base64Response = await fetch(photoInfo);
+    const blob = await base64Response.blob();
+
+    setPhotoBlob(blob)
   }
 
   return (
@@ -33,7 +38,7 @@ const Print = () =>{
       <div className="mt-4">
         <input 
           type="file"
-          accept=".jpg, .png"
+          // accept=".jpg, .png"
           id="fileName"
           name="fileName"
           onChange={(e)=>getBase64(e)}
@@ -43,10 +48,9 @@ const Print = () =>{
         </label>
         
         {/* <a href={photoInfo} download> */}
-        <button onClick={()=>window.print()}>列印圖片</button>
+        <button onClick={()=>window.print(photoBlob)}>列印圖片</button>
         {/* </a> */}
         <a download="圖片.png" href={photoInfo}>Download</a>
-
       </div>
 
       <div>參考資源: https://www.w3schools.com/tags/att_a_download.asp</div>
