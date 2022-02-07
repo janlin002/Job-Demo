@@ -25,6 +25,7 @@ import SVG from './Demo/SVG'
 import ReactSlick from './Demo/React-slick'
 import QrCode from './Demo/QRCode'
 import Print from './Demo/Print'
+import PrintModal from './Demo/PrintModal'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -62,6 +63,7 @@ function App() {
             <Route path="/react-slick" exact component={ReactSlick}></Route>
             <Route path="/qrcode" exact component={QrCode}></Route>
             <Route path="/print" exact component={Print}></Route>
+            <Route path="/print-modal" exact component={PrintModal}></Route>
           </Switch>
         </Router>
       </IntlProvider>

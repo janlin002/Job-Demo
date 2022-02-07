@@ -63,6 +63,9 @@ function Header(){
       <button>
         <Link to="/print">Print</Link>
       </button>
+      <button>
+        <Link to="/print-modal">Print-Modal</Link>
+      </button>
     </div>
   )
 }

@@ -59,5 +59,3 @@ const Print = () =>{
 }
 
 export default Print
-
-// ! 列印圖片待補
