@@ -66,6 +66,9 @@ function Header(){
       <button>
         <Link to="/print-modal">Print-Modal</Link>
       </button>
+      <button>
+        <Link to="/react-table-pagination">ReactTablePagination</Link>
+      </button>
     </div>
   )
 }

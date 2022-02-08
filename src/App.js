@@ -26,6 +26,7 @@ import ReactSlick from './Demo/React-slick'
 import QrCode from './Demo/QRCode'
 import Print from './Demo/Print'
 import PrintModal from './Demo/PrintModal'
+import ReactTablePagination from './Demo/ReactTablePagination'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -64,6 +65,7 @@ function App() {
             <Route path="/qrcode" exact component={QrCode}></Route>
             <Route path="/print" exact component={Print}></Route>
             <Route path="/print-modal" exact component={PrintModal}></Route>
+            <Route path="/react-table-pagination" exact component={ReactTablePagination}></Route>
           </Switch>
         </Router>
       </IntlProvider>
