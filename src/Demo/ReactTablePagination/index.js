@@ -1,5 +1,10 @@
 import React from 'react';
-import { useTable, usePagination } from 'react-table'
+import { 
+  useTable,
+  usePagination,
+  useGlobalFilter,
+  useSortBy,
+} from 'react-table'
 
 const ReactTablePagination = () =>{
   const perPageOptions = [10, 20,30,40,50]
@@ -39,7 +44,10 @@ const ReactTablePagination = () =>{
     rows,
     prepareRow,
     page
-  } = useTable({ columns, data })
+  } = useTable({ columns, data }, 
+    useGlobalFilter,
+    useSortBy,
+    usePagination,)
   return (
     <table {...getTableProps()} style={{ border: 'solid 1px blue' }}>
       <thead>
@@ -63,7 +71,7 @@ const ReactTablePagination = () =>{
         ))}
       </thead>
       <tbody {...getTableBodyProps()}>
-        {rows.map(row => {
+        {/* {rows.map(row => {
           prepareRow(row)
           return (
             <tr {...row.getRowProps()} key={columns.accessor}>
@@ -82,6 +90,14 @@ const ReactTablePagination = () =>{
                   </td>
                 )
               })}
+            </tr>
+          )
+        })} */}
+        {page.map((row) => {
+          prepareRow(row)
+          return (
+            <tr {...row.getRowProps()} key={columns.accessor}>
+              {row.cells.map((cell) => <td {...cell.getCellProps()} key={columns.accessor}>{cell.render('Cell')}</td>)}
             </tr>
           )
         })}

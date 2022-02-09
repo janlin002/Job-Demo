@@ -27,6 +27,7 @@ import QrCode from './Demo/QRCode'
 import Print from './Demo/Print'
 import PrintModal from './Demo/PrintModal'
 import ReactTablePagination from './Demo/ReactTablePagination'
+import UseState from './Demo/Hooks/useState'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -66,6 +67,7 @@ function App() {
             <Route path="/print" exact component={Print}></Route>
             <Route path="/print-modal" exact component={PrintModal}></Route>
             <Route path="/react-table-pagination" exact component={ReactTablePagination}></Route>
+            <Route path="/hooks/useState" exact component={UseState}></Route>
           </Switch>
         </Router>
       </IntlProvider>
