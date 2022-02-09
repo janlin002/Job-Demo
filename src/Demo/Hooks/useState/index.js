@@ -8,18 +8,11 @@ const UseState = () =>{
   })
 
   return (
-    <div>123</div>
+    <div>useState</div>
   )
 }
 
 export default UseState
-
-// const useState = (init) =>{
-//   let initValue
-//   function dispatch(initValue){
-//     let initValue = init
-//   }
-// }
 
 function useState(init){
   let initValue = init
@@ -27,6 +20,5 @@ function useState(init){
     initValue = newState
     console.log(newState, 'newState')
   }
-  console.log(initValue, 'init')
   return [initValue, dispatch]
 }
