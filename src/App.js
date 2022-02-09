@@ -28,6 +28,7 @@ import Print from './Demo/Print'
 import PrintModal from './Demo/PrintModal'
 import ReactTablePagination from './Demo/ReactTablePagination'
 import UseState from './Demo/Hooks/useState'
+import Ref from './Demo/Hooks/useRef'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -68,6 +69,7 @@ function App() {
             <Route path="/print-modal" exact component={PrintModal}></Route>
             <Route path="/react-table-pagination" exact component={ReactTablePagination}></Route>
             <Route path="/hooks/useState" exact component={UseState}></Route>
+            <Route path="/hooks/useRef" exact component={Ref}></Route>
           </Switch>
         </Router>
       </IntlProvider>

@@ -72,6 +72,9 @@ function Header(){
       <button>
         <Link to="/hooks/useState">useState</Link>
       </button>
+      <button>
+        <Link to="/hooks/useRef">useRef</Link>
+      </button>
     </div>
   )
 }
