@@ -29,6 +29,7 @@ import PrintModal from './Demo/PrintModal'
 import ReactTablePagination from './Demo/ReactTablePagination'
 import UseState from './Demo/Hooks/useState'
 import Ref from './Demo/Hooks/useRef'
+import UseEffectDemo1 from './Demo/Hooks/useEffect/Demo1'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -70,6 +71,7 @@ function App() {
             <Route path="/react-table-pagination" exact component={ReactTablePagination}></Route>
             <Route path="/hooks/useState" exact component={UseState}></Route>
             <Route path="/hooks/useRef" exact component={Ref}></Route>
+            <Route path="/hooks/useEffect/Demo1" exact component={UseEffectDemo1}></Route>
           </Switch>
         </Router>
       </IntlProvider>
