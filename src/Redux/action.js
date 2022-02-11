@@ -2,7 +2,9 @@ import {
   CHANGE_LANG,
   FETCH_DATA,
   GTE_SAGA_TEST,
-  GTE_SAGA_TEST_SUCCESS
+  GTE_SAGA_TEST_SUCCESS,
+
+  TEST
 } from './actionType'
 
 export const changeLang = ( value)=>{
@@ -25,5 +27,10 @@ export const getSagaTest = (payload) =>({
 
 export const getSagaTestSuccess = (payload) =>({
   type: GTE_SAGA_TEST_SUCCESS,
+  payload
+})
+
+export const test = (payload) =>({
+  type: TEST,
   payload
 })

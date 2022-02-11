@@ -5,8 +5,8 @@ const Demo1 = () =>{
 
   useEffect(()=>{
     setCount('2')
-    setCount('3')
-    setCount('4')
+    setCount('1')
+    // setCount('4')
   }, [])
 
   useEffect(()=>{

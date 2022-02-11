@@ -4,3 +4,5 @@ export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS'
 
 export const GTE_SAGA_TEST = 'GTE_SAGA_TEST'
 export const GTE_SAGA_TEST_SUCCESS = 'GTE_SAGA_TEST_SUCCESS'
+
+export const TEST = 'TEST'
