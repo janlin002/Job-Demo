@@ -35,22 +35,22 @@ const Print = () =>{
         <button style={{ color: 'black' }}>下載截圖</button>
       </a>
 
-      <div className="mt-4">
+      <div className='mt-4'>
         <input 
-          type="file"
+          type='file'
           // accept=".jpg, .png"
-          id="fileName"
-          name="fileName"
+          id='fileName'
+          name='fileName'
           onChange={(e)=>getBase64(e)}
         />
-        <label className="custom-file-label" htmlFor="fileName">
+        <label className='custom-file-label' htmlFor='fileName'>
           選取檔案
         </label>
         
         {/* <a href={photoInfo} download> */}
         <button onClick={()=>window.print(photoBlob)}>列印圖片</button>
         {/* </a> */}
-        <a download="圖片.png" href={photoInfo}>Download</a>
+        <a download='圖片.png' href={photoInfo}>Download</a>
       </div>
 
       <div>參考資源: https://www.w3schools.com/tags/att_a_download.asp</div>

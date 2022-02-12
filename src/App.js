@@ -47,33 +47,33 @@ function App() {
         <Router>
           <Header />
           <Switch>
-            <Route path="/formik" exact component={Formik}></Route>
-            <Route path="/formikyup" exact component={FormikYup}></Route>
-            <Route path="/reacttable" exact component={ReactTable}></Route>
-            <Route path="/reactintl" exact component={ReactIntl}></Route>
-            <Route path="/chart" exact component={Chart}></Route>
-            <Route path="/colspan" exact component={Colspan}></Route>
-            <Route path="/saga" exact component={Saga}></Route>
-            <Route path="/jsx-control" exact component={JsxControl}></Route>
-            <Route path="/day-js" exact component={DayJs}></Route>
-            <Route path="/formik-2" exact component={Formik2}></Route>
-            <Route path="/formik-20" exact component={Formik20}></Route>
-            <Route path="/formik-next" exact component={FormikResult}></Route>
-            <Route path="/react-modal" exact component={ReactModal}></Route>
-            <Route path="/selector-test" exact component={SelectorTest}></Route>
-            <Route path="/react-dnd" exact component={ReactDnd}></Route>
-            <Route path="/rt-job" exact component={ReactTableJob}></Route>
-            <Route path="/js-saga" exact component={JobStyleSaga}></Route>
-            <Route path="/svg" exact component={SVG}></Route>
-            <Route path="/react-slick" exact component={ReactSlick}></Route>
-            <Route path="/qrcode" exact component={QrCode}></Route>
-            <Route path="/print" exact component={Print}></Route>
-            <Route path="/print-modal" exact component={PrintModal}></Route>
-            <Route path="/react-table-pagination" exact component={ReactTablePagination}></Route>
-            <Route path="/hooks/useState" exact component={UseState}></Route>
-            <Route path="/hooks/useRef" exact component={Ref}></Route>
-            <Route path="/hooks/useEffect/Demo1" exact component={UseEffectDemo1}></Route>
-            <Route path="/hooks/useEffect/Demo2" exact component={UseEffectDemo2}></Route>
+            <Route path='/formik' exact component={Formik}></Route>
+            <Route path='/formikyup' exact component={FormikYup}></Route>
+            <Route path='/reacttable' exact component={ReactTable}></Route>
+            <Route path='/reactintl' exact component={ReactIntl}></Route>
+            <Route path='/chart' exact component={Chart}></Route>
+            <Route path='/colspan' exact component={Colspan}></Route>
+            <Route path='/saga' exact component={Saga}></Route>
+            <Route path='/jsx-control' exact component={JsxControl}></Route>
+            <Route path='/day-js' exact component={DayJs}></Route>
+            <Route path='/formik-2' exact component={Formik2}></Route>
+            <Route path='/formik-20' exact component={Formik20}></Route>
+            <Route path='/formik-next' exact component={FormikResult}></Route>
+            <Route path='/react-modal' exact component={ReactModal}></Route>
+            <Route path='/selector-test' exact component={SelectorTest}></Route>
+            <Route path='/react-dnd' exact component={ReactDnd}></Route>
+            <Route path='/rt-job' exact component={ReactTableJob}></Route>
+            <Route path='/js-saga' exact component={JobStyleSaga}></Route>
+            <Route path='/svg' exact component={SVG}></Route>
+            <Route path='/react-slick' exact component={ReactSlick}></Route>
+            <Route path='/qrcode' exact component={QrCode}></Route>
+            <Route path='/print' exact component={Print}></Route>
+            <Route path='/print-modal' exact component={PrintModal}></Route>
+            <Route path='/react-table-pagination' exact component={ReactTablePagination}></Route>
+            <Route path='/hooks/useState' exact component={UseState}></Route>
+            <Route path='/hooks/useRef' exact component={Ref}></Route>
+            <Route path='/hooks/useEffect/Demo1' exact component={UseEffectDemo1}></Route>
+            <Route path='/hooks/useEffect/Demo2' exact component={UseEffectDemo2}></Route>
           </Switch>
         </Router>
       </IntlProvider>

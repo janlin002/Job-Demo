@@ -28,11 +28,11 @@ function FormikYup(){
       <h1>formik 搭配 yup</h1>
       <form onSubmit={formik.handleSubmit}>
         <div>
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor='firstName'>First Name</label>
           <input
-            id="firstName"
-            name="firstName"
-            type="text"
+            id='firstName'
+            name='firstName'
+            type='text'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.firstName}
@@ -42,11 +42,11 @@ function FormikYup(){
           ) : null}
         </div>
         <div>   
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor='lastName'>Last Name</label>
           <input
-            id="lastName"
-            name="lastName"
-            type="text"
+            id='lastName'
+            name='lastName'
+            type='text'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.lastName}
@@ -56,11 +56,11 @@ function FormikYup(){
           ) : null}
         </div>
         <div>
-          <label htmlFor="email">Email Address</label>
+          <label htmlFor='email'>Email Address</label>
           <input
-            id="email"
-            name="email"
-            type="email"
+            id='email'
+            name='email'
+            type='email'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -69,7 +69,7 @@ function FormikYup(){
             <div>{formik.errors.email}</div>
           ) : null}
         </div>
-        <button type="submit">Submit</button>
+        <button type='submit'>Submit</button>
       </form>
     </div>
   )

@@ -9,7 +9,7 @@ const QRcode = () =>{
   //   console.log(inputTxt, 'inputTxt')
   return (
     <>
-      <input type="text" 
+      <input type='text' 
         onChange={(e)=>setInputTxt(e.target.value)}/>
       <QRCode 
         value={inputTxt}

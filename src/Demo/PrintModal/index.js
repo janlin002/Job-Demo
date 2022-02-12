@@ -52,8 +52,8 @@ const PrintModal = () =>{
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
-        id="printableArea"
+        contentLabel='Example Modal'
+        id='printableArea'
       >
         <button onClick={closeModal}>close</button>
         <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint, error, nisi ea recusandae quidem nam harum ullam cumque perferendis quod soluta placeat amet perspiciatis illum tempora dignissimos aperiam molestiae?</div>

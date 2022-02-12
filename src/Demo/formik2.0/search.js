@@ -33,63 +33,63 @@ const Search = ({ handleSubmit }) =>{
     <>
       <form onSubmit={formik.handleSubmit}>
         <div>
-          <label htmlFor="name">請輸入姓名</label>
+          <label htmlFor='name'>請輸入姓名</label>
           <input 
-            type="text" 
-            className="name"
+            type='text' 
+            className='name'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
-            id="name"
+            id='name'
           />
           {
             (formik.touched.name && formik.errors.name) ? <div style={{ color: 'red' }}>{formik.errors.name}</div> : ''
           }
         </div>
         <div>
-          <label htmlFor="name">請輸入年齡</label>
+          <label htmlFor='name'>請輸入年齡</label>
           <input 
-            type="text" 
-            className="age"
+            type='text' 
+            className='age'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.age}
-            id="age"
+            id='age'
           />
           {
             (formik.touched.age && formik.errors.age) ? <div style={{ color: 'red' }}>{formik.errors.age}</div> : ''
           }
         </div>
         <div>
-          <label htmlFor="name">請輸入身高</label>
+          <label htmlFor='name'>請輸入身高</label>
           <input 
-            type="text" 
-            className="tall"
+            type='text' 
+            className='tall'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.tall}
-            id="tall"
+            id='tall'
           />
           {
             (formik.touched.tall && formik.errors.tall) ? <div style={{ color: 'red' }}>{formik.errors.tall}</div> : ''
           }
         </div>
         <div>
-          <label htmlFor="weight">請輸入體重</label>
+          <label htmlFor='weight'>請輸入體重</label>
           <input 
-            type="text" 
-            className="weight"
+            type='text' 
+            className='weight'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.weight}
-            id="weight"
+            id='weight'
           />
           {
             (formik.touched.weight && formik.errors.weight) ? <div style={{ color: 'red' }}>{formik.errors.weight}</div> : ''
           }
         </div>
         <div>
-          <button type="submit">
+          <button type='submit'>
             下一頁
           </button>
         </div>

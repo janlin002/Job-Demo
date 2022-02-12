@@ -45,8 +45,8 @@ function Formiks(){
             <form onSubmit={handleSubmit}>
               <div>
                 <input
-                  type="email"
-                  name="email"
+                  type='email'
+                  name='email'
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.email}
@@ -55,15 +55,15 @@ function Formiks(){
               </div>
               <div>
                 <input
-                  type="password"
-                  name="password"
+                  type='password'
+                  name='password'
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.password}
                 />
                 {errors.password && touched.password && errors.password}
               </div>
-              <button type="submit" disabled={isSubmitting}>
+              <button type='submit' disabled={isSubmitting}>
              Submit
               </button>
             </form>

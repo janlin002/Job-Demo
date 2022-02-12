@@ -17,6 +17,7 @@ const Demo2 = () =>{
 
   useEffect(()=>{
     console.log(testDatas, 'testDatas')
+    // console.log("12334343")
   }, [testDatas])
 
   return (

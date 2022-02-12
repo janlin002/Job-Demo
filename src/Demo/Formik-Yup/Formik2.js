@@ -34,13 +34,13 @@ const Formik2 = () =>{
   return (
     <>
       <form onSubmit={formik.handleSubmit}>
-        <label htmlFor="name">請輸入姓名</label>
+        <label htmlFor='name'>請輸入姓名</label>
         <input 
-          type="text" 
-          className="name"
+          type='text' 
+          className='name'
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          id="name"
+          id='name'
         />
         {
           (formik.touched.name && formik.errors.name) ? <div style={{ color: 'red' }}>{formik.errors.name}</div> : ''

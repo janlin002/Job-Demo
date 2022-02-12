@@ -11,8 +11,8 @@ function ReactIntl(){
     <div>
       <div>
         <FormattedMessage
-          id="app.header"
-          defaultMessage="Edit src/App.js and save to reload."
+          id='app.header'
+          defaultMessage='Edit src/App.js and save to reload.'
         />
       </div>
       
@@ -23,10 +23,10 @@ function ReactIntl(){
           dispatch(changeLang(evt.target.value))
         }}
       >
-        <option value="en">English</option>
-        <option value="zh">中文</option>
+        <option value='en'>English</option>
+        <option value='zh'>中文</option>
         {/* <option value="fr">Français</option> */}
-        <option value="jp">日本語</option>
+        <option value='jp'>日本語</option>
       </select>
     </div>
   )
