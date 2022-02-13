@@ -81,6 +81,9 @@ function Header(){
       <button>
         <Link to='/hooks/useEffect/Demo2'>useEffect Demo2</Link>
       </button>
+      <button>
+        <Link to='/formik-submit'>fromik submit</Link>
+      </button>
     </div>
   )
 }

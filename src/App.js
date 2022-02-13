@@ -31,6 +31,7 @@ import UseState from './Demo/Hooks/useState'
 import Ref from './Demo/Hooks/useRef'
 import UseEffectDemo1 from './Demo/Hooks/useEffect/Demo1'
 import UseEffectDemo2 from './Demo/Hooks/useEffect/Demo2'
+import FromikSubmit from './Demo/formik isSubmitting vs isvalidating'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -74,6 +75,7 @@ function App() {
             <Route path='/hooks/useRef' exact component={Ref}></Route>
             <Route path='/hooks/useEffect/Demo1' exact component={UseEffectDemo1}></Route>
             <Route path='/hooks/useEffect/Demo2' exact component={UseEffectDemo2}></Route>
+            <Route path='/formik-submit' exact component={FromikSubmit}></Route>
           </Switch>
         </Router>
       </IntlProvider>

@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types';
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+
+const FormikSubmit = () =>{
+  const [page, setPage] = useState('main')
+  const handleSubmit = () =>{
+    setPage('next')
+  }
+  const mainPage = () =>{
+    setPage('main')
+  }
+  //   const changePage = () =>{
+  //     if(page === 'main'){
+  //       <Search 
+  //         handleSubmit={handleSubmit}/>
+  //     }else if(page=== 'result'){
+  //       <Result 
+  //         mainPage={mainPage}/>
+  //     }
+  //   }
+  console.log(page)
+  return (
+    <Search handleSubmit={handleSubmit}/>
+  )
+}
 
 const initialValues = {
   name: '',
@@ -25,9 +48,19 @@ const Search = ({ handleSubmit }) =>{
     }),
     onSubmit: handleSubmit
   })
-  console.log(formik.values, 'formik')
-  console.log(formik.values.name, 'handleSubmit')
-  console.log(handleSubmit)
+
+  useEffect(()=>{
+    if(formik.isValidating){
+      console.log('isValidating')
+    }
+  }, [formik.isValidating])
+
+  useEffect(()=>{
+    if(formik.isSubmitting){
+      console.log('isSubmit')
+    }
+  }, [formik.isSubmitting])
+  
   return (
     <>
       <form onSubmit={formik.handleSubmit}>
@@ -88,15 +121,27 @@ const Search = ({ handleSubmit }) =>{
           }
         </div>
         <div>
-          <button type='submit'>
-            下一頁
+          <button 
+            type='submit'
+            onClick={()=>{
+              console.log('hello')
+            }}
+          >
+              下一頁
           </button>
         </div>
       </form>
     </>
   )
 }
-export default Search
+
+const Result =() =>{
+  return (
+    <h1>R</h1>
+  )
+}
+
+export default FormikSubmit
 
 Search.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
