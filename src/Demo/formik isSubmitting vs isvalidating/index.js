@@ -8,19 +8,6 @@ const FormikSubmit = () =>{
   const handleSubmit = () =>{
     setPage('next')
   }
-  const mainPage = () =>{
-    setPage('main')
-  }
-  //   const changePage = () =>{
-  //     if(page === 'main'){
-  //       <Search 
-  //         handleSubmit={handleSubmit}/>
-  //     }else if(page=== 'result'){
-  //       <Result 
-  //         mainPage={mainPage}/>
-  //     }
-  //   }
-  console.log(page)
   return (
     <Search handleSubmit={handleSubmit}/>
   )
@@ -123,11 +110,14 @@ const Search = ({ handleSubmit }) =>{
         <div>
           <button 
             type='submit'
-            onClick={()=>{
-              console.log('hello')
-            }}
           >
               下一頁
+          </button>
+          <button 
+            type='button'
+            onClick={()=>console.log('button click')}
+          >
+              上一頁
           </button>
         </div>
       </form>
@@ -137,7 +127,7 @@ const Search = ({ handleSubmit }) =>{
 
 const Result =() =>{
   return (
-    <h1>R</h1>
+    <h1>Result</h1>
   )
 }
 
