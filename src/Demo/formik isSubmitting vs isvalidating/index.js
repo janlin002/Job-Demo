@@ -8,8 +8,15 @@ const FormikSubmit = () =>{
   const handleSubmit = () =>{
     setPage('next')
   }
+
+  const handleClick = () =>{
+    setPage('result')
+  }
   return (
-    <Search handleSubmit={handleSubmit}/>
+    <Search 
+      handleSubmit={handleSubmit}
+      handleClick={handleClick}
+    />
   )
 }
 
@@ -22,6 +29,7 @@ const initialValues = {
 
 const Search = ({ handleSubmit }) =>{
   const formik = useFormik({
+    enableReinitialize: true,
     initialValues,
     validationSchema: Yup.object({
       name: Yup.string()
@@ -37,16 +45,16 @@ const Search = ({ handleSubmit }) =>{
   })
 
   useEffect(()=>{
-    if(formik.isValidating){
-      console.log('isValidating')
+    if(formik.isSubmitting && formik.isValidating){
+      console.log('both')
     }
-  }, [formik.isValidating])
+  }, [formik.isSubmitting, formik.isValidating])
 
-  useEffect(()=>{
-    if(formik.isSubmitting){
-      console.log('isSubmit')
-    }
-  }, [formik.isSubmitting])
+  // useEffect(()=>{
+  //   if(formik.isSubmitting){
+  //     console.log('isSubmit')
+  //   }
+  // }, [formik.isSubmitting])
   
   return (
     <>
@@ -66,7 +74,7 @@ const Search = ({ handleSubmit }) =>{
           }
         </div>
         <div>
-          <label htmlFor='name'>請輸入年齡</label>
+          <label htmlFor='age'>請輸入年齡</label>
           <input 
             type='text' 
             className='age'
@@ -80,7 +88,7 @@ const Search = ({ handleSubmit }) =>{
           }
         </div>
         <div>
-          <label htmlFor='name'>請輸入身高</label>
+          <label htmlFor='tall'>請輸入身高</label>
           <input 
             type='text' 
             className='tall'
@@ -113,12 +121,12 @@ const Search = ({ handleSubmit }) =>{
           >
               下一頁
           </button>
-          <button 
+          {/* <button 
             type='button'
             onClick={()=>console.log('button click')}
           >
               上一頁
-          </button>
+          </button> */}
         </div>
       </form>
     </>
@@ -135,4 +143,5 @@ export default FormikSubmit
 
 Search.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
 }
