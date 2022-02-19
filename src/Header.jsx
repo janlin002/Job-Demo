@@ -87,6 +87,9 @@ function Header(){
       <button>
         <Link to='/interview'>interview</Link>
       </button>
+      <button>
+        <Link to='/bs-col-table'>bs-col-table</Link>
+      </button>
     </div>
   )
 }
