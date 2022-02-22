@@ -90,6 +90,9 @@ function Header(){
       <button>
         <Link to='/bs-col-table'>bs-col-table</Link>
       </button>
+      <button>
+        <Link to='/hooks/useMemo'>useMemo</Link>
+      </button>
     </div>
   )
 }

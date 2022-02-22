@@ -34,6 +34,7 @@ import UseEffectDemo2 from './Demo/Hooks/useEffect/Demo2'
 import FromikSubmit from './Demo/formik isSubmitting vs isvalidating'
 import Interview from './Demo/Interview'
 import BsColTable from './Demo/BS-Col-Table'
+import UseMemo from './Demo/Hooks/useMemo'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -80,6 +81,7 @@ function App() {
             <Route path='/formik-submit' exact component={FromikSubmit}></Route>
             <Route path='/interview' exact component={Interview}></Route>
             <Route path='/bs-col-table' exact component={BsColTable}></Route>
+            <Route path='/hooks/useMemo' exact component={UseMemo}></Route>
           </Switch>
         </Router>
       </IntlProvider>
