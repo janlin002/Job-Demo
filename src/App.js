@@ -35,6 +35,8 @@ import FromikSubmit from './Demo/formik isSubmitting vs isvalidating'
 import Interview from './Demo/Interview'
 import BsColTable from './Demo/BS-Col-Table'
 import UseMemo from './Demo/Hooks/useMemo'
+import scrollTimeline from './Demo/@scroll-timeline'
+import mixBlendMode from './Demo/mix-blend-mode'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -82,6 +84,8 @@ function App() {
             <Route path='/interview' exact component={Interview}></Route>
             <Route path='/bs-col-table' exact component={BsColTable}></Route>
             <Route path='/hooks/useMemo' exact component={UseMemo}></Route>
+            <Route path='/scroll-timeline' exact component={scrollTimeline}></Route>
+            <Route path='/mixBlendMode' exact component={mixBlendMode}></Route>
           </Switch>
         </Router>
       </IntlProvider>

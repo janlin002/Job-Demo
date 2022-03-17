@@ -93,6 +93,12 @@ function Header(){
       <button>
         <Link to='/hooks/useMemo'>useMemo</Link>
       </button>
+      <button>
+        <Link to='/scroll-timeline'>scrollTimeline</Link>
+      </button>
+      <button>
+        <Link to='/mixBlendMode'>mixBlendMode</Link>
+      </button>
     </div>
   )
 }

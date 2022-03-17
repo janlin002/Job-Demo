@@ -1,0 +1,44 @@
+#g-box {
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  /* animation-easing-function: linear; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#g-content {
+  width: 300px;
+  height: 170vh;
+  background: #999;
+}
+#g-box {
+  font-size: 150px;
+  margin: 70vh auto 0;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  /* animation-easing-function: linear;
+    animation-timeline: box-rotate; */
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@scroll-timeline box-rotate {
+  source: selector("#g-content");
+}
+
+/* keyframes: https://pjchender.blogspot.com/2015/12/cssanimation-keyframes.html */
