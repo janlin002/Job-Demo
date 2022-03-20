@@ -37,6 +37,7 @@ import BsColTable from './Demo/BS-Col-Table'
 import UseMemo from './Demo/Hooks/useMemo'
 import scrollTimeline from './Demo/@scroll-timeline'
 import mixBlendMode from './Demo/mix-blend-mode'
+import ClipPath from './Demo/Clipath'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -86,6 +87,7 @@ function App() {
             <Route path='/hooks/useMemo' exact component={UseMemo}></Route>
             <Route path='/scroll-timeline' exact component={scrollTimeline}></Route>
             <Route path='/mixBlendMode' exact component={mixBlendMode}></Route>
+            <Route path='/clip-path' exact component={ClipPath}></Route>
           </Switch>
         </Router>
       </IntlProvider>

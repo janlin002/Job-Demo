@@ -99,6 +99,9 @@ function Header(){
       <button>
         <Link to='/mixBlendMode'>mixBlendMode</Link>
       </button>
+      <button>
+        <Link to='/clip-path'>ClipPath</Link>
+      </button>
     </div>
   )
 }
