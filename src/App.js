@@ -38,6 +38,7 @@ import UseMemo from './Demo/Hooks/useMemo'
 import scrollTimeline from './Demo/@scroll-timeline'
 import mixBlendMode from './Demo/mix-blend-mode'
 import ClipPath from './Demo/Clipath'
+import CustomHook from './Demo/Custom-Hook'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -88,6 +89,7 @@ function App() {
             <Route path='/scroll-timeline' exact component={scrollTimeline}></Route>
             <Route path='/mixBlendMode' exact component={mixBlendMode}></Route>
             <Route path='/clip-path' exact component={ClipPath}></Route>
+            <Route path='/custom-hook' exact component={CustomHook}></Route>
           </Switch>
         </Router>
       </IntlProvider>

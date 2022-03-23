@@ -102,6 +102,9 @@ function Header(){
       <button>
         <Link to='/clip-path'>ClipPath</Link>
       </button>
+      <button>
+        <Link to='/custom-hook'>CustomHook</Link>
+      </button>
     </div>
   )
 }
