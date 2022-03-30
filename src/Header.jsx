@@ -105,6 +105,9 @@ function Header(){
       <button>
         <Link to='/custom-hook'>CustomHook</Link>
       </button>
+      <button>
+        <Link to='/bind-js'>JsBind</Link>
+      </button>
     </div>
   )
 }

@@ -39,6 +39,7 @@ import scrollTimeline from './Demo/@scroll-timeline'
 import mixBlendMode from './Demo/mix-blend-mode'
 import ClipPath from './Demo/Clipath'
 import CustomHook from './Demo/Custom-Hook'
+import JsBind from './Demo/JsBind.js'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -90,6 +91,7 @@ function App() {
             <Route path='/mixBlendMode' exact component={mixBlendMode}></Route>
             <Route path='/clip-path' exact component={ClipPath}></Route>
             <Route path='/custom-hook' exact component={CustomHook}></Route>
+            <Route path='/bind-js' exact component={JsBind}></Route>
           </Switch>
         </Router>
       </IntlProvider>
