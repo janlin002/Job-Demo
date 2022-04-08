@@ -40,6 +40,7 @@ import mixBlendMode from './Demo/mix-blend-mode'
 import ClipPath from './Demo/Clipath'
 import CustomHook from './Demo/Custom-Hook'
 import JsBind from './Demo/JsBind.js'
+import ThemeProvider from './Demo/ThemeProvider'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -92,6 +93,7 @@ function App() {
             <Route path='/clip-path' exact component={ClipPath}></Route>
             <Route path='/custom-hook' exact component={CustomHook}></Route>
             <Route path='/bind-js' exact component={JsBind}></Route>
+            <Route path='/theme-provider' exact component={ThemeProvider}></Route>
           </Switch>
         </Router>
       </IntlProvider>

@@ -108,6 +108,9 @@ function Header(){
       <button>
         <Link to='/bind-js'>JsBind</Link>
       </button>
+      <button>
+        <Link to='/theme-provider'>ThemeProvider</Link>
+      </button>
     </div>
   )
 }
