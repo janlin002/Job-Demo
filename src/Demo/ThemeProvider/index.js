@@ -7,6 +7,14 @@ const Button = styled.button`
   margin: 1em;
   padding: 0.25em 1em;
   border-radius: 3px;
+  &:hover {
+    background: gray;
+    color: black;
+  }
+  &:active {
+    background: green;
+    color: white;
+  }
 
   /* Color the border and text with theme.main */
   color: ${props => props.theme.main};
