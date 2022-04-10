@@ -41,6 +41,7 @@ import ClipPath from './Demo/Clipath'
 import CustomHook from './Demo/Custom-Hook'
 import JsBind from './Demo/JsBind.js'
 import ThemeProvider from './Demo/ThemeProvider'
+import FormTest from './Demo/FormTest'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -94,6 +95,7 @@ function App() {
             <Route path='/custom-hook' exact component={CustomHook}></Route>
             <Route path='/bind-js' exact component={JsBind}></Route>
             <Route path='/theme-provider' exact component={ThemeProvider}></Route>
+            <Route path='/form-test' exact component={FormTest}></Route>
           </Switch>
         </Router>
       </IntlProvider>
