@@ -2,6 +2,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import PropTypes from 'prop-types';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
 
 const Select = React.forwardRef(({ onChange, onBlur, name, label }, ref) => {
   return (
@@ -44,8 +46,14 @@ InputText.propTypes = {
   required: PropTypes.bool.isRequired,
 }
 
+const schema = yup.object({
+  fileName: yup.string().required('此為必填欄位')
+})
+
 const ReactHookForm = () =>{
-  const { handleSubmit, register, formState: { errors } }  = useForm()
+  const { handleSubmit, register, formState: { errors } }  = useForm({
+    resolver: yupResolver(schema)
+  })
 
   const handleClick = (data) =>{
     console.log(data, 'data')
@@ -54,16 +62,16 @@ const ReactHookForm = () =>{
 
   return (
     <form onSubmit={handleSubmit(handleClick)}>
-        <>
         <input {
-        ...register('fileName',
-          { required: true })
+        ...register('fileName'
+          // { required: true }
+          )
         } 
       />
         <div className="text-danger">
         {errors.fileName?.type === 'required' && "First name is required"}
+          {/* {errors.firstName?.message} */}
         </div>
-        </>
       <select {...register("gender")}>
         <option value="female">female</option>
         <option value="male">male</option>

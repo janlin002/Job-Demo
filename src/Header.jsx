@@ -120,6 +120,9 @@ function Header(){
       <button>
         <Link to='/react-hook-form'>react-hook-form</Link>
       </button>
+      <button>
+        <Link to='/ref'>ref</Link>
+      </button>
     </div>
   )
 }

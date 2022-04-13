@@ -44,6 +44,7 @@ import ThemeProvider from './Demo/ThemeProvider'
 import FormTest from './Demo/FormTest'
 import PhoneCharging from './Demo/PhoneCharging'
 import ReactHookForm from './Demo/React-hook-form'
+import theRef from './Demo/Ref'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -100,6 +101,7 @@ function App() {
             <Route path='/form-test' exact component={FormTest}></Route>
             <Route path='/phone-charging' exact component={PhoneCharging}></Route>
             <Route path='/react-hook-form' exact component={ReactHookForm}></Route>
+            <Route path='/ref' exact component={theRef}></Route>
           </Switch>
         </Router>
       </IntlProvider>
