@@ -27,7 +27,11 @@ const FormTest = () =>{
       >
           點擊
       </button>
-      <input type="submit" className="btn btn-primary"/>
+      <input 
+        type="submit"
+        value="送出"
+        className="btn btn-primary"
+      />
     </form>
   )
 }

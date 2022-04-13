@@ -42,6 +42,8 @@ import CustomHook from './Demo/Custom-Hook'
 import JsBind from './Demo/JsBind.js'
 import ThemeProvider from './Demo/ThemeProvider'
 import FormTest from './Demo/FormTest'
+import PhoneCharging from './Demo/PhoneCharging'
+import ReactHookForm from './Demo/React-hook-form'
 
 function App() {
   const [locale, setLocale] = useState(undefined)
@@ -96,6 +98,8 @@ function App() {
             <Route path='/bind-js' exact component={JsBind}></Route>
             <Route path='/theme-provider' exact component={ThemeProvider}></Route>
             <Route path='/form-test' exact component={FormTest}></Route>
+            <Route path='/phone-charging' exact component={PhoneCharging}></Route>
+            <Route path='/react-hook-form' exact component={ReactHookForm}></Route>
           </Switch>
         </Router>
       </IntlProvider>

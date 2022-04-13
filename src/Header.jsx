@@ -114,6 +114,12 @@ function Header(){
       <button>
         <Link to='/form-test'>Form-test</Link>
       </button>
+      <button>
+        <Link to='/phone-charging'>phone-charging</Link>
+      </button>
+      <button>
+        <Link to='/react-hook-form'>react-hook-form</Link>
+      </button>
     </div>
   )
 }
