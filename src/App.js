@@ -6,6 +6,7 @@ import { IntlProvider } from 'react-intl'
 const Formik = lazy(()=>import(/* webpackChunkName: "Formik" */'./Demo/Formik-Yup/Formik'))
 const ReactTable = lazy(()=>import(/* webpackChunkName: "ReactTable" */'./Demo/Recat-table/ReactTable'))
 const FormikYup = lazy(()=>import(/* webpackChunkName: "FormikYup" */'./Demo/Formik-Yup/FormikYup.jsx'))
+const FrostedGlass = lazy(()=>import(/* webpackChunkName: "FrostedGlass" */ './Demo/FrostedGlass'))
 // import Formik from './Demo/Formik-Yup/Formik'
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
@@ -107,6 +108,7 @@ function App() {
               <Route path='/phone-charging' exact component={PhoneCharging}></Route>
               <Route path='/react-hook-form' exact component={ReactHookForm}></Route>
               <Route path='/ref' exact component={theRef}></Route>
+              <Route path='/frosted-glass' exact component={FrostedGlass}></Route>
             </Switch>
           </Suspense>
         </Router>

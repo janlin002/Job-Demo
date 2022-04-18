@@ -123,6 +123,10 @@ function Header(){
       <button>
         <Link to='/ref'>ref</Link>
       </button>
+      <button>
+        <Link to='/frosted-glass'>frosted-glass</Link>
+      </button>
+      
     </div>
   )
 }
