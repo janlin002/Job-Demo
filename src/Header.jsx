@@ -126,6 +126,9 @@ function Header(){
       <button>
         <Link to='/frosted-glass'>frosted-glass</Link>
       </button>
+      <button>
+        <Link to='/react-query'>react-query</Link>
+      </button>
       
     </div>
   )
