@@ -1,29 +1,56 @@
 import React from 'react';
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+import { QueryClient, QueryClientProvider, useMutation, useQuery } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import axios from 'axios'
 
 const ReactQuery = () =>{
   const queryClient = new QueryClient()
   return (
-    <QueryClientProvider client={queryClient}>
+    <QueryClientProvider client={queryClient} contextSharing={true}>
       <Example />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   )
 }
+const fetchPlanets = async (key, page) => {
+  // const res = await fetch('https://swapi.dev/api/planets/')
+  // return res.json()
+  const { data } = await axios.get('https://swapi.dev/api/planets/')
+  
+  return data
+}
 
 const Example = () =>{
-  const fetchPlanets = async () => {
-    const res = await fetch('https://swapi.dev/api/planets/')
-    return res.json()
-  }
-  const { data, isLoading, isError, isSuccess } = useQuery('userData', fetchPlanets, {
-    // staleTime: 5000,
-  })
+  const [page, setPage] = React.useState(1) 
+  
+  const { data, isLoading, isError, isSuccess } = useQuery(
+    ['userData', page],
+    fetchPlanets, 
+  )
 
-  console.log({ data, isLoading, isError })
+  console.log({ data, isLoading, isError }, 'axios')
   if (isLoading) return 'Loading...'
+
+  if(isError) return 'Error...'
+
+  // const mutation = useMutation(
+  //   async (data)=>{
+  //     const res = await axios.get('https://swapi.dev/api/planets/', {
+  //       name: data
+  //     })
+  //     return res;
+  //   },
+  //   {
+  //     // 成功回调
+  //     onSuccess(res) {
+  //       console.log(res);
+  //     },
+  //     // 失败回调
+  //     onError(err) {
+  //       console.log(err);
+  //     },
+  //   }
+  // )
 
   return (
     <div>
@@ -39,6 +66,11 @@ const Example = () =>{
             </div>
           )
         })}
+      {/* <button 
+        type="button"
+        onClick={mutation.mutate('David')}>
+          點擊
+      </button> */}
     </div>
   )
 }
