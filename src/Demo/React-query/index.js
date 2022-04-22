@@ -12,10 +12,12 @@ const ReactQuery = () =>{
     </QueryClientProvider>
   )
 }
-const fetchPlanets = async (key, page) => {
+const fetchPlanets = async () => {
   // const res = await fetch('https://swapi.dev/api/planets/')
   // return res.json()
   const { data } = await axios.get('https://swapi.dev/api/planets/')
+
+  console.log(data, 'data')
   
   return data
 }
