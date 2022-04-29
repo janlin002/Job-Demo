@@ -132,6 +132,9 @@ function Header(){
       <button>
         <Link to='/immer'>Immer</Link>
       </button>
+      <button>
+        <Link to='/redux-toolkit'>Redux-toolkit</Link>
+      </button>
     </div>
   )
 }
