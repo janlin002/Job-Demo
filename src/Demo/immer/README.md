@@ -20,6 +20,6 @@
 
 ### 自我結論:
 
-useState 可使用 useImmer 作替代
+useState 可使用 useImmer 作替代 [替代練習](https://github.com/janlin002/Job-Demo/blob/master/src/Demo/immer/index.js)
 
 如果想處理 reducer 內的狀態，目前看起來還是需要使用到[immerjs](https://immerjs.github.io/immer/)
