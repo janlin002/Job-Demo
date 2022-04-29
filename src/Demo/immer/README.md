@@ -4,7 +4,7 @@
 
 [use-immer Github](https://github.com/immerjs/use-immer)
 
-## immrt
+## immer
 
 > copy-on-write
 
