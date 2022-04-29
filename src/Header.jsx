@@ -129,7 +129,9 @@ function Header(){
       <button>
         <Link to='/react-query'>react-query</Link>
       </button>
-      
+      <button>
+        <Link to='/immer'>Immer</Link>
+      </button>
     </div>
   )
 }

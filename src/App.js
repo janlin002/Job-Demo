@@ -8,7 +8,7 @@ const ReactTable = lazy(()=>import(/* webpackChunkName: "ReactTable" */'./Demo/R
 const FormikYup = lazy(()=>import(/* webpackChunkName: "FormikYup" */'./Demo/Formik-Yup/FormikYup.jsx'))
 const FrostedGlass = lazy(()=>import(/* webpackChunkName: "FrostedGlass" */ './Demo/FrostedGlass'))
 const ReactQuery = lazy(()=>import(/* webpackChunkName: "ReactQuery" */ './Demo/React-query'))
-
+const Immer = lazy(()=>import(/* webpackChunkName: "immer" */ './Demo/immer'))
 // import Formik from './Demo/Formik-Yup/Formik'
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
@@ -112,6 +112,7 @@ function App() {
               <Route path='/ref' exact component={theRef}></Route>
               <Route path='/frosted-glass' exact component={FrostedGlass}></Route>
               <Route path='/react-query' exact component={ReactQuery}></Route>
+              <Route path='/immer' exact component={Immer}></Route>
             </Switch>
           </Suspense>
         </Router>

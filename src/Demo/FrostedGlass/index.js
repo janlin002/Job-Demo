@@ -11,19 +11,27 @@ const Test= (values)=>{
 }
 
 const FrostedGlass = () =>{
-  const props = {
-    name: 'david',
-    age: '12'
+  // const props = {
+  //   name: 'david',
+  //   age: '12'
+  // }
+
+  const inputChange = (e) =>{
+    console.log(e)
   }
   return (
-    <div>
-      <div className="card">123</div>
-      <div className="backdrop-blur">456</div>
-      {/* not working */}
-      <Test 
-        {...props}
-      />
-    </div>
+    // <div>
+    //   <div className="card">123</div>
+    //   <div className="backdrop-blur">456</div>
+    //   {/* not working */}
+    //   <Test 
+    //     {...props}
+    //   />
+    // </div>
+    <input 
+      type="text"
+      onChange={(e)=>inputChange(e.target.value)}
+    />
   )
 }
 
