@@ -10,6 +10,7 @@ const FrostedGlass = lazy(()=>import(/* webpackChunkName: "FrostedGlass" */ './D
 const ReactQuery = lazy(()=>import(/* webpackChunkName: "ReactQuery" */ './Demo/React-query'))
 const Immer = lazy(()=>import(/* webpackChunkName: "immer" */ './Demo/immer'))
 const ReduxToolkitTest = lazy(()=>import(/* ReduxToolkitTest: "immer" */ './Demo/ReduxToolkitTest'))
+const DriveJs = lazy(()=>import(/* ReduxToolkitTest: "immer" */ './Demo/Drivejs'))
 // import Formik from './Demo/Formik-Yup/Formik'
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
@@ -115,6 +116,7 @@ function App() {
               <Route path='/react-query' exact component={ReactQuery}></Route>
               <Route path='/immer' exact component={Immer}></Route>
               <Route path='/redux-toolkit' exact component={ReduxToolkitTest}></Route>
+              <Route path='/drive-js' exact component={DriveJs}></Route>
             </Switch>
           </Suspense>
         </Router>
