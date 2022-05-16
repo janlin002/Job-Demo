@@ -1,14 +1,8 @@
 import React from 'react';
 
-/**
- * 
- * @class JS-DOC-2
- */
-const JSDOC = () =>{
+const JSDOC2 = () =>{
   /**
      * 
-     * @memberof JS-DOC
-     * @method Test
      * @param {numbrt} a 參數1
      * @param {number} b 參數2
      * @param {number} c 參數3
@@ -29,4 +23,4 @@ const JSDOC = () =>{
   )
 }
 
-export default JSDOC
+export default JSDOC2
