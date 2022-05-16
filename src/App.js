@@ -9,8 +9,10 @@ const FormikYup = lazy(()=>import(/* webpackChunkName: "FormikYup" */'./Demo/For
 const FrostedGlass = lazy(()=>import(/* webpackChunkName: "FrostedGlass" */ './Demo/FrostedGlass'))
 const ReactQuery = lazy(()=>import(/* webpackChunkName: "ReactQuery" */ './Demo/React-query'))
 const Immer = lazy(()=>import(/* webpackChunkName: "immer" */ './Demo/immer'))
-const ReduxToolkitTest = lazy(()=>import(/* ReduxToolkitTest: "immer" */ './Demo/ReduxToolkitTest'))
-const DriveJs = lazy(()=>import(/* ReduxToolkitTest: "immer" */ './Demo/Drivejs'))
+const ReduxToolkitTest = lazy(()=>import(/* webpackChunkName: "immer" */ './Demo/ReduxToolkitTest'))
+const DriveJs = lazy(()=>import(/* webpackChunkName: "DriveJs" */ './Demo/Drivejs'))
+const ReactPlx = lazy(()=>import(/* webpackChunkName: "ReactPlx" */ './Demo/React-plx'))
+const jsDoc = lazy(()=>import('./Demo/JSDOC'))
 // import Formik from './Demo/Formik-Yup/Formik'
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
@@ -117,6 +119,8 @@ function App() {
               <Route path='/immer' exact component={Immer}></Route>
               <Route path='/redux-toolkit' exact component={ReduxToolkitTest}></Route>
               <Route path='/drive-js' exact component={DriveJs}></Route>
+              <Route path='/react-plx' exact component={ReactPlx}></Route>
+              <Route path='/js-doc' exact component={jsDoc}></Route>
             </Switch>
           </Suspense>
         </Router>

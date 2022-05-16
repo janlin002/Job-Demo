@@ -138,6 +138,12 @@ function Header(){
       <button>
         <Link to='/drive-js'>Drive-js</Link>
       </button>
+      <button>
+        <Link to='/react-plx'>react-plx</Link>
+      </button>
+      <button>
+        <Link to='/js-doc'>js-doc</Link>
+      </button>
     </div>
   )
 }
