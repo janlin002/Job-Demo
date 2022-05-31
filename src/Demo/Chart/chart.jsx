@@ -3,7 +3,7 @@ import { Bar, Line, Pie, Doughnut } from 'react-chartjs-2';
 
 function Chart(){
   const state = {
-    labels: ['January', 'February', 'March', 'April', 'May'],
+    labels: ['January', 'February', 'March', 'April', 'May']
     datasets: [
       {
         label: '你好啊',

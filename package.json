@@ -80,5 +80,16 @@
     "eslint-plugin-react": "^7.24.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.3"
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
