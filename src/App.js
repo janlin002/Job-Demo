@@ -13,7 +13,7 @@ const ReduxToolkitTest = lazy(()=>import(/* webpackChunkName: "immer" */ './Demo
 const DriveJs = lazy(()=>import(/* webpackChunkName: "DriveJs" */ './Demo/Drivejs'))
 const ReactPlx = lazy(()=>import(/* webpackChunkName: "ReactPlx" */ './Demo/React-plx'))
 const jsDoc = lazy(()=>import('./Demo/JSDOC'))
-const Suspenses = lazy(()=>import('./Demo/Suspence'))
+const ReactLoadingSkeleton = lazy(()=>import('./Demo/ReactLoadingSkeleton'))
 // import Formik from './Demo/Formik-Yup/Formik'
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
@@ -122,7 +122,7 @@ function App() {
               <Route path='/drive-js' exact component={DriveJs}></Route>
               <Route path='/react-plx' exact component={ReactPlx}></Route>
               <Route path='/js-doc' exact component={jsDoc}></Route>
-              <Route path='/suspence' exact component={Suspenses}></Route>
+              <Route path='/react-loading-skeleton' exact component={ReactLoadingSkeleton}></Route>
             </Switch>
           </Suspense>
         </Router>

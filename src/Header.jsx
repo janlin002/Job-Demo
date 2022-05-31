@@ -145,7 +145,7 @@ function Header(){
         <Link to='/js-doc'>js-doc</Link>
       </button>
       <button>
-        <Link to='/suspence'>Suspence</Link>
+        <Link to='/react-loading-skeleton'>react-loading-skeleton</Link>
       </button>
     </div>
   )
