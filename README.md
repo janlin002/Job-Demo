@@ -41,7 +41,7 @@
 
 [React-plx](https://github.com/Stanko/react-plx)
 
-[react-loading-skeleton]()
+[react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
 
 ### 其他
 
