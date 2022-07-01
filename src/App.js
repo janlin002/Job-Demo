@@ -14,6 +14,7 @@ const DriveJs = lazy(()=>import(/* webpackChunkName: "DriveJs" */ './Demo/Drivej
 const ReactPlx = lazy(()=>import(/* webpackChunkName: "ReactPlx" */ './Demo/React-plx'))
 const jsDoc = lazy(()=>import('./Demo/JSDOC'))
 const ReactLoadingSkeleton = lazy(()=>import('./Demo/ReactLoadingSkeleton'))
+const GoogleOauthLogin = lazy(()=>import('./Demo/Google-auth'))
 // import Formik from './Demo/Formik-Yup/Formik'
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
@@ -123,6 +124,7 @@ function App() {
               <Route path='/react-plx' exact component={ReactPlx}></Route>
               <Route path='/js-doc' exact component={jsDoc}></Route>
               <Route path='/react-loading-skeleton' exact component={ReactLoadingSkeleton}></Route>
+              <Route path='/google-oauth' exact component={GoogleOauthLogin}></Route>
             </Switch>
           </Suspense>
         </Router>

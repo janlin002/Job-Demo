@@ -147,6 +147,9 @@ function Header(){
       <button>
         <Link to='/react-loading-skeleton'>react-loading-skeleton</Link>
       </button>
+      <button>
+        <Link to='/google-oauth'>Google-Oauth</Link>
+      </button>
     </div>
   )
 }
