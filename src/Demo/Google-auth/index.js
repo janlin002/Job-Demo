@@ -13,7 +13,7 @@ const GoogleAuth = () => {
             console.log(credentialResponse);
           }}
           onError={() => {
-            console.log('Login Failed');
+            console.log('Login Failed')
           }}
         />
       </GoogleOAuthProvider>
