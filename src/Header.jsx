@@ -150,6 +150,12 @@ function Header(){
       <button>
         <Link to='/google-oauth'>Google-Oauth</Link>
       </button>
+      <button>
+        <Link to='/react-router'>React-router</Link>
+      </button>
+      <button>
+        <Link to='/react-client-validation'>react-client-validation</Link>
+      </button>
     </div>
   )
 }
