@@ -156,6 +156,9 @@ function Header(){
       <button>
         <Link to='/react-client-validation'>react-client-validation</Link>
       </button>
+      <button>
+        <Link to='/swiper'>swiper</Link>
+      </button>
     </div>
   )
 }

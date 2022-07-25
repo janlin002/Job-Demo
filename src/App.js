@@ -17,6 +17,7 @@ const ReactLoadingSkeleton = lazy(()=>import('./Demo/ReactLoadingSkeleton'))
 const GoogleOauthLogin = lazy(()=>import('./Demo/Google-auth'))
 const ReactRouter = lazy(()=>import('./Demo/react-router'))
 const ReactClientValidation = lazy(()=>import('./Demo/ReactClientValidation'))
+const Swiper = lazy(()=>import('./Demo/Swiper'))
 // import Formik from './Demo/Formik-Yup/Formik'
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
@@ -129,6 +130,7 @@ function App() {
               <Route path='/google-oauth' exact component={GoogleOauthLogin}></Route>
               <Route path='/react-router' exact component={ReactRouter}></Route>
               <Route path='/react-client-validation' exact component={ReactClientValidation}></Route>
+              <Route path='/swiper' exact component={Swiper}></Route>
             </Switch>
           </Suspense>
         </Router>
