@@ -59,7 +59,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "clean": "clean"
   },
   "eslintConfig": {
     "extends": [
