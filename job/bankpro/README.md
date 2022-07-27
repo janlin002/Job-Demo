@@ -88,6 +88,12 @@ src 裡面基本上該有的都有: components, pages, redux, routes...，所以
 
 pom.xml: 內容包含專案的描述，依賴，使用的 plugin，及 Maven 該如何建置專案的等配置說明。
 
+## 套件內有趣的語法
+
+[memory-router](https://reactrouter.com/docs/en/v6/routers/memory-router): 解決 browserRouter 無法記憶路徑問題
+
+[react error-boundary(錯誤邊界)](https://zh-hant.reactjs.org/docs/error-boundaries.html): 遇到 js 錯誤，可能導致白畫面，使用錯誤邊界可以讓畫面不會全部壞掉，而是使用自定義畫面，去提示錯誤訊息
+
 ## webpack - 待補
 
 個人認爲 webpack 是這個轉案裡面最具價值的部分
@@ -118,6 +124,7 @@ module.exports = merge(需合併的配置檔, {
 6. 離開畫面後，會將資料清除
 
 值得注意的點是，reducer 裡面 loading 跟 error 預設都是 null，主要是為了之後的畫面監聽
+p.s. 這團隊專案所有請求都用 post 去完成(包含 CRUD)，其實也是蠻傻眼的...
 
 ## axios 封裝
 
@@ -135,6 +142,31 @@ module.exports = merge(需合併的配置檔, {
 ## i18n 實現
 
 使用 react-intl
+
+[react-intl](https://pjchender.dev/react/note-react-intl/)教學
+
+## 頁面封裝模式
+
+```js
+|- featureName
+    |- index.js
+    |- featureName
+            |- index.js
+            |- search.js
+            |- result.js
+```
+
+簡介:
+
+1. 第二個 featureName，才是正個公能真正寫頁面邏輯的地方
+2. 第一個 index 是做基礎模板封裝，會引入第二個 featureName，將他當做 prop(children)，傳入一個叫 Layout 的 component
+3. Layout component 裡面包含了共用的 header 跟 footer
+4. 第二個 index 是整個功能的頁面邏輯跟 function 放置的地方，基本上所有 function 都是透過 prop 往下做傳遞，包含 useState 亦是，主要是方便資料作流動，當然可能會有例外
+5. 所有換頁邏輯都是使用 useState 去做管理
+
+詳細部分可參考 [Pages]()
+
+// 圖片待補
 
 ## 題外話
 
