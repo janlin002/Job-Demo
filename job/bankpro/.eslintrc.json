@@ -1,0 +1,86 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true,
+      "jsx-control-statements/jsx-control-statements": true
+    },
+    "extends": ["airbnb", "plugin:jsx-control-statements/recommended"],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "overrides": [
+      {
+        "files": ["**/*.test.js", "**/*.test.jsx"],
+        "env": {
+          "jest": true
+        }
+      }
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 11,
+      "sourceType": "module"
+    },
+    "plugins": [],
+    "rules": {
+      "semi": ["error", "never"],
+      "import/prefer-default-export": "off",
+      "react/jsx-no-undef": [
+        2,
+        {
+          "allowGlobals": true
+        }
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js", ".jsx"]
+        }
+      ],
+      "react/jsx-wrap-multilines": 0,
+      "jsx-a11y/anchor-is-valid": 0,
+      "jsx-a11y/label-has-associated-control": [
+        "error",
+        {
+          "labelComponents": ["label"],
+          "labelAttributes": ["htmlFor"],
+          "controlComponents": ["input"],
+          "required": {
+            "some": ["nesting", "id"]
+          }
+        }
+      ],
+      "jsx-a11y/label-has-for": [
+        "error",
+        {
+          "required": {
+            "some": ["nesting", "id"]
+          }
+        }
+      ],
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "**/webpack/*.js",
+            "**/src/redux/store.js",
+            "**/src/__tests__/*.js",
+            "**/src/__tests__/utils/*.js"
+          ]
+        }
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "./webpack/dev.js"
+        }
+      }
+    }
+  }
+  
