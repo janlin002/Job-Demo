@@ -104,7 +104,7 @@ const createReducer = (asyncReducers = {}) => {
   };
 };
 
-// 正常版
+// 正常的 combineReducers
 export default combineReducers({
   todos,
   counter
@@ -187,6 +187,40 @@ const route = [
 
 詳細部分可參考 [Pages](https://github.com/janlin002/Job-Demo/tree/master/job/bankpro/pages)
 
+## 關閉 開發者工具 (f12,右鍵)
+
+```js
+window.console.log(
+  "%c為了您的使用安全，請關閉開發者工具再進入網站!",
+  "color: #04e1a6;font-size: 24px;font-weight: bold;"
+);
+window.document.addEventListener("contextmenu", (e) => e.preventDefault());
+window.document.addEventListener("keydown", (e) => {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && e.key === "I") ||
+    (e.ctrlKey && e.shiftKey && e.key === "J") ||
+    (e.ctrlKey && e.shiftKey && e.key === "C") ||
+    (e.ctrlKey && e.key === "U")
+  )
+    e.preventDefault();
+});
+```
+
+## 取消快取機制 [meta http-equiv](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
+
+```js
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-store, max-age=0, must-revalidate">
+  <meta http-equiv="expires" content="0">
+```
+
+## 共用元件 && 功能部分
+
+[FEAT]() // 專案路徑
+
 ## 題外話
 
 css 部分是有美工團隊去做開發，所以 css 部分就先跳過
+
+# 著作權所有，翻印必究

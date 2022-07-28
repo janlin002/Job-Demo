@@ -5,6 +5,12 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-store, max-age=0, must-revalidate"
+    />
+    <meta http-equiv="expires" content="0" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -59,6 +65,21 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Job-Demo</title>
+    <!-- <script>
+      window.document.addEventListener("contextmenu", (e) =>
+        e.preventDefault()
+      );
+      window.document.addEventListener("keydown", (e) => {
+        if (
+          e.key === "F12" ||
+          (e.ctrlKey && e.shiftKey && e.key === "I") ||
+          (e.ctrlKey && e.shiftKey && e.key === "J") ||
+          (e.ctrlKey && e.shiftKey && e.key === "C") ||
+          (e.ctrlKey && e.key === "U")
+        )
+          e.preventDefault();
+      });
+    </script> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
