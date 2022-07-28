@@ -1,78 +1,10 @@
 # BANKPRO
 
-## 套件使用
-
-[Husky](https://www.npmjs.com/package/husky): 達到在 commit 時做 eslint 驗證
-
-[jsdoc](https://www.npmjs.com/package/jsdoc): jsdoc 註解並快速產生 api 文件
-
-[redux-logger](https://www.npmjs.com/package/redux-logger): 可以在 F12 的 console 裡面，直接看到打 action 的情況
-
-[sweetalert2](): 畫面提示框
-
-[react-intl](): 實現 i18n
-
-[axios]()
-
-[bootstrap]()
-
-[core-js]()
-
-[dayjs]()
-
-[flat]()
-
-[formik]()
-
-[html2canvas]()
-
-[jquery]()
-
-[jspdf]()
-
-[jspdf-autotable]()
-
-[lodash]()
-
-[node-forge]()
-
-[path]()
-
-[prop-types]()
-
-[react]()
-
-[react-day-picker]()
-
-[react-dom]()
-
-[react-intl]()
-
-[react-modal]()
-
-[react-redux]()
-
-[react-router]()
-
-[react-router-dom]()
-
-[react-select]()
-
-[react-table]()
-
-[react-tooltip]()
-
-[redux]()
-
-[redux-saga]()
-
-[sweetalert2]()
-
-[yup]()
-
 ## 資料夾擺放
 
 ![file-style](../../src/assets/image/%E6%88%AA%E5%9C%96%202022-07-27%20%E4%B8%8A%E5%8D%889.55.50.png)
+
+### 根目錄
 
 ```
 |- demo
@@ -84,15 +16,30 @@
 |- web.xml
 ```
 
-src 裡面基本上該有的都有: components, pages, redux, routes...，所以就不另外寫
-
 pom.xml: 內容包含專案的描述，依賴，使用的 plugin，及 Maven 該如何建置專案的等配置說明。
 
-## 套件內有趣的語法
+### src 內部
+
+```
+|- assets -
+|- components - 共用元件
+|- constants - 放使用大量的常數，避免之後要更改很麻煩
+|- hooks - 自定義hook
+|- lang - i18n語言包
+|- redux - redux
+|- routes - 路由配置
+|- util - 共用function
+```
+
+## 專案中有趣的語法 && 套件
 
 [memory-router](https://reactrouter.com/docs/en/v6/routers/memory-router): 解決 browserRouter 無法記憶路徑問題
 
 [react error-boundary(錯誤邊界)](https://zh-hant.reactjs.org/docs/error-boundaries.html): 遇到 js 錯誤，可能導致白畫面，使用錯誤邊界可以讓畫面不會全部壞掉，而是使用自定義畫面，去提示錯誤訊息
+
+[manifest.json](https://developer.mozilla.org/zh-TW/docs/Mozilla/Add-ons/WebExtensions/manifest.json): [相關文章](https://www.letswrite.tw/pwa-manifest/)，主要是讓 app 版時，可以有一個 icon 去做點按
+
+[jsx-control-statements](https://www.npmjs.com/package/babel-plugin-jsx-control-statements): 可以自由的加入條件判斷的 Tag 標籤
 
 ## webpack - 待補
 
@@ -118,19 +65,93 @@ module.exports = merge(需合併的配置檔, {
 
 1. 透過按鈕，或是 useEffect，打 api
 2. 觸發 reducer 同時，也觸發 saga
-3. reducer 會有三種形式: 打 api 的資料,Loading,Error，同樣 action 也有三種形式: 打 api 的資料,Loading,Error
+3. reducer 會有三種形式: 打 api 的資料,Loading, Error，同樣 action 也有三種形式: 打 api 的資料,Loading, Error
 4. 進到 saga 後會看是否成功，如果成功就打成功的 action，反之亦然
 5. 透過 useSelector 到頁面上拿到資料
 6. 離開畫面後，會將資料清除
 
-值得注意的點是，reducer 裡面 loading 跟 error 預設都是 null，主要是為了之後的畫面監聽
+_值得注意的點是，reducer 裡面 loading 跟 error 預設都是 null，主要是為了之後的畫面監聽_
+
 p.s. 這團隊專案所有請求都用 post 去完成(包含 CRUD)，其實也是蠻傻眼的...
+
+## redux 封裝
+
+### action
+
+```js
+export * from "./test/actions";
+```
+
+### reducer - combineReducers
+
+```js
+const staticReducers = {
+  test,
+  ...
+};
+
+const createReducer = (asyncReducers = {}) => {
+  const reducers = combineReducers({
+    ...staticReducers,
+    ...asyncReducers,
+  });
+  return (state, action) => {
+    if (action.type === "RESET_AUTH_STORE") {
+      const ignoreResetState = { noAuthPages: state.noAuthPages };
+      return reducers(ignoreResetState, action);
+    }
+    return reducers(state, action);
+  };
+};
+
+// 正常版
+export default combineReducers({
+  todos,
+  counter
+})
+```
+
+### saga - all
+
+```js
+export default function* rootSaga() {
+  yield all([
+    test(),
+    ...
+  ]);
+}
+```
+
+### select
+
+```js
+export * from "./test/actions";
+```
+
+## routes 封裝 - React.lazy
+
+使用 [React.lazy](https://zh-hant.reactjs.org/docs/code-splitting.html) 做導入
+
+```js
+const Abc = lazy(() => import("./..."));
+
+const router = [
+    {
+        path: "./...",
+        Child: Abc,
+    };
+]
+
+const route = [
+    ...router
+]
+```
 
 ## axios 封裝
 
-[axios 封裝]()
-
 [掘金](https://zhuanlan.zhihu.com/p/136035219)
+
+[專案封裝](https://github.com/janlin002/Job-Demo/tree/master/job/bankpro/axios)
 
 ## 包版方式
 
@@ -164,10 +185,8 @@ p.s. 這團隊專案所有請求都用 post 去完成(包含 CRUD)，其實也�
 4. 第二個 index 是整個功能的頁面邏輯跟 function 放置的地方，基本上所有 function 都是透過 prop 往下做傳遞，包含 useState 亦是，主要是方便資料作流動，當然可能會有例外
 5. 所有換頁邏輯都是使用 useState 去做管理
 
-詳細部分可參考 [Pages]()
-
-// 圖片待補
+詳細部分可參考 [Pages](https://github.com/janlin002/Job-Demo/tree/master/job/bankpro/pages)
 
 ## 題外話
 
-css 部分是有美工團堆去做開發，所以 css 部分就先跳過
+css 部分是有美工團隊去做開發，所以 css 部分就先跳過
