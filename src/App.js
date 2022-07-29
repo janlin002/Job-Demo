@@ -19,7 +19,6 @@ const ReactRouter = lazy(()=>import('./Demo/react-router'))
 const ReactClientValidation = lazy(()=>import('./Demo/ReactClientValidation'))
 const Swiper = lazy(()=>import('./Demo/Swiper'))
 // import Formik from './Demo/Formik-Yup/Formik'
-// import ReactTable from './Demo/Recat-table/ReactTable'
 import Header from './Header'
 import ReactIntl from './Demo/React-intl/react-intl'
 import { useSelector } from 'react-redux'
