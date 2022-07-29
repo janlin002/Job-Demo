@@ -41,6 +41,8 @@ pom.xml: 內容包含專案的描述，依賴，使用的 plugin，及 Maven 該
 
 [jsx-control-statements](https://www.npmjs.com/package/babel-plugin-jsx-control-statements): 可以自由的加入條件判斷的 Tag 標籤
 
+[core-js(polyfill)](https://tw511.com/a/01/29541.html): 自動化打修補程式，有時候可能某些瀏覽器不支援特殊語法，需要用這些程式來做修正
+
 ## webpack - 待補
 
 個人認爲 webpack 是這個轉案裡面最具價值的部分
