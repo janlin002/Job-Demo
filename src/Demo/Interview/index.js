@@ -69,6 +69,7 @@ import React, { useState, useEffect } from 'react'
 // }
 
 // export default A
+
 function ScopeTest(a) {
   var b = 4;
   function bar() {
