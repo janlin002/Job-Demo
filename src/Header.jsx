@@ -40,7 +40,7 @@ function Header(){
         <Link to='/react-modal'>React-modal</Link>
       </button>
       <button>
-        <Link to='/selector-test'>React-modal</Link>
+        <Link to='/selector-test'>selector-test</Link>
       </button>
       <button>
         <Link to='/react-dnd'>React-dnd</Link>
