@@ -40,7 +40,7 @@ function Header(){
         <Link to='/react-modal'>React-modal</Link>
       </button>
       <button>
-        <Link to='/selector-test'>selector-test</Link>
+        <Link to='/selector-test'>array-method</Link>
       </button>
       <button>
         <Link to='/react-dnd'>React-dnd</Link>
@@ -158,6 +158,9 @@ function Header(){
       </button>
       <button>
         <Link to='/swiper'>swiper</Link>
+      </button>
+      <button>
+        <Link to='/array-method'>array-method</Link>
       </button>
     </div>
   )

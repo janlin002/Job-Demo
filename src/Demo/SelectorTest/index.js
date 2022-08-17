@@ -7,12 +7,12 @@ const SelectorTest = () =>{
   var arr = [1, 2, 3, 4, 5]
   //给push封装，向数组尾部追加值
   function push() {
-    console.log(arguments.length, 'arguments')
+    // console.log(arguments.length, 'arguments')
     //arguments 伪数组,遍历伪数组，存入arr中，每循环一次，arr.length的值会加一。进而可以存值
     for (var i = 0; i < arguments.length; i++) {
       arr[arr.length] = arguments[i];
     }
-    console.log(arr);
+    return arr
   }
   push(6, 7)//[1,2,3,4,5,6,7]
 
@@ -24,10 +24,10 @@ const SelectorTest = () =>{
     for(let i = 0; arr2.length > i; i++){
       arr2[i] = arr3[arr3.length - 1 - i]
     }
-    console.log(arr2)
+    return arr2
   }
 
-  reverse(arr2)
+  const arrayReverse = reverse(arr2)
 
   return (
     <div>123</div>
