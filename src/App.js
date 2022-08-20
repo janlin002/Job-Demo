@@ -18,7 +18,7 @@ const GoogleOauthLogin = lazy(()=>import('./Demo/Google-auth'))
 const ReactRouter = lazy(()=>import('./Demo/react-router'))
 const ReactClientValidation = lazy(()=>import('./Demo/ReactClientValidation'))
 const Swiper = lazy(()=>import('./Demo/Swiper'))
-const ArrayMethod = lazy(()=>import('./Demo/Array'))
+const HandWrite = lazy(()=>import('./Demo/handWrite'))
 // import ReactTable from './Demo/Recat-table/ReactTable'
 // import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
 import Header from './Header'
@@ -131,7 +131,7 @@ function App() {
               <Route path='/react-router' exact component={ReactRouter}></Route>
               <Route path='/react-client-validation' exact component={ReactClientValidation}></Route>
               <Route path='/swiper' exact component={Swiper}></Route>
-              <Route path='/array-method' exact component={ArrayMethod}></Route>
+              <Route path='/hand-write' exact component={HandWrite}></Route>
             </Switch>
           </Suspense>
         </Router>

@@ -160,7 +160,7 @@ function Header(){
         <Link to='/swiper'>swiper</Link>
       </button>
       <button>
-        <Link to='/array-method'>array-method</Link>
+        <Link to='/hand-write'>hand-write</Link>
       </button>
     </div>
   )
