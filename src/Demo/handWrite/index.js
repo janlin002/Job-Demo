@@ -180,3 +180,4 @@ const Index = () => {
 export default Index
 
 // 有更好的寫法會回來修正
+// mysetTimeout, mysetInterval => https://juejin.cn/post/7005863255990075399
