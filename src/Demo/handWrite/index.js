@@ -116,54 +116,30 @@ const Index = () => {
 
   instanceOf({}, Object) // true
 
-  // Promise
-  function Promise(exector) {
-    console.log(exector, 'exector')
-    
-    this.pending = [];
-    this.value = undefined;
+  // setTimeOut
+  let setTimeout = (fn, timeout, ...args) => {
+    // 初始当前时间
+    const start = new Date()
+    let timer, now
+    const loop = () => {
+      timer = window.requestAnimationFrame(loop)
 
-    console.log(this.pending, 'pending')
-    console.log(this.value, 'value')
-
-    const resolve = value => {
-      if (this.pending) {
-        this.value = value;
-
-        console.log(value, 'value')
-        
-        for (const onFulfilled of this.pending) {
-
-          console.log(onFulfilled, 'onFulfilled')
-          // 通知观察者。
-          onFulfilled(this.value);
-        }
-        this.pending = undefined;
+      // 再次运行时获取当前时间
+      now = new Date()
+      // 当前运行时间 - 初始当前时间 >= 等待时间 ===>> 跳出
+      if (now - start >= timeout) {
+        fn.apply(this, args)
+        window.cancelAnimationFrame(timer)
       }
-    };
-
-    console.log(resolve, 'resolve')
-
-    exector(resolve);
-  }
-  Promise.prototype.then = function (onFulfilled) {
-    console.log(onFulfilled, 'onFulfilled')
-    if (this.pending) {
-      // 还没决议，先注册观察者。
-      this.pending.push(onFulfilled);
-    } else {
-      // 已决议，直接通知。
-      onFulfilled(this.value);
     }
-  };
-  // 测试一下。
-  const p = new Promise(resolve => {
-    setTimeout(() => resolve(666), 100);
-  })
-  p.then(res => console.log('res: %s', res));
-  // 输出：
-  // res: 666
-
+    window.requestAnimationFrame(loop)
+  }
+  
+  function showName(){ 
+    console.log("Hello")
+  }
+  let timerID = setTimeout(showName, 1000);
+  
   return (
     <div>ARRAY_METHOD</div>
   )
