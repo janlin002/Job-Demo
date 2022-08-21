@@ -117,28 +117,60 @@ const Index = () => {
   instanceOf({}, Object) // true
 
   // setTimeOut
-  let setTimeout = (fn, timeout, ...args) => {
-    // 初始当前时间
-    const start = new Date()
-    let timer, now
-    const loop = () => {
-      timer = window.requestAnimationFrame(loop)
+  // let setTimeout = (fn, timeout, ...args) => {
+  //   // 初始当前时间
+  //   const start = new Date()
+  //   let timer, now
+  //   const loop = () => {
+  //     timer = window.requestAnimationFrame(loop)
 
-      // 再次运行时获取当前时间
-      now = new Date()
-      // 当前运行时间 - 初始当前时间 >= 等待时间 ===>> 跳出
-      if (now - start >= timeout) {
-        fn.apply(this, args)
-        window.cancelAnimationFrame(timer)
-      }
-    }
-    window.requestAnimationFrame(loop)
-  }
+  //     // 再次运行时获取当前时间
+  //     now = new Date()
+  //     // 当前运行时间 - 初始当前时间 >= 等待时间 ===>> 跳出
+  //     if (now - start >= timeout) {
+  //       fn.apply(this, args)
+  //       window.cancelAnimationFrame(timer)
+  //     }
+  //   }
+  //   window.requestAnimationFrame(loop)
+  // }
   
   function showName(){ 
     console.log("Hello")
   }
-  let timerID = setTimeout(showName, 1000);
+  // let timerID = setTimeout(showName, 1000);
+
+  function mysetTimeout(fn, time){
+    let now = Date.now();
+    let flag = true;
+    while(flag){
+      if(Date.now() - now >= time){
+        flag = false;
+        fn();
+      }
+    }
+  }
+
+  let test = mysetTimeout(showName, 1000)
+  test
+
+  function mysetInterval(fn, time){
+    let timeId = null;
+    let isClear = false;
+    function interval(){
+      if(isClear){
+        isClear = false;
+        clearTimeout(timeId);
+      }else{
+        fn();
+        timeId = setTimeout(interval, time);
+      }
+    }
+    timeId = setTimeout(interval, time);
+    return () => {isClear = true};
+  }
+
+  mysetInterval(showName, 1000)
   
   return (
     <div>ARRAY_METHOD</div>
