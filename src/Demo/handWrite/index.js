@@ -70,6 +70,61 @@ const Index = () => {
 
   const flat = flatten([1, [2, [3]]])
 
+  // toString
+
+  const arr7 = [10, 5, 3, 8, 2]
+
+  function toString(){
+    let args = arguments
+
+    return [...args].join(',')
+  }
+
+  const tostring = toString(arr7)
+
+  // reduce
+
+  const arr9 = [10, 5, 3, 8, 2]
+
+  function reduce(arr){
+    console.log(arr, 'arr')
+    const len = arr.length
+    let red = 0
+    for(let i = 0; len > i; i++){
+      red += arr[i]
+    }
+    return red
+  }
+
+  const toReduce = reduce(arr9)
+  console.log(toReduce, 'toReduce')
+
+  // sort
+
+  const arr8 = [10, 5, 3, 8, 2]
+
+  // [2, 3, 5, 8, 10]
+  function bSort(arr) {
+    var len = arr.length;
+    for (var i = 0; i < len - 1; i++) {
+      for (var j = 0; j < len - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+          var temp = arr[j];
+          arr[j] = arr[j+1];
+          arr[j+1] = temp;
+        }
+      }
+    }
+    return arr;
+  }
+
+  const toSort1 = bSort(arr8)
+
+  // slice
+
+  // splice
+
+  // split
   //Debounce
   // function debounce(func, wait) {
   //   var timeout;
@@ -135,9 +190,9 @@ const Index = () => {
   //   window.requestAnimationFrame(loop)
   // }
   
-  function showName(){ 
-    console.log("Hello")
-  }
+  // function showName(){ 
+  //   console.log("Hello")
+  // }
   // let timerID = setTimeout(showName, 1000);
 
   function mysetTimeout(fn, time){
@@ -151,8 +206,8 @@ const Index = () => {
     }
   }
 
-  let test = mysetTimeout(showName, 1000)
-  test
+  // let test = mysetTimeout(showName, 1000)
+  // test
 
   function mysetInterval(fn, time){
     let timeId = null;
@@ -170,7 +225,7 @@ const Index = () => {
     return () => {isClear = true};
   }
 
-  mysetInterval(showName, 1000)
+  // mysetInterval(showName, 1000)
   
   return (
     <div>ARRAY_METHOD</div>

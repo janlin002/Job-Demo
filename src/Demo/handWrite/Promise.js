@@ -86,3 +86,39 @@ test.then(
 )
 
 console.log('6')
+
+// Promise.all() => https://juejin.cn/post/7006200103157383175
+function MyPromiseAll(args){
+    return new Promise((resolve, reject)=>{
+        const promises = Array.from(args); // shallow copy
+
+        const result = []
+
+        let count = 0;
+
+        for (let i = 0; i < promises.length; i++) {
+            Promise.resolve(promises[i]).then(res => {
+                result[i] = res;
+                count++;
+                if (count === promises.length) {
+                    resolve(result);
+                }
+            }).catch(err => reject(err))
+        }
+    })
+}
+
+MyPromiseAll(['a', 'b', 'c'])
+
+// Promise.race() => 只要有結果就顯示出來
+Promise.race = function(promiseArr) {
+    return new Promise((resolve, reject) => {
+        promiseArr.forEach(p => {
+            Promise.resolve(p).then(val => {
+                resolve(val)
+            }, err => {
+                rejecte(err)
+            })
+        })
+    })
+}
