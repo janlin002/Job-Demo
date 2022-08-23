@@ -8,3 +8,5 @@ function throttled1(fn, delay = 500) {
     }
   }
 }
+
+// 到指定時間，才做執行，跟setimeout很像

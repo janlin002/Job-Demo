@@ -129,7 +129,6 @@ const Index = () => {
     let _return_arr = []//返回的數組
 
     for (let i = index; i < index + count; i++) {
-      console.log(i, 'i')
       delIndex_arr.push(i)
     }
     let this_finishArr = [] //存放處理之後的數組
@@ -189,27 +188,6 @@ const Index = () => {
 
   const test = arr11.slice(0, 5)
 
-  //Debounce
-  // function debounce(func, wait) {
-  //   var timeout;
-  //   return function () {
-  //     var context = this;
-  //     var args = arguments;
-  //     clearTimeout(timeout)
-  //     timeout = setTimeout(function(){
-  //       func.apply(context, args)
-  //     }, wait);
-  //   }
-  // }
-
-  // function getUserAction(e) {
-  //   console.log(this, e)  // 分别打印：node 这个节点 和 MouseEvent
-  // }
-
-  // let abc = debounce(getUserAction, 1000)
-
-  // console.log(abc())
-
   // instanceOf
   // A instanceOf B
   // 构造函数的 prototype 属性是否出现在某个实例对象的原型链上
@@ -236,30 +214,31 @@ const Index = () => {
   instanceOf({}, Object) // true
 
   // setTimeOut
-  // let setTimeout = (fn, timeout, ...args) => {
-  //   // 初始当前时间
-  //   const start = new Date()
-  //   let timer, now
-  //   const loop = () => {
-  //     timer = window.requestAnimationFrame(loop)
+  let setTimeout = (fn, timeout, ...args) => {
+    // 初始当前时间
+    const start = new Date()
+    let timer, now
+    const loop = () => {
+      timer = window.requestAnimationFrame(loop)
 
-  //     // 再次运行时获取当前时间
-  //     now = new Date()
-  //     // 当前运行时间 - 初始当前时间 >= 等待时间 ===>> 跳出
-  //     if (now - start >= timeout) {
-  //       fn.apply(this, args)
-  //       window.cancelAnimationFrame(timer)
-  //     }
-  //   }
-  //   window.requestAnimationFrame(loop)
-  // }
+      // 再次运行时获取当前时间
+      now = new Date()
+      // 当前运行时间 - 初始当前时间 >= 等待时间 ===>> 跳出
+      if (now - start >= timeout) {
+        fn.apply(this, args)
+        window.cancelAnimationFrame(timer)
+      }
+    }
+    window.requestAnimationFrame(loop)
+  }
   
-  // function showName(){ 
-  //   console.log("Hello")
-  // }
-  // let timerID = setTimeout(showName, 1000);
+  function showName(){ 
+    console.log("Hello")
+  }
+  let timerID = setTimeout(showName, 1000);
 
-  function setTimeout(fn, time){
+  // 簡易版
+  function mysetTimeout(fn, time){
     let now = Date.now();
     let flag = true;
     while(flag){
@@ -273,7 +252,7 @@ const Index = () => {
   // let test = mysetTimeout(showName, 1000)
   // test
 
-  function setInterval(fn, time){
+  function mysetInterval(fn, time){
     let timeId = null;
     let isClear = false;
     function interval(){
@@ -298,5 +277,4 @@ const Index = () => {
 
 export default Index
 
-// 有更好的寫法會回來修正
 // mysetTimeout, mysetInterval => https://juejin.cn/post/7005863255990075399

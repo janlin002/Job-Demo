@@ -11,3 +11,12 @@ function debounce(func, wait) {
     }, wait);
   }
 }
+
+// 簡易版
+var timer; // 维护同一个timer
+function debounce2(fn, delay) {
+  clearTimeout(timer);
+  timer = setTimeout(function(){
+    fn();
+  }, delay);
+}
