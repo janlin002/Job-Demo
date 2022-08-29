@@ -2,6 +2,7 @@
   "name": "job-demo",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@hookform/resolvers": "^2.8.8",
     "@react-oauth/google": "^0.2.6",
