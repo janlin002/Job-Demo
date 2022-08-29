@@ -19,8 +19,9 @@ const ReactRouter = lazy(()=>import('./Demo/react-router'))
 const ReactClientValidation = lazy(()=>import('./Demo/ReactClientValidation'))
 const Swiper = lazy(()=>import('./Demo/Swiper'))
 const HandWrite = lazy(()=>import('./Demo/handWrite'))
-// import ReactTable from './Demo/Recat-table/ReactTable'
-// import FormikYup from './Demo/Formik-Yup/FormikYup.jsx'
+const ReactCheck = lazy(()=>import('./Demo/ReactCheck'))
+
+
 import Header from './Header'
 import ReactIntl from './Demo/React-intl/react-intl'
 import { useSelector } from 'react-redux'
@@ -34,7 +35,7 @@ import Formik20 from './Demo/formik2.0'
 import FormikResult from './Demo/formik2.0/result'
 import ReactModal from './Demo/React-modal'
 import SelectorTest from './Demo/SelectorTest'
-import ReactDnd from './Demo/React-dnd'
+// import ReactDnd from './Demo/React-dnd'
 import ReactTableJob from './Demo/React-table-job'
 import JobStyleSaga from './Demo/Job-style-saga'
 import SVG from './Demo/SVG'
@@ -92,7 +93,7 @@ function App() {
               <Route path='/formik-next' exact component={FormikResult}></Route>
               <Route path='/react-modal' exact component={ReactModal}></Route>
               <Route path='/selector-test' exact component={SelectorTest}></Route>
-              <Route path='/react-dnd' exact component={ReactDnd}></Route>
+              {/* <Route path='/react-dnd' exact component={ReactDnd}></Route> */}
               <Route path='/rt-job' exact component={ReactTableJob}></Route>
               <Route path='/js-saga' exact component={JobStyleSaga}></Route>
               <Route path='/svg' exact component={SVG}></Route>
@@ -132,6 +133,7 @@ function App() {
               <Route path='/react-client-validation' exact component={ReactClientValidation}></Route>
               <Route path='/swiper' exact component={Swiper}></Route>
               <Route path='/hand-write' exact component={HandWrite}></Route>
+              <Route path='/react-check' exact component={ReactCheck}></Route>
             </Switch>
           </Suspense>
         </Router>

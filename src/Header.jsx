@@ -42,9 +42,9 @@ function Header(){
       <button>
         <Link to='/selector-test'>array-method</Link>
       </button>
-      <button>
+      {/* <button>
         <Link to='/react-dnd'>React-dnd</Link>
-      </button>
+      </button> */}
       <button>
         <Link to='/rt-job'>React-table-job</Link>
       </button>
@@ -161,6 +161,9 @@ function Header(){
       </button>
       <button>
         <Link to='/hand-write'>hand-write</Link>
+      </button>
+      <button>
+        <Link to='/react-check'>react-check</Link>
       </button>
     </div>
   )
