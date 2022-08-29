@@ -1,11 +1,29 @@
-import React from 'react';
+import React from "react";
 
-const ExecutionOrder = () =>{
-  console.log('123')
+export function Father() {
+  React.useEffect(() => {
+    console.log("Father useEffect");
+  }, []);
 
-  return (
-    <div>123</div>
-  )
+  console.log("Father rnder");
+
+  return <Children />;
 }
 
-export default ExecutionOrder
+export function Children() {
+  React.useEffect(() => {
+    console.log("Child useEffect");
+  }, []);
+
+  console.log("Child render");
+
+  return;
+}
+
+export default Father;
+
+// Result
+// Father rnder 
+// Child render 
+// Child useEffect 
+// Father useEffect 
