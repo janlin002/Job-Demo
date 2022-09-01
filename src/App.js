@@ -21,7 +21,6 @@ const Swiper = lazy(()=>import('./Demo/Swiper'))
 const HandWrite = lazy(()=>import('./Demo/handWrite'))
 const ReactCheck = lazy(()=>import('./Demo/ReactCheck'))
 
-
 import Header from './Header'
 import ReactIntl from './Demo/React-intl/react-intl'
 import { useSelector } from 'react-redux'
