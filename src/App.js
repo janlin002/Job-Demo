@@ -3,6 +3,8 @@ import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
 
+// import HeaderList from '../src/assets/Data/HeaderList'
+
 const Formik = lazy(()=>import(/* webpackChunkName: "Formik" */'./Demo/Formik-Yup/Formik'))
 const ReactTable = lazy(()=>import(/* webpackChunkName: "ReactTable" */'./Demo/Recat-table/ReactTable'))
 const FormikYup = lazy(()=>import(/* webpackChunkName: "FormikYup" */'./Demo/Formik-Yup/FormikYup.jsx'))
@@ -78,6 +80,11 @@ function App() {
           <Header />
           <Suspense fallback={<p>Loading...</p>}>
             <Switch>
+              {/* {
+                HeaderList.map((item)=> {
+                  <Route path={item.to} exact component={item.component}></Route>
+                })
+              } */}
               <Route path='/formik' exact component={Formik}></Route>
               <Route path='/formikyup' exact component={FormikYup}></Route>
               <Route path='/reacttable' exact component={ReactTable}></Route>

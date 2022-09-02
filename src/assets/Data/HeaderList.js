@@ -1,215 +1,270 @@
+// import { lazy } from 'react';
+// const Formik = lazy(()=>import(/* webpackChunkName: "Formik" */'../../Demo/Formik-Yup/Formik'))
 const HeaderList = [
   {
     to: 'formik',
-    name: 'Formik'
+    name: 'Formik',
+    component: 'Formik'
   },
   {
     to: 'formikyup',
-    name: 'FormikYup'
+    name: 'FormikYup',
+    component: 'FormikYup'
   },
   {
     to: 'reacttable',
-    name: 'React-table'
+    name: 'React-table',
+    component: 'ReactTable'
   },
   {
     to: 'reactintl',
-    name: 'React-intl'
+    name: 'React-intl',
+    component: 'ReactIntl'
   },
   {
     to: 'chart',
-    name: 'Chart'
+    name: 'Chart',
+    component: 'Chart'
   },
   {
     to: 'colspan',
-    name: 'colspan'
+    name: 'colspan',
+    component: 'Colspan'
   },
   {
     to: 'saga',
-    name: 'saga'
+    name: 'saga',
+    component: 'Saga'
   },
   {
     to: 'jsx-control',
-    name: 'jsx-control'
+    name: 'jsx-control',
+    component: 'JsxControl'
   },
   {
     to: 'day-js',
-    name: 'Day.Js'
+    name: 'Day.Js',
+    component: 'DayJs'
   },
   {
     to: 'formik-2',
-    name: 'formik 2.0'
+    name: 'formik 2.0',
+    component: 'Formik2'
   },
   {
     to: 'react-modal',
-    name: 'React-modal'
+    name: 'React-modal',
+    component: 'ReactModal'
   },
   {
     to: 'selector-test',
     name: 'array-method',
+    component: 'SelectorTest'
   },
   {
     to: 'react-dnd',
-    name: 'React-dnd'
+    name: 'React-dnd',
+    component: 'ReactDnd'
   },
   {
     to: 'rt-job',
-    name: 'React-table-job'
+    name: 'React-table-job',
+    component: 'ReactTableJob'
   },
   {
     to: 'js-saga',
-    name: 'job-style-saga'
+    name: 'job-style-saga',
+    component: 'JobStyleSaga'
   },
   {
     to: 'svg',
-    name: 'svg'
+    name: 'svg',
+    component: 'SVG'
   },
   {
     to: 'react-slick',
-    name: 'react-slick'
+    name: 'react-slick',
+    component: 'ReactSlick'
   },
   {
     to: 'qrcode',
-    name: 'react-qrcode'
+    name: 'react-qrcode',
+    component: 'QrCode'
   },
   {
     to: 'print',
-    name: 'Print'
+    name: 'Print',
+    component: 'Print'
   },
   {
     to: 'print-modal',
-    name: 'Print-Modal'
+    name: 'Print-Modal',
+    component: 'PrintModal'
   },
   {
     to: 'react-table-pagination',
-    name: 'ReactTablePagination'
+    name: 'ReactTablePagination',
+    component: 'ReactTablePagination'
   },
   {
     to: '/hooks/useState',
-    name: 'useState'
+    name: 'useState',
+    component: 'UseState'
   },
   {
     to: '/hooks/useRef',
-    name: 'useRef'
+    name: 'useRef',
+    component: 'Ref'
   },
   {
     to: '/hooks/useEffect/Demo1',
-    name: 'useEffect Demo1'
+    name: 'useEffect Demo1',
+    component: 'UseEffectDemo1'
   },
   {
     to: '/hooks/useEffect/Demo2',
-    name: 'useEffect Demo2'
+    name: 'useEffect Demo2',
+    component: 'UseEffectDemo2'
   },
   {
     to: 'formik-submit',
-    name: 'formik submit'
+    name: 'formik submit',
+    component: 'FromikSubmit'
   },
   {
     to: 'interview',
-    name: 'interview'
+    name: 'interview',
+    component: 'Interview'
   },
   {
     to: 'bs-col-table',
-    name: 'bs-col-table'
+    name: 'bs-col-table',
+    component: 'BsColTable'
   },
   {
     to: 'hooks/useMemo',
-    name: 'useMemo'
+    name: 'useMemo',
+    component: 'UseMemo'
   },
   {
     to: 'scroll-timeline',
-    name: 'scrollTimeline'
+    name: 'scrollTimeline',
+    component: 'scrollTimeline'
   },
   {
     to: 'mixBlendMode',
-    name: 'mixBlendMode'
+    name: 'mixBlendMode',
+    component: 'mixBlendMode'
   },
   {
     to: 'clip-path',
-    name: 'ClipPath'
+    name: 'ClipPath',
+    component: 'ClipPath'
   },
   {
     to: 'custom-hook',
-    name:'CustomHook'
+    name:'CustomHook',
+    component: 'CustomHook'
   },
   {
     to: 'bind-js',
-    name: 'JsBind'
+    name: 'JsBind',
+    component: 'JsBind'
   },
   {
     to: 'theme-provider',
-    name: 'ThemeProvider'
+    name: 'ThemeProvider',
+    component: 'ThemeProvider'
   },
   {
     to: 'form-test',
-    name: 'form-test'
+    name: 'form-test',
+    component: 'FormTest'
   },
   {
     to: 'phone-charging',
-    name: 'phone-charging'
+    name: 'phone-charging',
+    component: 'PhoneCharging'
   },
   {
     to: 'react-hook-form',
-    name: 'react-hook-form' 
+    name: 'react-hook-form',
+    component: 'ReactHookForm'
   },
   {
     to: 'ref',
-    name: 'ref'
+    name: 'ref',
+    component: 'theRef'
   },
   {
     to: 'frosted-glass',
-    name: 'frosted-glass' 
+    name: 'frosted-glass',
+    component: 'FrostedGlass'
   },
   {
     to: 'react-query',
-    name: 'react-query'
+    name: 'react-query',
+    component: 'ReactQuery'
   },
   {
     to: 'immer',
-    name:'immer'
+    name:'immer',
+    component: 'Immer'
   },
   {
     to: 'redux-toolkit',
-    name: 'redux-toolkit'
+    name: 'redux-toolkit',
+    component: 'ReduxToolkitTest'
   },
   {
     to: 'drive-js',
-    name: 'drive-js'
+    name: 'drive-js',
+    component: 'DriveJs'
   },
   {
     to: 'react-plx',
-    name: 'react-plx'
+    name: 'react-plx',
+    component: 'ReactPlx'
   },
   {
     to: 'js-doc',
-    name: 'js-doc'
+    name: 'js-doc',
+    component: 'jsDoc'
   },
   {
     to: 'react-loading-skeleton',
-    name: 'react-loading-skeleton'
+    name: 'react-loading-skeleton',
+    component: 'ReactLoadingSkeleton'
   },
   {
     to: 'google-oauth',
-    name: 'google-oauth'
+    name: 'google-oauth',
+    component: 'GoogleOauthLogin'
   },
   {
     to: 'react-router',
-    name:'react-router'
+    name:'react-router',
+    component: 'ReactRouter'
   },
   {
     to: 'react-client-validation',
-    name: 'react-client-validation'
+    name: 'react-client-validation',
+    component: 'ReactClientValidation'
   },
   {
     to: 'swiper',
-    name: 'swiper'
+    name: 'swiper',
+    component: 'Swiper'
   },
   {
     to: 'hand-write',
     name: 'hand-write',
+    component: 'HandWrite'
   },
   {
     to: 'react-check',
-    name: 'react-check'
+    name: 'react-check',
+    component: 'ReactCheck'
   }
 ]
 
