@@ -96,3 +96,11 @@ p.s. 因為太多了，所以我沒有全部截起來
 以上就是今天的內容，如果有任何錯誤，歡迎留言在下方～～
 
 那我們明天見～～
+
+參考資料:
+
+https://www.casper.tw/development/2022/01/10/install-nvm/
+
+https://github.com/nvm-sh/nvm
+
+https://medium.com/@123davidbill/%E5%B0%8F%E5%AD%A9%E5%AD%90%E6%89%8D%E5%81%9A%E9%81%B8%E6%93%87-%E6%88%91%E5%85%A8%E9%83%BD%E8%A6%81-%E5%A4%9A%E5%80%8Bnode%E7%89%88%E6%9C%AC%E8%87%AA%E7%94%B1%E5%88%87%E6%8F%9B-82b0fa9f6522
