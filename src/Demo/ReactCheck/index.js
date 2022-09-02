@@ -5,13 +5,14 @@ import BatchUpdate from './code/batchUpdate'
 import UnControl from './code/uncontrol';
 import RederProps from './code/renderProps'
 import CantChangeProps from './code/cantChangeProps'
+import DataBinding from './code/dataBinding'
 
 const ReactCheck = () => {
   let [count, setCount] = useState(0);
   return (
     <>
-      <CantChangeProps />
-      <div>React-Check</div>
+      <DataBinding />
+      {/* <div>React-Check</div> */}
     </>
   );
 }
