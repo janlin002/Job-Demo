@@ -1,65 +1,119 @@
-// import { lazy } from 'react';
-// const Formik = lazy(()=>import(/* webpackChunkName: "Formik" */'../../Demo/Formik-Yup/Formik'))
+import { lazy } from 'react';
+const Formik = lazy(()=>import(/* webpackChunkName: "Formik" */'../../Demo/Formik-Yup/Formik'))
+const ReactTable = lazy(()=>import(/* webpackChunkName: "ReactTable" */'../../Demo/Recat-table/ReactTable'))
+const FormikYup = lazy(()=>import(/* webpackChunkName: "FormikYup" */'../../Demo/Formik-Yup/FormikYup.jsx'))
+const FrostedGlass = lazy(()=>import(/* webpackChunkName: "FrostedGlass" */ '../../Demo/FrostedGlass'))
+const ReactQuery = lazy(()=>import(/* webpackChunkName: "ReactQuery" */ '../../Demo/React-query'))
+const Immer = lazy(()=>import(/* webpackChunkName: "immer" */ '../../Demo/immer'))
+const ReduxToolkitTest = lazy(()=>import(/* webpackChunkName: "immer" */ '../../Demo/ReduxToolkitTest'))
+const DriveJs = lazy(()=>import(/* webpackChunkName: "DriveJs" */ '../../Demo/Drivejs'))
+const ReactPlx = lazy(()=>import(/* webpackChunkName: "ReactPlx" */ '../../Demo/React-plx'))
+const jsDoc = lazy(()=>import('../../Demo/JSDOC'))
+const ReactLoadingSkeleton = lazy(()=>import('../../Demo/ReactLoadingSkeleton'))
+const GoogleOauthLogin = lazy(()=>import('../../Demo/Google-auth'))
+const ReactRouter = lazy(()=>import('../../Demo/react-router'))
+const ReactClientValidation = lazy(()=>import('../../Demo/ReactClientValidation'))
+const Swiper = lazy(()=>import('../../Demo/Swiper'))
+const HandWrite = lazy(()=>import('../../Demo/handWrite'))
+const ReactCheck = lazy(()=>import('../../Demo/ReactCheck'))
+import ReactIntl from '../../Demo/React-intl/react-intl'
+import Chart from '../../Demo/Chart/chart'
+import Colspan from '../../Demo/colspan/colspan';
+import Saga from '../../Demo/checkSaga'
+import JsxControl from '../../Demo/jsx-control-statements'
+import DayJs from '../../Demo/Dayjs'
+import Formik2 from '../../Demo/Formik-Yup/Formik2.js'
+import Formik20 from '../../Demo/formik2.0'
+import FormikResult from '../../Demo/formik2.0/result'
+import ReactModal from '../../Demo/React-modal'
+import SelectorTest from '../../Demo/SelectorTest'
+// import ReactDnd from './Demo/React-dnd'
+import ReactTableJob from '../../Demo/React-table-job'
+import JobStyleSaga from '../../Demo/Job-style-saga'
+import SVG from '../../Demo/SVG'
+import ReactSlick from '../../Demo/React-slick'
+import QrCode from '../../Demo/QRCode'
+import Print from '../../Demo/Print'
+import PrintModal from '../../Demo/PrintModal'
+import ReactTablePagination from '../../Demo/ReactTablePagination'
+import UseState from '../../Demo/Hooks/useState'
+import Ref from '../../Demo/Hooks/useRef'
+import UseEffectDemo1 from '../../Demo/Hooks/useEffect/Demo1'
+import UseEffectDemo2 from '../../Demo/Hooks/useEffect/Demo2'
+import FromikSubmit from '../../Demo/formik isSubmitting vs isvalidating'
+import Interview from '../../Demo/Interview'
+import BsColTable from '../../Demo/BS-Col-Table'
+import UseMemo from '../../Demo/Hooks/useMemo'
+import scrollTimeline from '../../Demo/@scroll-timeline'
+import mixBlendMode from '../../Demo/mix-blend-mode'
+import ClipPath from '../../Demo/Clipath'
+import CustomHook from '../../Demo/Custom-Hook'
+import JsBind from '../../Demo/JsBind.js'
+import ThemeProvider from '../../Demo/ThemeProvider'
+import FormTest from '../../Demo/FormTest'
+import PhoneCharging from '../../Demo/PhoneCharging'
+import ReactHookForm from '../../Demo/React-hook-form'
+import theRef from '../../Demo/Ref'
 const HeaderList = [
   {
     to: 'formik',
     name: 'Formik',
-    component: 'Formik'
+    component: Formik
   },
   {
     to: 'formikyup',
     name: 'FormikYup',
-    component: 'FormikYup'
+    component: FormikYup
   },
   {
     to: 'reacttable',
     name: 'React-table',
-    component: 'ReactTable'
+    component: ReactTable
   },
   {
     to: 'reactintl',
     name: 'React-intl',
-    component: 'ReactIntl'
+    component: ReactIntl
   },
   {
     to: 'chart',
     name: 'Chart',
-    component: 'Chart'
+    component: Chart
   },
   {
     to: 'colspan',
     name: 'colspan',
-    component: 'Colspan'
+    component: Colspan
   },
   {
     to: 'saga',
     name: 'saga',
-    component: 'Saga'
+    component: Saga
   },
   {
     to: 'jsx-control',
     name: 'jsx-control',
-    component: 'JsxControl'
+    component: JsxControl
   },
   {
     to: 'day-js',
     name: 'Day.Js',
-    component: 'DayJs'
+    component: DayJs
   },
   {
     to: 'formik-2',
     name: 'formik 2.0',
-    component: 'Formik2'
+    component: Formik2
   },
   {
     to: 'react-modal',
     name: 'React-modal',
-    component: 'ReactModal'
+    component: ReactModal
   },
   {
     to: 'selector-test',
     name: 'array-method',
-    component: 'SelectorTest'
+    component: SelectorTest
   },
   {
     to: 'react-dnd',
@@ -69,202 +123,202 @@ const HeaderList = [
   {
     to: 'rt-job',
     name: 'React-table-job',
-    component: 'ReactTableJob'
+    component: ReactTableJob
   },
   {
     to: 'js-saga',
     name: 'job-style-saga',
-    component: 'JobStyleSaga'
+    component: JobStyleSaga
   },
   {
     to: 'svg',
     name: 'svg',
-    component: 'SVG'
+    component: SVG
   },
   {
     to: 'react-slick',
     name: 'react-slick',
-    component: 'ReactSlick'
+    component: ReactSlick
   },
   {
     to: 'qrcode',
     name: 'react-qrcode',
-    component: 'QrCode'
+    component: QrCode
   },
   {
     to: 'print',
     name: 'Print',
-    component: 'Print'
+    component: Print
   },
   {
     to: 'print-modal',
     name: 'Print-Modal',
-    component: 'PrintModal'
+    component: PrintModal
   },
   {
     to: 'react-table-pagination',
     name: 'ReactTablePagination',
-    component: 'ReactTablePagination'
+    component: ReactTablePagination
   },
   {
     to: '/hooks/useState',
     name: 'useState',
-    component: 'UseState'
+    component: UseState
   },
   {
     to: '/hooks/useRef',
     name: 'useRef',
-    component: 'Ref'
+    component: Ref
   },
   {
     to: '/hooks/useEffect/Demo1',
     name: 'useEffect Demo1',
-    component: 'UseEffectDemo1'
+    component: UseEffectDemo1
   },
   {
     to: '/hooks/useEffect/Demo2',
     name: 'useEffect Demo2',
-    component: 'UseEffectDemo2'
+    component: UseEffectDemo2
   },
   {
     to: 'formik-submit',
     name: 'formik submit',
-    component: 'FromikSubmit'
+    component: FromikSubmit
   },
   {
     to: 'interview',
     name: 'interview',
-    component: 'Interview'
+    component: Interview
   },
   {
     to: 'bs-col-table',
     name: 'bs-col-table',
-    component: 'BsColTable'
+    component: BsColTable
   },
   {
     to: 'hooks/useMemo',
     name: 'useMemo',
-    component: 'UseMemo'
+    component: UseMemo
   },
   {
     to: 'scroll-timeline',
     name: 'scrollTimeline',
-    component: 'scrollTimeline'
+    component: scrollTimeline
   },
   {
     to: 'mixBlendMode',
     name: 'mixBlendMode',
-    component: 'mixBlendMode'
+    component: mixBlendMode
   },
   {
     to: 'clip-path',
     name: 'ClipPath',
-    component: 'ClipPath'
+    component: ClipPath
   },
   {
     to: 'custom-hook',
     name:'CustomHook',
-    component: 'CustomHook'
+    component: CustomHook
   },
   {
     to: 'bind-js',
     name: 'JsBind',
-    component: 'JsBind'
+    component: JsBind
   },
   {
     to: 'theme-provider',
     name: 'ThemeProvider',
-    component: 'ThemeProvider'
+    component: ThemeProvider
   },
   {
     to: 'form-test',
     name: 'form-test',
-    component: 'FormTest'
+    component: FormTest
   },
   {
     to: 'phone-charging',
     name: 'phone-charging',
-    component: 'PhoneCharging'
+    component: PhoneCharging
   },
   {
     to: 'react-hook-form',
     name: 'react-hook-form',
-    component: 'ReactHookForm'
+    component: ReactHookForm
   },
   {
     to: 'ref',
     name: 'ref',
-    component: 'theRef'
+    component: theRef
   },
   {
     to: 'frosted-glass',
     name: 'frosted-glass',
-    component: 'FrostedGlass'
+    component: FrostedGlass
   },
   {
     to: 'react-query',
     name: 'react-query',
-    component: 'ReactQuery'
+    component: ReactQuery
   },
   {
     to: 'immer',
     name:'immer',
-    component: 'Immer'
+    component: Immer
   },
   {
     to: 'redux-toolkit',
     name: 'redux-toolkit',
-    component: 'ReduxToolkitTest'
+    component: ReduxToolkitTest
   },
   {
     to: 'drive-js',
     name: 'drive-js',
-    component: 'DriveJs'
+    component: DriveJs
   },
   {
     to: 'react-plx',
     name: 'react-plx',
-    component: 'ReactPlx'
+    component: ReactPlx
   },
   {
     to: 'js-doc',
     name: 'js-doc',
-    component: 'jsDoc'
+    component: jsDoc
   },
   {
     to: 'react-loading-skeleton',
     name: 'react-loading-skeleton',
-    component: 'ReactLoadingSkeleton'
+    component: ReactLoadingSkeleton
   },
   {
     to: 'google-oauth',
     name: 'google-oauth',
-    component: 'GoogleOauthLogin'
+    component: GoogleOauthLogin
   },
   {
     to: 'react-router',
     name:'react-router',
-    component: 'ReactRouter'
+    component: ReactRouter
   },
   {
     to: 'react-client-validation',
     name: 'react-client-validation',
-    component: 'ReactClientValidation'
+    component: ReactClientValidation
   },
   {
     to: 'swiper',
     name: 'swiper',
-    component: 'Swiper'
+    component: Swiper
   },
   {
     to: 'hand-write',
     name: 'hand-write',
-    component: 'HandWrite'
+    component: HandWrite
   },
   {
     to: 'react-check',
     name: 'react-check',
-    component: 'ReactCheck'
+    component: ReactCheck
   }
 ]
 
