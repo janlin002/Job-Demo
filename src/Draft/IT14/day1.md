@@ -40,4 +40,4 @@ node 版本控制
 
 ## 其他
 
-以上寫的文章，會有程式碼的部分，會收錄在我個人的[Github](https://github.com/janlin002)中，有興趣的話可以去看看
+以上寫的文章，程式碼的部分，會收錄在我個人的[Github](https://github.com/janlin002)中，有興趣的話可以去看看

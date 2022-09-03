@@ -1,106 +1,50 @@
-## NVM
+# 關於選擇套件你必須知道的事
 
-[Github 連結](https://github.com/nvm-sh/nvm#installing-and-updating)
+今天我想說明一下，該如何去挑選套件，並且這都是我個人習慣，所以如果有其他挑選方式，歡迎留言給我，謝謝
 
-NVM 是 `Node Version Manager` 的縮寫，可以了解這是一個跟 Node 版本控制有關係的套件，他讓我們可以自由的切換到自己想要的版本號
+## 為什麼要討論這個問題？
 
-## 為什麼需要 NVM?
+主要是因為套件也是需要有人去維護，或是新增功能，這樣套件才會越來越完善，所以我們在選擇套件要考慮到幾個面向:
 
-當某個特定專案需要使用指定版本時，我們不可能去 uninstall 現有版本，然後 install 指定版本，這樣很沒效率，為了解決這個問題，我們就會需要使用到 NVM，她讓我們可以永有多個 Node 版本，讓我們可以自己選擇現在要用到的版本號
+1. 上次更新是什麼時候
+2. 有多少人使用
 
-## 環境安裝
+## [NPM](https://www.npmjs.com/)
 
-首先我們需要先下載 NVM
+![npm](../IT14/image/NeedToKnow/npm-react.png)
 
-不過因為 NVM 不是透過 Node 去做下載，所以 Windows 這邊我沒辦法演示，但別擔心我有放[連結](https://github.com/coreybutler/nvm-windows/releases)，方便 Windows 的讀者去做下載
+可以看到右方資訊欄，有幾個關鍵字
 
-MAC:
+**Weekly Downloads (有多少人使用)**
 
-先在 Terminal，書入以下指令:
+代表每週有多少人下載，當然越多人越好，代表這個套件的社群也相對龐大，有問題時網路上基本上也都會有相關回答
 
-```js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
+**Last publish (上次更新是什麼時候)**
 
-也可以到官網找到以下指令
-![how-to-install-nvm](./image/NVM/day1-intsall-nvm.png)
+最新一次的 commit 時間，可看到 React 在 10 小時前有做更新，代表還有人在維護，如果看到有些套件已經 3, 4 年沒維護，在選擇時就需要慎重考慮，因為如果遇到問題也會沒版法解決
 
-現在就可以確認有沒有下載成功
+## Github
 
-```
-nvm
-```
+以上資訊也可以在 Github 上面看到
 
-如果現在出現類似 `zsh: command not found: nvm` 的錯誤訊息出現
+![github](./image/NeedToKnow/github.png)
 
-記得到你的 ~/.bashrc, ~/.profile, 或是 ~/.zshrc 檔案裡面加入
+可以在圖片裡面看到我圈起來的部分，分別是:
 
-```js
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"bash_completion
-```
+### Star
 
-![nvm-cant-install](./image/NVM/nvm-cant-install.png)
+有點像 Github 裡面的按讚功能，所以如果 Star 越多，代表越多人支持這個套件
 
-加入以上指令後，回到 Terminal，一樣下`nvm`指令
+### Releases
 
-![nvm-check](./image/NVM/nvm-check.png)
+最新發佈時間，時間如果裡目前時間越近，代表還有在維護
 
-如果顯示以上文字代表你已經成功下載 NVM
+### Used by
 
-## 如何使用
+代表著有多少人使用者個套件
 
-下載完之後，終於到了使用的環節了
+## 結論
 
-這邊[官網](https://github.com/nvm-sh/nvm#usage)其實有寫得很清楚了
+筆者自己就曾經遇過套件停更很久，導致當下專案沒辦法完成 PM 的需求，運氣好的話，PM 可能可能會跟你討論這個功能的需求性，然後使用替代方案，運氣差一點，一定要這個效果的話，可能就會需要換套件，因為停更很久，你發 issue 或是 PR，也不太可能會有人理你
 
-![how-to-use](./image/NVM/how-to-use-nvm.png)
-
-## 常用的指令
-
-### nvm install node - 下載 Node 版本
-
-```js
-nvm install 16.15
-```
-
-### nvm ls-remote - 可以看 Node 所有的版本
-
-![nvm-ls-remote](./image//NVM/nvm-ls-remote.gif)
-
-p.s. 因為太多了，所以我沒有全部截起來
-
-其中會有一些版本號跟其他的不太一樣
-
-![own-version](./image/NVM/nvm-own-version.png)
-
-藍色部分是你目前擁有的 Node 版本號
-
-### nvm ls - 可以看自己擁有哪些版本
-
-![nvm-ls](./image/NVM/nvm-ls.png)
-
-其中綠色箭頭就是目前使用的版本
-
-### nvm use node-version - 可以切換到指定版本
-
-透過上方指令我們可以看到目前擁有的 Node 版本，並使用`nvm use node-version`可以切換到指定版本
-
-![change-version](./image/NVM/use-version.png)
-
-### nvm alias default node - 將某一個版本當作預設版本
-
-今天如果想要使用特定版本的話可以使用上方指令
-
-以上就是今天的內容，如果有任何錯誤，歡迎留言在下方～～
-
-那我們明天見～～
-
-參考資料:
-
-https://www.casper.tw/development/2022/01/10/install-nvm/
-
-https://github.com/nvm-sh/nvm
-
-https://medium.com/@123davidbill/%E5%B0%8F%E5%AD%A9%E5%AD%90%E6%89%8D%E5%81%9A%E9%81%B8%E6%93%87-%E6%88%91%E5%85%A8%E9%83%BD%E8%A6%81-%E5%A4%9A%E5%80%8Bnode%E7%89%88%E6%9C%AC%E8%87%AA%E7%94%B1%E5%88%87%E6%8F%9B-82b0fa9f6522
+> 以上就是今天的內容，如果有任何錯誤，歡迎留言在下方～～
