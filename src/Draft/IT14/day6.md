@@ -36,6 +36,8 @@ npm i yup
 
 ## `<Formik>`
 
+[Github 程式碼](https://github.com/janlin002/IT14/blob/master/src/Demo/formik-yup1.js)
+
 > <Formik> is a component that helps you with building forms. It uses a render props pattern made popular by libraries like React Motion and React Router.
 
 `<Formik>` 就是一個 Component，讓你把資料透過傳遞 Props 的方法傳進去，然後在 Component 中做處理，相信 React 開發者一定都能了解
@@ -150,6 +152,8 @@ const myValidation = Yup.object().shape({
 
 ## `useFormik`
 
+[Github 程式碼](https://github.com/janlin002/IT14/blob/master/src/Demo/formik-yup2.js)
+
 > useFormik() is a custom React hook that will return all Formik state and helpers directly.
 
 基本上他跟我們上面所說的`<Formik>`一樣，但寫法更漂亮(筆者個人認爲)，兩個的比較可以看這篇[Issue](https://github.com/jaredpalmer/formik/discussions/2851)
@@ -235,6 +239,8 @@ const formik = useFormik({
 其實 Formik 可以玩的東西很多，不過以上的教學已經可以在工作上做使用了，希望各位讀者能夠看得懂，以上就是今天的文章，一樣有問題都歡迎在下方留言~~
 
 那我們明天見~~
+
+> 我有為了這次的鐵人賽建立了 Github 的專案，有程式碼的問題歡迎去我的[Github](https://github.com/janlin002/IT14)上面看
 
 參考文章：
 
