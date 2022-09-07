@@ -24,7 +24,7 @@ day12: [react-thunk]()
 
 day13: [react-query]()
 
-day14: [react-redux]()
+<!-- day14: [react-redux]() -->
 
 day15: [react-modal]()
 
