@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import * as Driver from 'driver.js';
 // import 'driver.js/dist/driver.min.css';
 // import Joyride from 'react-joyride';
-import { Steps } from 'intro.js-react';
+import { Steps, Hints } from 'intro.js-react';
 import 'intro.js/introjs.css';
 import './style.css'
 // import introJs from 'intro.js';
@@ -75,6 +75,22 @@ const Drivejs = () =>{
       intro: 'You can use this button to contact us',
     },
   ];
+
+  const hints = [
+    {
+      element: '#help',
+      hint: 'test 1',
+      hintPosition: 'middle-middle',
+    },
+    {
+      element: '#about',
+      hint: 'test 2',
+    },
+    {
+      element: '#contact',
+      hint: 'test 3',
+    },
+  ];
   
   return (
     <div>
@@ -92,11 +108,15 @@ const Drivejs = () =>{
         />
       </div> */}
       <div className="App">
-        <Steps
+        {/* <Steps
           enabled={enabled}
           steps={steps}
           initialStep={initialStep}
           onExit={onExit}
+        /> */}
+        <Hints
+          enabled={enabled}
+          hints={hints}
         />
         <div id="buttonRow">
           <button id="help">Help</button>
