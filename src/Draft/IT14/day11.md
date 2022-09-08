@@ -1,4 +1,4 @@
-# Redux-logger
+# 一天一套件，工作沒煩惱 - Redux-logger
 
 相信很多 React 開發者都依定聽過 Redux，但 Redux-logger 可能就沒有多少人聽過了，今天會來帶大家了解這個套件
 
