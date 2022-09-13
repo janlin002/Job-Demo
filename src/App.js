@@ -9,7 +9,7 @@ import HeaderList from '../src/assets/Data/HeaderList'
 import Header from './Header'
 
 function App() {
-  const [locale, setLocale] = useState(undefined)
+  const [locale, setLocale] = useState("en")
   const lang = useSelector(state=>state.localeLanguage)
   // const locale = navigator.language;
   useEffect(async() => {
@@ -18,9 +18,11 @@ function App() {
     setLocale(data)
   },[lang])
 
+  console.log(locale, 'locale')
+
   return (
     <div>
-      <IntlProvider messages={locale}>
+      <IntlProvider locale={locale} key={locale} messages={locale}>
         <Router>
           <Header />
           <Suspense fallback={<p>Loading...</p>}>
