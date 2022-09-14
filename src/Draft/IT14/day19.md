@@ -40,7 +40,7 @@ import "./i18n";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import en from "../public/locales/en.json";
+import en from "../public/locales/en.json"; // 這個路徑可以自己定義，不需要跟筆者一樣
 import zh_tw from "../public/locales/zh_TW.json";
 import thai from "../public/locales/thai.json";
 
@@ -99,7 +99,7 @@ export default i18n;
 
 基本設定好了以後，進入到頁面，我們要讓翻譯的字，顯示在畫面上
 
-我們需要透過 react-i18next 提供的一個 hook: `useTranslation`，或是透過 HOC 的方式: `Translation`，來做顯示
+我們需要透過 react-i18next 提供的一個 Hook: `useTranslation`，或是透過 HOC 的方式: `Translation`，來做顯示
 
 Hook:
 
@@ -121,11 +121,14 @@ import { Translation } from "react-i18next";
 <Translation>{() => <p>{t("hello")}</p>}</Translation>;
 ```
 
-以上是基本的翻譯部分，不過我們今天需要可以自己轉換語系，那就會需要用到 react-i18next 提供的 changeLanguage
+以上是基本的翻譯部分，不過我們今天需要可以自己轉換語系，那就會需要用到 react-i18next 提供的 `changeLanguage`
 
 ```js
+語法:
 i18n.changeLanguage("en");
 
+
+範例:
 <button onClick={() => i18n.changeLanguage('en')} type="button">
     英文
 </button>
