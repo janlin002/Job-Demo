@@ -8,7 +8,16 @@ import CantChangeProps from './code/cantChangeProps'
 import DataBinding from './code/dataBinding'
 
 const ReactCheck = () => {
-  let [count, setCount] = useState(0);
+  let [count, setCount] = useState([]);
+
+  const a = [100, 200, 300]
+
+  for(var i = 0; i < 3; i++){
+    setTimeout(function(i){
+      console.log(i, a[i])
+    }, a[i])
+  }
+
   return (
     <>
       <DataBinding />

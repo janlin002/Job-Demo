@@ -10,7 +10,7 @@ react-i18next 是跟 react-intl 一樣功能的套件，都是在處理網頁的
 
 老樣子遇到類似套件，我們都要給他比較一下
 
-![compare]()
+![compare](./image/react-i18n/compare.png)
 
 [Link](https://npmtrends.com/react-i18next-vs-react-intl)
 
