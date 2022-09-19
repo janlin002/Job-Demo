@@ -11,7 +11,7 @@
 ![compare](./image/react-select/compare.png)
 [Link](https://npmtrends.com/downshift-vs-react-autocomplete-vs-react-autosuggest-vs-react-bootstrap-multiselect-vs-react-dropdown-vs-react-multi-select-vs-react-select-vs-react-selectize-vs-react-simple-dropdown-vs-react-virtualized-select-vs-react-widgets)
 
-downshift 今年感覺有其來了一下，不過有下去了，筆者自己也還在觀望中
+downshift 今年感覺有起來了一下，不過又下去了，筆者自己也還在觀望中
 
 p.s 看了一下 downshift，是透過 Hooks 去實作的，但感覺不太直觀，目前應該還會是 react-select 的天下
 
