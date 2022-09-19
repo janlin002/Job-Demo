@@ -16,7 +16,7 @@ npm install react-table@7.6.3
 
 今天因為要介紹的是第七版，所以我下載了第七版的 7.6.3，原因是因為筆者自己公司目前就是用這個版本，使用起來沒有什麼奇怪的問題，如果對於 node 的版本號不太了解的讀者，可以看一下[這篇文章](https://israynotarray.com/nodejs/20190626/2459037265/)，裡面有講一些基本的版本號知識
 
-題外話：筆者推薦大家在寫 `useGlobalFilter` 時，可以參考[這篇文章](https://nafeu.medium.com/global-filtering-and-sorting-with-react-table-ec604e57614a)，不過只需參考他的思維，至於他的程式碼其實錯很多，需要讀者自己去發現，不過這篇已經幫大家避過不少坑，所以不需要太過害怕
+題外話：筆者推薦大家在寫 `useGlobalFilter` 時，可以參考[這篇文章](https://nafeu.medium.com/global-filtering-and-sorting-with-react-table-ec604e57614a)，不過只需參考他的思維，至於他的程式碼不太適合去做使用，所以如果有讀者去複製這篇文章的程式碼發現一堆錯誤，是很正常的
 
 ## 怎麼使用
 
