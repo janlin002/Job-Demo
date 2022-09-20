@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Index = () => {
-  // Push
+  // .Push()
   var arr = [1, 2, 3, 4, 5]
   function push() {
     for (var i = 0; i < arguments.length; i++) {
@@ -12,7 +12,7 @@ const Index = () => {
   }
   push(6, 7)//[1,2,3,4,5,6,7]
 
-  // Reverse
+  // .Reverse()
   const arr2 = [10, 5, 3, 8, 2] // 2,8,3,5,10
 
   function reverse(arr2){

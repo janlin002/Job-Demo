@@ -22,7 +22,6 @@ export default (state = defaultState,action)=>{
     return { ...state,  localeLanguage: value }
   }
   case FETCH_DATA_SUCCESS:{
-    console.log('hello')
     return {
       ...state,
       data: action.payload.data,

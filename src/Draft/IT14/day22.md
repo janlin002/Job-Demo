@@ -17,6 +17,7 @@ npm install react-day-picker date-fns
 這篇我想嘗試點不一樣的風格，加上官網真的寫得很清楚了，所以這篇不如我們改成翻譯？不過我會歸納出幾種常用功能，讓各位讀者可以一目瞭然知道該功能的對應位置
 
 ![meme](https://memeprod.ap-south-1.linodeobjects.com/user-template/0a1eebc7bd35334c028e4a1b285a4d95.png)
+
 圖片取自 google
 
 既然大家都贊成，那我們開始吧 :)
@@ -31,21 +32,53 @@ npm install react-day-picker date-fns
 
 透過`defaultMonth`去選擇預設的月份
 
+```js
+export default function App() {
+  return <DayPicker defaultMonth={new Date(1979, 8)} />;
+}
+```
+
 ### [Controlling the current month](https://react-day-picker.js.org/basics/navigation#controlling-the-current-month)
 
 透過`month`去決定目前的月份
+
+```js
+export default function App() {
+  return <DayPicker month={month} onMonthChange={setMonth} footer={footer} />;
+}
+```
 
 ### [Limiting the month navigation](https://react-day-picker.js.org/basics/navigation#limiting-the-month-navigation)
 
 夠過`fromYear`去決定可選最舊的月份是哪一個月，透過`toYear`去決定可選最新的月分是哪一個月
 
+```js
+export default function App() {
+  return (
+    <DayPicker defaultMonth={new Date(2015, 0)} fromYear={2015} toYear={2018} />
+  );
+}
+```
+
 ### [Using a drop-down to change the month](https://react-day-picker.js.org/basics/navigation#using-a-drop-down-to-change-the-month)
 
 使用`captionLayout="dropdown"`可讓我們的年份跟日期選擇是使用`dropdown`的方式去選擇
 
+```js
+export default function App() {
+  return <DayPicker fromYear={2015} toYear={2025} captionLayout="dropdown" />;
+}
+```
+
 ### [Disabling navigation](https://react-day-picker.js.org/basics/navigation#disabling-navigation)
 
 `disableNavigation`會讓整個選擇器沒辦法切換月份
+
+```js
+export default function App() {
+  return <DayPicker mode="single" disableNavigation />;
+}
+```
 
 ## [Customization](https://react-day-picker.js.org/basics/customization)
 
@@ -53,9 +86,21 @@ npm install react-day-picker date-fns
 
 使用`numberOfMonths`可讓我們生成多個日曆
 
+```js
+export default function App() {
+  return <DayPicker numberOfMonths={2} />;
+}
+```
+
 ### [Showing the week numbers](https://react-day-picker.js.org/basics/customization#showing-the-week-numbers)
 
 使用`showWeekNumber`，可以顯示目前為第幾週，1 月 1 號那個禮拜為第 1 週，以此類推
+
+```js
+export default function App() {
+  return <DayPicker showOutsideDays />;
+}
+```
 
 ## [Selecting Days](https://react-day-picker.js.org/basics/selecting-days)
 
