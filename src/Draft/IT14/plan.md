@@ -40,7 +40,7 @@ day20: [react-select]()
 
 day21: [react-table]()
 
-day22: [AntD Table]()
+day22: [react-day-picker]()
 
 day23: [jspdf]()
 
