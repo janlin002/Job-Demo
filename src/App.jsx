@@ -4,7 +4,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
 import { useSelector } from 'react-redux'
 
-import HeaderList from '../src/assets/Data/HeaderList'
+import HeaderList from './assets/Data/HeaderList'
 
 import Header from './Header'
 
