@@ -54,6 +54,7 @@ import FormTest from '../../Demo/FormTest'
 import PhoneCharging from '../../Demo/PhoneCharging'
 import ReactHookForm from '../../Demo/React-hook-form'
 import theRef from '../../Demo/Ref'
+import HandSign from '../../Demo/handSign'
 const HeaderList = [
   {
     to: 'formik',
@@ -319,6 +320,11 @@ const HeaderList = [
     to: 'react-check',
     name: 'react-check',
     component: ReactCheck
+  },
+  {
+    to: 'hand-sign',
+    name: 'hand-sign',
+    component: HandSign
   }
 ]
 
