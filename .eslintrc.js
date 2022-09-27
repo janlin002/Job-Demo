@@ -1,28 +1,24 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true,
-    'amd': true,
-    'node': true,
-  },
-  'extends': [
-    // 'airbnb',
-    // "plugin:jsx-control-statements/recommended"
-    'eslint:recommended',
-    'plugin:react/recommended'
-  ],
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true
+    "env": {
+        "browser": true,
+        "es2021": true
     },
-    'ecmaVersion': 12,
-    'sourceType': 'module'
-  },
-  'plugins': [
-    'react'
-  ],
-  'rules': {
-    // semi: ["error", "never"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      // semi: ["error", "never"],
     'semi': 'off',
     'react/react-in-jsx-scope': 'off', // 縮排限制
     'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }],
@@ -41,5 +37,5 @@ module.exports = {
     // ],
     'react/jsx-no-undef': [2, { 'allowGlobals': true }],
     // 'jsx-quotes': ["error", "prefer-single"]
-  }
-}
+    }
+};

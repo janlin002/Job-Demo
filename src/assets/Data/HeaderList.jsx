@@ -55,6 +55,8 @@ import PhoneCharging from '../../Demo/PhoneCharging'
 import ReactHookForm from '../../Demo/React-hook-form'
 import theRef from '../../Demo/Ref'
 import HandSign from '../../Demo/handSign'
+import JsPdf from '../../Demo/JsPdf'
+
 const HeaderList = [
   {
     to: 'formik',
@@ -325,6 +327,11 @@ const HeaderList = [
     to: 'hand-sign',
     name: 'hand-sign',
     component: HandSign
+  },
+  {
+    to: 'jspdf',
+    name: 'jspdf',
+    component: JsPdf
   }
 ]
 

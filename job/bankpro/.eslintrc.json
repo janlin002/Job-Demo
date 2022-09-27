@@ -5,7 +5,8 @@
       "node": true,
       "jsx-control-statements/jsx-control-statements": true
     },
-    "extends": ["airbnb", "plugin:jsx-control-statements/recommended"],
+    // "extends": ["airbnb", "plugin:jsx-control-statements/recommended"],
+    "extends": ["react-app", "airbnb"],
     "globals": {
       "Atomics": "readonly",
       "SharedArrayBuffer": "readonly"

@@ -4,7 +4,6 @@ import SignatureCanvas from 'react-signature-canvas'
 function HandSign() {
     const signature= useRef(null)
 
-    console.log(signature, 'signature')
     return (
         <>
         <SignatureCanvas 
