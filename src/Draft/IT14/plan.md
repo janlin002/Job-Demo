@@ -105,4 +105,6 @@ vscode:
 Power Mode
 Better Comments
 Bookmarks
+
+react-signature-canvas
 ```
