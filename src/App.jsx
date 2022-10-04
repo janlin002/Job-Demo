@@ -29,7 +29,7 @@ function App() {
             <Switch>
               {
                 [...HeaderList].map((item)=> (
-                  <Route path={`/${item.to}`} exact component={item.component} key={item.to}></Route>
+                  <Route path={`/${item.to}`} component={item.component} key={item.to}></Route>
                 )
                 )
               }

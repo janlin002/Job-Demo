@@ -8,7 +8,7 @@ function Header(){
   return (
     HeaderList.map((item)=>(
       <button key={item.to} type="button">
-        <Link to={item.to}>{item.name}</Link>
+        <Link to={`/${item.to}`}>{item.name}</Link>
       </button>
     ))
   )
