@@ -48,13 +48,15 @@ day24: [qrcode.react]()
 
 day25: [sweetalert2]()
 
-day26: [html2canvas]()
+<!-- day26: [html2canvas]() -->
 
 day27: [Webpack Bundle Analyzer]()
 
 day28: [lodash]()
 
 day29: [chart.js]()
+
+day?: 遺珠之憾
 
 day30: [結語]()
 

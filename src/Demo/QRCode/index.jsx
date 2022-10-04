@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { useHistory, Link } from 'react-router-dom';
-import QRCode from 'qrcode.react'
+import QRCodeSVG from 'qrcode.react'
 
 const QRcode = () =>{
   const [inputTxt, setInputTxt] = useState('')
@@ -11,9 +11,14 @@ const QRcode = () =>{
     <>
       <input type='text' 
         onChange={(e)=>setInputTxt(e.target.value)}/>
-      <QRCode 
+      <QRCodeSVG 
         value={inputTxt}
+        renderAs='svg'
         size={200}
+        bgColor="black"
+        fgColor="red"
+        level="H"
+        includeMargin="true"
       />
       <button>
         <a href={inputTxt}>
