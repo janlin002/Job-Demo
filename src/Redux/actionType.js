@@ -6,3 +6,5 @@ export const GTE_SAGA_TEST = 'GTE_SAGA_TEST'
 export const GTE_SAGA_TEST_SUCCESS = 'GTE_SAGA_TEST_SUCCESS'
 
 export const TEST = 'TEST'
+
+export const REDUCER_TEST = 'REDUCER_TEST'

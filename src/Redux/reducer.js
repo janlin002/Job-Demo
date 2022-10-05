@@ -4,7 +4,9 @@ import {
   GTE_SAGA_TEST,
   GTE_SAGA_TEST_SUCCESS,
 
-  TEST
+  TEST,
+
+  REDUCER_TEST,
 } from './actionType'
 
 const defaultState = {
@@ -12,7 +14,14 @@ const defaultState = {
   data: {},
   content: {},
 
-  testData: false
+  testData: false,
+
+  me: {
+    name: '',
+    age: '',
+    sex: '',
+    job: ''
+  }
 }
 
 export default (state = defaultState,action)=>{
@@ -45,6 +54,16 @@ export default (state = defaultState,action)=>{
       testData: action.payload
     }
   }
+
+  case REDUCER_TEST: 
+    return {
+      ...state,
+      me: {
+        ...state.me,
+        age: action.payload
+      }
+    }
+  
   default:
     return state
   }

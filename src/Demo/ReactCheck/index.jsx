@@ -7,6 +7,7 @@ import RederProps from './code/renderProps'
 import CantChangeProps from './code/cantChangeProps'
 import DataBinding from './code/dataBinding'
 import BetaContext from './code/betaContext'
+import NestedReducer from './code/nestedReducer'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([]);
@@ -21,7 +22,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <BetaContext />
+      <NestedReducer />
       {/* <div>React-Check</div> */}
     </>
   );
