@@ -7,6 +7,7 @@ import {
   TEST,
 
   REDUCER_TEST,
+  CHANGE_REDUCER_TEST,
 } from './actionType'
 
 const defaultState = {
@@ -56,6 +57,15 @@ export default (state = defaultState,action)=>{
   }
 
   case REDUCER_TEST: 
+    return {
+      ...state,
+      me: {
+        ...state.me,
+        age: action.payload
+      }
+    }
+
+  case CHANGE_REDUCER_TEST:
     return {
       ...state,
       me: {

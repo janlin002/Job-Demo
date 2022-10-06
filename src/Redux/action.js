@@ -5,7 +5,8 @@ import {
   GTE_SAGA_TEST_SUCCESS,
 
   TEST,
-  REDUCER_TEST
+  REDUCER_TEST,
+  CHANGE_REDUCER_TEST
 } from './actionType'
 
 export const changeLang = ( value)=>{
@@ -38,5 +39,9 @@ export const test = (payload) =>({
 
 export const reducerTest = (payload) =>({
   type: REDUCER_TEST,
+  payload
+})
+export const changeReducerTest = (payload) =>({
+  type: CHANGE_REDUCER_TEST,
   payload
 })
