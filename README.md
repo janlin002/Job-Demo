@@ -7,7 +7,7 @@
 
 主要是實驗工作上遇到的問題，或是新的套件練習，會以路由為區分的依據
 
-react version: 17.0.2 -> 18
+react18 測試路徑: /src/Demo/React18/vite-project
 
 ### 套件類:
 
