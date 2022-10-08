@@ -1,5 +1,5 @@
 import React from 'react';
-import Plx from 'react-plx';
+import Plx from "react-plx"
 
 const ReactPlx = () =>{
   const parallaxData = [
@@ -10,7 +10,7 @@ const ReactPlx = () =>{
         {
           startValue: 1,
           endValue: 2,
-          property: 'scale',
+          property: "scale",
         },
       ],
     },
@@ -18,8 +18,7 @@ const ReactPlx = () =>{
   
   return (
     <Plx
-      className='MyAwesomeParallax'
-      parallaxData={ parallaxData }
+      className="MyAwesomeParallax" parallaxData={parallaxData}
     >
       <div>123</div>
     </Plx>

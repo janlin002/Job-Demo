@@ -54,13 +54,13 @@ day25: [sweetalert2]()
 
 day26: [react-loading-skeleton]()
 
-day27: [react-plx]()
+day27: [react-signature-canvas]()
 
-day28: [lodash]()
+<!-- day28: [lodash]() -->
 
-day29: [chart.js]()
+day28: [chart.js]()
 
-day?: 遺珠之憾
+day29: 遺珠之憾
 
 day30: [結語]()
 
