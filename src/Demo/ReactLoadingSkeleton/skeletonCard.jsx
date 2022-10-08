@@ -1,6 +1,6 @@
 // skeleton Loading card
 import React from 'react'
-import Skeleton from 'react-loading-skeleton'
+import Skeleton, { SkeletonTheme} from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
 const SkeletonCard = () =>{
@@ -14,9 +14,10 @@ const SkeletonCard = () =>{
         {Array(9)
           .fill()
           .map((item, index) => (
+            <>
             <li className="card" key={index}>
               <div className="card-image">
-                <Skeleton height={40} width={500} />
+                <Skeleton count={3.5} height={40} width={500} circle={false} />
               </div>
               <h4 className="card-title">
                 <Skeleton height={30} width={`80%`} />
@@ -35,8 +36,15 @@ const SkeletonCard = () =>{
                 </div>
               </div>
             </li>
+            <SkeletonTheme baseColor="#202020" highlightColor="#444">
+            <p>
+                <Skeleton count={3} />
+            </p>
+            </SkeletonTheme>
+            </>
           ))}
       </ul>
+      
     </section>
   )
 }

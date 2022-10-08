@@ -56,6 +56,7 @@ import ReactHookForm from '../../Demo/React-hook-form'
 import theRef from '../../Demo/Ref'
 import HandSign from '../../Demo/handSign'
 import JsPdf from '../../Demo/JsPdf'
+import SweetAlert from '../../Demo/SweetAlert'
 
 const HeaderList = [
   {
@@ -332,6 +333,11 @@ const HeaderList = [
     to: 'jspdf',
     name: 'jspdf',
     component: JsPdf
+  },
+  {
+    to: 'sweet-alert',
+    name: 'sweet-alert',
+    component: SweetAlert
   }
 ]
 

@@ -50,7 +50,11 @@ day25: [sweetalert2]()
 
 <!-- day26: [html2canvas]() -->
 
-day27: [Webpack Bundle Analyzer]()
+<!-- day27: [Webpack Bundle Analyzer]() -->
+
+day26: [react-loading-skeleton]()
+
+day27: [react-plx]()
 
 day28: [lodash]()
 
