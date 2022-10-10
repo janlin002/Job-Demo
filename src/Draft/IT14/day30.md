@@ -25,6 +25,12 @@
 
 在這邊感謝所有參賽者，願意無私的分享自己所學，幫助在學程式的各位小夥伴
 
+這邊推薦兩個我這一屆很喜歡的主題給大家:
+
+[擊敗前端面試大作戰！](https://ithelp.ithome.com.tw/users/20148825/ironman/5299)
+
+[我讀你看](https://ithelp.ithome.com.tw/users/20103315/ironman/5808)
+
 ## 最後的最後
 
 雖然說可能不再參加鐵人賽，不過不定期還是會在我的 [Medium](https://medium.com/@123davidbill) 上面發表文章，如果有興趣的讀者可以去看看，喜歡的話也可以追蹤喔
