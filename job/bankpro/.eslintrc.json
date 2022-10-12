@@ -2,8 +2,7 @@
     "env": {
       "browser": true,
       "es6": true,
-      "node": true,
-      "jsx-control-statements/jsx-control-statements": true
+      "node": true
     },
     // "extends": ["airbnb", "plugin:jsx-control-statements/recommended"],
     "extends": ["react-app", "airbnb"],
@@ -19,7 +18,6 @@
         }
       }
     ],
-    "parser": "babel-eslint",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true
