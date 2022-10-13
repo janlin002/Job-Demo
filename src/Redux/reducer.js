@@ -35,7 +35,7 @@ export default (state = defaultState,action)=>{
     return {
       ...state,
       data: action.payload.data,
-    };
+    }
   }
   case GTE_SAGA_TEST: {
     return {
@@ -57,6 +57,7 @@ export default (state = defaultState,action)=>{
   }
 
   case REDUCER_TEST: 
+    console.log('12345reducer')
     return {
       ...state,
       me: {

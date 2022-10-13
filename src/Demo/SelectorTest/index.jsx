@@ -1,5 +1,5 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from 'react'
+import { useSelector } from 'react-redux'
 import { checkSagaData } from '../../Redux/selector'
 
 const SelectorTest = () =>{
@@ -10,7 +10,7 @@ const SelectorTest = () =>{
     // console.log(arguments.length, 'arguments')
     //arguments 伪数组,遍历伪数组，存入arr中，每循环一次，arr.length的值会加一。进而可以存值
     for (var i = 0; i < arguments.length; i++) {
-      arr[arr.length] = arguments[i];
+      arr[arr.length] = arguments[i]
     }
     return arr
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Bar, Line, Pie, Doughnut } from 'react-chartjs-2';
+import { Bar, Line, Pie, Doughnut } from 'react-chartjs-2'
 
 function Chart(){
   const state = {
@@ -144,4 +144,4 @@ function Chart(){
   )
 }
 
-export default Chart;
+export default Chart

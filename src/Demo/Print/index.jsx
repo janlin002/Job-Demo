@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import photo from '../../assets/image/photo1.png'
 
 const Print = () =>{
@@ -11,44 +11,44 @@ const Print = () =>{
   }
 
   const getBase64 = async(event)=> {
-    const reader = new FileReader();
-    const file = event.target.files[0];
+    const reader = new FileReader()
+    const file = event.target.files[0]
     
     // reader.readAsDataURL(file);
 
     if(file){
-      reader.readAsDataURL(file);
+      reader.readAsDataURL(file)
     }
 
     reader.onload = function (e) {
       setPhotoInfo(e.target.result)
-    };
+    }
 
-    const base64Response = await fetch(photoInfo);
-    const blob = await base64Response.blob();
+    const base64Response = await fetch(photoInfo)
+    const blob = await base64Response.blob()
 
     setPhotoBlob(blob)
   }
 
   function BlobToBase64(blob, callback){
-    const reader = new FileReader();
-    reader.readAsDataURL(blob);
+    const reader = new FileReader()
+    reader.readAsDataURL(blob)
     reader.onload = function (e) {
       callback(e.target.result)
-    };
+    }
   }
 
   function preView(){
-    let reader    = new FileReader();
+    let reader    = new FileReader()
 
     // getImageBlob( url , function(blob){
     //   reader.readAsDataURL(blob);
     // });
 
     reader.onload = function() {
-      var img = document.createElement("img");
-      img.src = photoBlob;
-      document.body.appendChild(img);
+      var img = document.createElement("img")
+      img.src = photoBlob
+      document.body.appendChild(img)
     }
   }
 

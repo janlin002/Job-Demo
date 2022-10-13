@@ -1,3 +1,4 @@
+```js
 import axios from 'axios'
 import {
   tokenInvalidMessageModal,
@@ -33,3 +34,4 @@ export default (() => {
   })
   return instance
 })()
+```

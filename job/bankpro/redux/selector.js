@@ -1,3 +1,3 @@
 export const actionData = (state) => (
-    state.actionData
+  state.actionData
 )

@@ -9,11 +9,11 @@ const SendButton = (handleClick) =>{
 }
 
 const UseCallBack = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState('')
 
   const onClick = useCallback(() => {
     // sendMessage(text);
-  }, []);
+  }, [])
   
   return <SendButton onClick={onClick} />
 }

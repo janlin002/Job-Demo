@@ -14,22 +14,22 @@ function Formiks(){
           // 表單條件
           initialValues={{ email: '', password: '' }}
           validate={values => {
-            const errors = {};
+            const errors = {}
             if (!values.email) {
-              errors.email = '請輸入email';
+              errors.email = '請輸入email'
             } else if (
               !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
-              errors.email = '請輸入正確的email';
+              errors.email = '請輸入正確的email'
             }
-            return errors;
+            return errors
           }}
           // 點擊顯示資料
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 400);
+              alert(JSON.stringify(values, null, 2))
+              setSubmitting(false)
+            }, 400)
           }}
         >
           {({

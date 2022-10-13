@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef } from 'react'
 
 const Ref = () =>{
   const inputRef = useRef(null)
@@ -6,7 +6,7 @@ const Ref = () =>{
   const handleClick = () =>{
     // inputRef.current.focus()
     // inputRef.current.style.backgroundColor = "blue"
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
 
   const handleClickBlur = () =>{

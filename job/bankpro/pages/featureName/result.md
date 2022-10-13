@@ -1,9 +1,11 @@
+```js
 import React from 'react'
 
-const Result = () => {
+function Result() {
   return (
     <div>result</div>
   )
 }
 
 export default Result
+```

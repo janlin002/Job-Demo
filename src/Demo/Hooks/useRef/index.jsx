@@ -36,8 +36,8 @@ const Ref = () =>{
   //     clearInterval(loop)
   //   }
   // }, [])
-  const [count, setCount] = useState(1);
-  const otherRef = useRef(1);
+  const [count, setCount] = useState(1)
+  const otherRef = useRef(1)
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -62,14 +62,14 @@ const Ref = () =>{
       </div>
       <button
         onClick={() => {
-          setCount((prev) => prev + 1);
+          setCount((prev) => prev + 1)
         }}
       >
         使state改變
       </button>
       <button
         onClick={() => {
-          otherRef.current++;
+          otherRef.current++
         }}
       >
         使ref.current改變, 不會rerender

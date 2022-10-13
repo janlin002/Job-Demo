@@ -1,12 +1,12 @@
 // input point
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 // import { Suspense } from 'react';
 // import { fetch } from 'react-fetch';
 // import Skeleton from 'react-loading-skeleton'
 
 import data from './data'
 import BlogList from './blogList'
-import SkeletonCard from './skeletonCard';
+import SkeletonCard from './skeletonCard'
 
 import './index.css'
 
@@ -35,7 +35,7 @@ const Suspences = () =>{
             <BlogList list={list} />
             <hr />
           </div>
-        );
+        )
       })}
       </div>
     </>

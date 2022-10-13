@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 export const todoSlice = createSlice({
   name: "todo",
   initialState: {
@@ -9,14 +9,14 @@ export const todoSlice = createSlice({
   },
   reducers: {
     addTodo: (state, action) => {
-      state.todolist.push(action.payload);
+      state.todolist.push(action.payload)
     },
   },
-});
+})
 
-export const selectTodo = (state) => state.todo;
-export const { addTodo } = todoSlice.actions;
-export default todoSlice.reducer;
+export const selectTodo = (state) => state.todo
+export const { addTodo } = todoSlice.actions
+export default todoSlice.reducer
 
 // initialState：就是放所有狀態初始值
 // reducers：通常是放很多的函式，會有兩個參數state和action

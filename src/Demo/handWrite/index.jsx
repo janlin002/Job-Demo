@@ -6,7 +6,7 @@ const Index = () => {
   var arr = [1, 2, 3, 4, 5]
   function push() {
     for (var i = 0; i < arguments.length; i++) {
-      arr[arr.length] = arguments[i];
+      arr[arr.length] = arguments[i]
     }
     return arr
   }
@@ -63,9 +63,9 @@ const Index = () => {
   // flat
   function flatten(arr) {
     while (arr.some(item => Array.isArray(item))) {
-      arr = [].concat(...arr);
+      arr = [].concat(...arr)
     }
-    return arr;
+    return arr
   }
 
   const flat = flatten([1, [2, [3]]])
@@ -103,17 +103,17 @@ const Index = () => {
 
   // [2, 3, 5, 8, 10]
   function bSort(arr) {
-    var len = arr.length;
+    var len = arr.length
     for (var i = 0; i < len - 1; i++) {
       for (var j = 0; j < len - 1; j++) {
         if (arr[j] > arr[j + 1]) {
-          var temp = arr[j];
-          arr[j] = arr[j+1];
-          arr[j+1] = temp;
+          var temp = arr[j]
+          arr[j] = arr[j+1]
+          arr[j+1] = temp
         }
       }
     }
-    return arr;
+    return arr
   }
 
   const toSort1 = bSort(arr8)
@@ -165,25 +165,25 @@ const Index = () => {
   const arr11 = [1, 2, 3, 4, 5, 6]
   Array.prototype.slice = function (start, end) {
     // 保存结果
-    let res = [];
+    let res = []
     // this指向调用slice方法的数组
-    let len = this.length;
+    let len = this.length
 
     // 確定有傳值
-    start = start === undefined ? 0 : start;
-    end = end === undefined ? len : end;
+    start = start === undefined ? 0 : start
+    end = end === undefined ? len : end
 
-    start = start < 0 ? start + len : start;
-    start = Math.max(0, start); // 算取最大值
+    start = start < 0 ? start + len : start
+    start = Math.max(0, start) // 算取最大值
 
-    end = end < 0 ? end + len : end;
+    end = end < 0 ? end + len : end
     end = Math.min(end, len) // 算取最小值
     
     // 截取[start,end)这个区间的元素
     for (let i = start; i < end; i++) {
       res.push(this[i])
     }
-    return res;
+    return res
   }
 
   const test = arr11.slice(0, 5)
@@ -235,16 +235,16 @@ const Index = () => {
   function showName(){ 
     console.log("Hello")
   }
-  let timerID = setTimeout(showName, 1000);
+  let timerID = setTimeout(showName, 1000)
 
   // 簡易版
   function mysetTimeout(fn, time){
-    let now = Date.now();
-    let flag = true;
+    let now = Date.now()
+    let flag = true
     while(flag){
       if(Date.now() - now >= time){
-        flag = false;
-        fn();
+        flag = false
+        fn()
       }
     }
   }
@@ -253,19 +253,19 @@ const Index = () => {
   // test
 
   function mysetInterval(fn, time){
-    let timeId = null;
-    let isClear = false;
+    let timeId = null
+    let isClear = false
     function interval(){
       if(isClear){
-        isClear = false;
-        clearTimeout(timeId);
+        isClear = false
+        clearTimeout(timeId)
       }else{
-        fn();
-        timeId = setTimeout(interval, time);
+        fn()
+        timeId = setTimeout(interval, time)
       }
     }
-    timeId = setTimeout(interval, time);
-    return () => {isClear = true};
+    timeId = setTimeout(interval, time)
+    return () => {isClear = true}
   }
 
   // mysetInterval(showName, 1000)

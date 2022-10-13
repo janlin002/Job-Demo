@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoogleOAuthProvider, GoogleLogin, useGoogleOneTapLogin, useOneTap } from '@react-oauth/google';
+import { GoogleOAuthProvider, GoogleLogin, useGoogleOneTapLogin } from '@react-oauth/google'
 
 const GoogleAuth = () => {
   return (
@@ -10,7 +10,7 @@ const GoogleAuth = () => {
       >
         <GoogleLogin
           onSuccess={credentialResponse => {
-            console.log(credentialResponse);
+            console.log(credentialResponse)
           }}
           onError={() => {
             console.log('Login Failed')

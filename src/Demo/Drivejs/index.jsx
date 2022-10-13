@@ -1,10 +1,9 @@
-import React from 'react';
-import { useState } from 'react'
+import React, { useState } from 'react'
 // import * as Driver from 'driver.js';
 // import 'driver.js/dist/driver.min.css';
 // import Joyride from 'react-joyride';
-import { Steps, Hints } from 'intro.js-react';
-import 'intro.js/introjs.css';
+import { Steps, Hints } from 'intro.js-react'
+import 'intro.js/introjs.css'
 import './style.css'
 // import introJs from 'intro.js';
 // import 'intro.js/introjs.css'; 
@@ -75,7 +74,7 @@ const Drivejs = () =>{
       element: '#contact',
       intro: 'You can use this button to contact us',
     },
-  ];
+  ]
 
   const hints = [
     {
@@ -91,7 +90,7 @@ const Drivejs = () =>{
       element: '#contact',
       hint: 'test 3',
     },
-  ];
+  ]
   
   return (
     <div>

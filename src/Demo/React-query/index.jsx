@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { QueryClient, QueryClientProvider, useMutation, useQuery } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import axios from 'axios'

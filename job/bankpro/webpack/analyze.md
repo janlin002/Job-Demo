@@ -1,3 +1,4 @@
+```js
 const merge = require('webpack-merge')
 const devConfig = require('./dev')
 
@@ -15,3 +16,4 @@ module.exports = merge(devConfig, {
     })
   ]
 })
+```

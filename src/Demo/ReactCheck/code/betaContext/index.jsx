@@ -1,5 +1,5 @@
-import Heading from './heading';
-import Section from './section';
+import Heading from './heading'
+import Section from './section'
 
 export default function Page() {
   return (
@@ -21,5 +21,5 @@ export default function Page() {
         </Section>
       </Section>
     </Section>
-  );
+  )
 }

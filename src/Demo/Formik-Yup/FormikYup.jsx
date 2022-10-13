@@ -1,6 +1,6 @@
-import React from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
+import React from 'react'
+import { useFormik } from 'formik'
+import * as Yup from 'yup'
 function FormikYup(){
   const formik = useFormik({
     // 初始值
@@ -20,9 +20,9 @@ function FormikYup(){
       email: Yup.string().email('請輸入正確email').required('請輸入email'),
     }),
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      alert(JSON.stringify(values, null, 2))
     },
-  });
+  })
   return (
     <div>
       <h1>formik 搭配 yup</h1>

@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Modal from 'react-modal'
 
 const customStyles = {
   content: {
@@ -11,26 +11,26 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
   },
-};
+}
 
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
-Modal.setAppElement('#root');
+Modal.setAppElement('#root')
 
 const ReactModal=()=> {
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  let subtitle
+  const [modalIsOpen, setIsOpen] = React.useState(false)
 
   function openModal() {
-    setIsOpen(true);
+    setIsOpen(true)
   }
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    subtitle.style.color = '#f00';
+    subtitle.style.color = '#f00'
   }
 
   function closeModal() {
-    setIsOpen(false);
+    setIsOpen(false)
   }
 
   return (
@@ -55,7 +55,7 @@ const ReactModal=()=> {
         </form>
       </Modal>
     </div>
-  );
+  )
 }
 
 export default ReactModal

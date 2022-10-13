@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React from 'react'
 import { useTable } from 'react-table'
 import PropTypes from 'prop-types'
 
@@ -69,7 +69,7 @@ const CustomTab = ({ columns, data }) => {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          <If condition={data.length !== 0}>
+          {/* <If condition={data.length !== 0}>
             {rows.map((row) => {
               prepareRow(row)
               return (
@@ -84,8 +84,8 @@ const CustomTab = ({ columns, data }) => {
                 </tr>
               )
             })}
-          </If>
-          <If condition={data.length === 0}>
+          </If> */}
+          {/* <If condition={data.length === 0}>
             <tr>
               <td colSpan={columns.length}>
                 <div className="d-flex justify-content-center" style={{ height: '20vh', width: '100%' }}>
@@ -97,7 +97,7 @@ const CustomTab = ({ columns, data }) => {
                 </div>
               </td>
             </tr>
-          </If>
+          </If> */}
         </tbody>
       </table>
     </div>

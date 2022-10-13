@@ -1,7 +1,7 @@
 // normal layout
 import React from 'react'
 import Card from './card'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const BlogList = ({ list }) =>{
   return (

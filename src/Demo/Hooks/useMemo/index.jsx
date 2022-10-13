@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback } from 'react'
 
 const UseMemoDemo = () =>{
   // const [firstState, setFirstState] = useState(0)

@@ -1,2 +1,2 @@
-const en = { 'app.learn': 'Learn {name}' };
-export default en;
+const en = { 'app.learn': 'Learn {name}' }
+export default en

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Plx from "react-plx"
 
 const ReactPlx = () =>{
@@ -14,7 +14,7 @@ const ReactPlx = () =>{
         },
       ],
     },
-  ];
+  ]
   
   return (
     <Plx

@@ -1,5 +1,5 @@
-import React from 'react';
-import produce from 'immer';
+import React from 'react'
+// import produce from 'immer'
 import { useImmer } from 'use-immer'
 
 const Immer = () =>{
@@ -25,9 +25,9 @@ const Immer = () =>{
     },
   ]
 
-  const newArray = produce(array, draft =>{
-    draft[0].value = 10
-  })
+  // const newArray = produce(array, draft =>{
+  //   draft[0].value = 10
+  // })
 
   const handleBack18Yr = () =>{
     setName(draft =>{

@@ -41,6 +41,10 @@
 // };
 
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+  },
     extends: [
       // By extending from a plugin config, we can get recommended rules without having to add them manually.
       'eslint:recommended',
@@ -52,6 +56,13 @@ module.exports = {
       // Make sure it's always the last config, so it gets the chance to override other configs.
       'eslint-config-prettier',
     ],
+    parserOptions: {
+          ecmaFeatures: {
+            jsx: true,
+          },
+          ecmaVersion: 'latest',
+          sourceType: 'module',
+        },
     settings: {
       react: {
         // Tells eslint-plugin-react to automatically detect the version of React to use.

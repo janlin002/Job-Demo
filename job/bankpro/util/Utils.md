@@ -1,3 +1,4 @@
+```js
 import dayjs from 'dayjs'
 import forge from 'node-forge'
 
@@ -270,3 +271,4 @@ export const detectOS = () => {
   }
   return os
 }
+```

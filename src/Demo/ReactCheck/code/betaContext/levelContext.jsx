@@ -1,6 +1,6 @@
-import { createContext } from 'react';
+import { createContext } from 'react'
 
 export const LevelContext = createContext({
-    value: 0,
-    hi: 0
-});
+  value: 0,
+  hi: 0
+})

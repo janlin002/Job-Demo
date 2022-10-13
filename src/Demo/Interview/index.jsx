@@ -71,18 +71,18 @@ import React, { useState, useEffect } from 'react'
 // export default A
 
 function ScopeTest(a) {
-  var b = 4;
+  var b = 4
   // function bar() {
   //   console.log(`a:${a},b:${b},c:${c}`); // "a:3,b:4,c:5"
   // }
-  let c = 5;
+  let c = 5
   // console.log(a); // 3
   // console.log(b); // 4
   // console.log(c); // 5
   // bar();
 }
 
-ScopeTest(3);
+ScopeTest(3)
 
 export default ScopeTest()
 // console.log(a);

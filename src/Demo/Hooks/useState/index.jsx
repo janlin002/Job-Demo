@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 
 const UseState = () =>{
   const [a, b] = useState('1')

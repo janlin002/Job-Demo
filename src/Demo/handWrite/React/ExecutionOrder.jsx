@@ -1,26 +1,26 @@
-import React from "react";
+import React from "react"
 
 export function Father() {
   React.useEffect(() => {
-    console.log("Father useEffect");
-  }, []);
+    console.log("Father useEffect")
+  }, [])
 
-  console.log("Father rnder");
+  console.log("Father rnder")
 
-  return <Children />;
+  return <Children />
 }
 
 export function Children() {
   React.useEffect(() => {
-    console.log("Child useEffect");
-  }, []);
+    console.log("Child useEffect")
+  }, [])
 
-  console.log("Child render");
+  console.log("Child render")
 
-  return;
+  return
 }
 
-export default Father;
+export default Father
 
 // Result
 // Father rnder 

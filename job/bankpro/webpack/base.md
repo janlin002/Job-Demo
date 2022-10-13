@@ -1,3 +1,4 @@
+```js
 const webpack = require('webpack')
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -136,3 +137,4 @@ module.exports = {
     new webpack.DefinePlugin({ API_HOST, IS_DEV_ENV }),
   ],
 }
+```

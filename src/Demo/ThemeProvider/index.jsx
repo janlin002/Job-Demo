@@ -1,6 +1,5 @@
-import React from 'react';
-import styled from 'styled-components'
-import { ThemeProvider } from "styled-components";
+import React from 'react'
+import styled, { ThemeProvider } from 'styled-components'
 
 const Button = styled.button`
   font-size: 1em;
@@ -19,7 +18,7 @@ const Button = styled.button`
   /* Color the border and text with theme.main */
   color: ${props => props.theme.main};
   border: 2px solid ${props => props.theme.main};
-`;
+`
 
 Button.defaultProps = {
   theme: {

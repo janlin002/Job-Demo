@@ -3,10 +3,10 @@ import handleValidation from 'react-client-validation'
 import Input from './input'
 
 const ReactClientValidation = () => {
-  const [username, setUsername] = useState(null);
-  const [password, setPassword] = useState(null);
-  const [others, setOthers] = useState(null);
-  const [errorValidation, setErrorValidation] = useState({});
+  const [username, setUsername] = useState(null)
+  const [password, setPassword] = useState(null)
+  const [others, setOthers] = useState(null)
+  const [errorValidation, setErrorValidation] = useState({})
   const handleSubmit = () => {
     const validationArray = [
       {
@@ -19,7 +19,7 @@ const ReactClientValidation = () => {
         errorMessage: "passwords cannot be null",
         customCondition: (data, returnArray) => {
           if (!data) {
-            returnArray.push(false);
+            returnArray.push(false)
           }
         }
       },
@@ -28,19 +28,19 @@ const ReactClientValidation = () => {
         condition: [!others],
         errorMessage: "others cannot be null"
       }
-    ];
+    ]
 
     let [isPass, errorObject] = handleValidation({
       errorArray: validationArray,
       dataSource: password,
       defaultErrorMessage: '啊啊啊啊'
-    });
+    })
     if (isPass) {
-      return alert("isPassed");
+      return alert("isPassed")
     } else {
-      setErrorValidation(errorObject);
+      setErrorValidation(errorObject)
     }
-  };
+  }
   console.log(errorValidation, 'errorValidation')
   return (
     <>

@@ -1,16 +1,16 @@
-import { Input } from "antd";
-import styled from "styled-components";
-import PropTypes from 'prop-types';
-const StyledInput = styled(Input)``;
+import { Input } from "antd"
+import styled from "styled-components"
+import PropTypes from 'prop-types'
+const StyledInput = styled(Input)``
 
 const InputWrapper = styled.div`
   /* margin: 15px 0;
   width: 400px; */
-`;
+`
 
 const ErrorText = styled.div`
   color: red;
-`;
+`
 
 function AntdInput({ text, isError, ...props }) {
   return (
@@ -19,10 +19,10 @@ function AntdInput({ text, isError, ...props }) {
       <StyledInput status={isError && "error"} {...props} />
       <ErrorText>{isError || ""}</ErrorText>
     </InputWrapper>
-  );
+  )
 }
 
-export default AntdInput;
+export default AntdInput
 
 AntdInput.propTypes = {
   text: PropTypes.string.isRequired,

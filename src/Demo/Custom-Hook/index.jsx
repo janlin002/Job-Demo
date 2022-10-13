@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import useValidation from './useValidation';
+import React, { useState, useEffect } from 'react'
+import useValidation from './useValidation'
 
 const CustomHook = ()=>{
   const [custom, setCustom] = useState('')

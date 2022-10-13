@@ -1,8 +1,8 @@
-import React from 'react';
-import Slider from "react-slick";
+import React from 'react'
+import Slider from "react-slick"
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css" 
+import "slick-carousel/slick/slick-theme.css"
 
 // 輪播
 
@@ -13,7 +13,7 @@ const ReactSlick = () =>{
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
-  };
+  }
   return (
     <div>
       <Slider {...settings}>

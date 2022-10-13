@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { checkSaga } from '../Redux/action'
 
@@ -7,13 +7,13 @@ const Main = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(checkSaga())
-  }, []);
+  }, [])
 
   return (
     <div>
       {JSON.stringify(data)}
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

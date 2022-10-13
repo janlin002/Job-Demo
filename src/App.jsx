@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useState, useEffect, Suspense, lazy } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
 import { useSelector } from 'react-redux'
@@ -13,12 +13,13 @@ function App() {
   const lang = useSelector(state=>state.localeLanguage)
   // const locale = navigator.language;
   useEffect(async() => {
+    // eslint-disable-next-line no-undef
     const resp = await fetch(`./lang/${lang}.json`)
     const data = await resp.json()
     setLocale(data)
   },[lang])
 
-  console.log(locale, 'locale')
+  // console.log(locale, 'locale')
 
   return (
     <div>

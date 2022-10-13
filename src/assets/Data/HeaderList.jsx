@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+import { lazy } from 'react'
 const Formik = lazy(()=>import(/* webpackChunkName: "Formik" */'../../Demo/Formik-Yup/Formik'))
 const ReactTable = lazy(()=>import(/* webpackChunkName: "ReactTable" */'../../Demo/Recat-table/ReactTable'))
 const FormikYup = lazy(()=>import(/* webpackChunkName: "FormikYup" */'../../Demo/Formik-Yup/FormikYup.jsx'))
@@ -18,7 +18,7 @@ const HandWrite = lazy(()=>import('../../Demo/handWrite'))
 const ReactCheck = lazy(()=>import('../../Demo/ReactCheck'))
 import ReactIntl from '../../Demo/React-intl/react-intl'
 import Chart from '../../Demo/Chart/chart'
-import Colspan from '../../Demo/colspan/colspan';
+import Colspan from '../../Demo/colspan/colspan'
 import Saga from '../../Demo/checkSaga'
 import JsxControl from '../../Demo/jsx-control-statements'
 import DayJs from '../../Demo/Dayjs'

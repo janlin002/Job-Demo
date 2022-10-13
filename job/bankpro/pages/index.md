@@ -1,14 +1,16 @@
+''`js
 import React from 'react'
 
 import postContent from './featureName'
 import Layout from './Layout'
 
-const Index = () => {
+function Index() {
   return (
     <Layout>
-        <postContent/> 
+      <postContent />
     </Layout>
   )
 }
 
 export default Index
+```

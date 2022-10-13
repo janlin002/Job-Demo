@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useDispatch } from 'react-redux'
 import { changeLang } from '../../Redux/action'
@@ -19,7 +19,7 @@ function ReactIntl(){
       <select
         value={lang}
         onChange={(evt) => {
-          setLang(evt.target.value);
+          setLang(evt.target.value)
           dispatch(changeLang(evt.target.value))
         }}
       >

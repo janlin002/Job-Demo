@@ -1,9 +1,9 @@
-import { configureStore } from "@reduxjs/toolkit";
-import todoReducer from "../slice/todo";
+import { configureStore } from "@reduxjs/toolkit"
+import todoReducer from "../slice/todo"
 
 export default configureStore({
   reducer: {
     todo: todoReducer,
     // 以功能作為區分
   },
-});
+})
