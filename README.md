@@ -5,46 +5,10 @@
   <img src="https://img.shields.io/badge/project%20name-JOB--DEMO-blue" />
 </div>
 
-主要是實驗工作上遇到的問題，或是新的套件練習，會以路由為區分的依據
+主要是實驗工作上遇到的問題，或是新的套件練習，會以路由為區分的依據，筆記部分會放到[issue](https://github.com/janlin002/Job-Demo/issues)，並以 Label 做區分
 
 react18 測試路徑: /src/Demo/React18/vite-project
 
-### 套件類:
 
-[Formik](https://github.com/jaredpalmer/formik)
+不定期會在 [Medium](https://medium.com/@123davidbill), [IT邦幫忙](https://ithelp.ithome.com.tw/#_=_) 發表文章
 
-[React-table](https://github.com/TanStack/react-table)
-
-[intro.js-react](https://github.com/HiDeoo/intro.js-react)
-
-[React-intl]()
-
-[Jsx-control-statements](https://github.com/AlexGilleran/jsx-control-statements)
-
-[DayJs](https://github.com/iamkun/dayjs)
-
-[React-modal](https://github.com/reactjs/react-modal)
-
-[React-Dnd](https://github.com/react-dnd/react-dnd)
-
-[React-Slick](https://github.com/akiran/react-slick)
-
-### 資料管理類
-
-[React-query](https://github.com/tannerlinsley/react-query)
-
-[Immer](https://github.com/immerjs/immer)
-
-[use-immer](https://github.com/immerjs/use-immer)
-
-[Redux-Toolkit](https://github.com/reduxjs/redux-toolkit)
-
-### UI 類
-
-[React-plx](https://github.com/Stanko/react-plx)
-
-[react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
-
-### 其他
-
-....
