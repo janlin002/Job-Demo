@@ -9,6 +9,7 @@ import DataBinding from './code/dataBinding'
 import BetaContext from './code/betaContext'
 import NestedReducer from './code/nestedReducer'
 import EventHandler from './code/EventHandler'
+import StateSnapchat from './code/stateSnapshot'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -23,7 +24,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <EventHandler />
+      <StateSnapchat />
       {/* <div>React-Check</div> */}
     </>
   )
