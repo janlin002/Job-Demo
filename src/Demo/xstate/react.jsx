@@ -1,5 +1,5 @@
 import { useMachine } from '@xstate/react'
-import { createMachine } from 'xstate'
+import { createMachine, interpret } from 'xstate'
 
 const promiseMachine = createMachine({
   id: 'redux-data-flow',
@@ -33,6 +33,17 @@ const promiseMachine = createMachine({
     }
   }
 })
+
+const promiseService = interpret(promiseMachine).onTransition((state) =>
+  console.log(state.value)
+)
+
+// Start the service
+promiseService.start()
+// => 'pending'
+
+promiseService.send({ type: 'RESOLVE' })
+// => 'resolved'
 
 // const ReactXstate = () => {
 //   const [state, send] = useMachine(promiseMachine)
