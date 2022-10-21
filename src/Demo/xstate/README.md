@@ -1,1 +1,3 @@
-![Redux-saga-data-flow](./%E6%88%AA%E5%9C%96%202022-10-21%20%E4%B8%8A%E5%8D%8810.27.35.png)
+## 使用 Xstate 模擬 Redux-saga 的執行過程
+
+![Redux-saga-data-flow](./redux-saga-data-flow.png)
