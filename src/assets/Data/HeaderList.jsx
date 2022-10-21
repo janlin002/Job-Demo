@@ -57,6 +57,7 @@ import theRef from '../../Demo/Ref'
 import HandSign from '../../Demo/handSign'
 import JsPdf from '../../Demo/JsPdf'
 import SweetAlert from '../../Demo/SweetAlert'
+import Xstate from '../../Demo/xstate/react'
 
 const HeaderList = [
   {
@@ -338,6 +339,11 @@ const HeaderList = [
     to: 'sweet-alert',
     name: 'sweet-alert',
     component: SweetAlert
+  },
+  {
+    to: 'react-xstate',
+    name: 'react-xstate',
+    component: Xstate
   }
 ]
 
