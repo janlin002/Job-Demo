@@ -2,6 +2,7 @@ import React from 'react'
 import { QueryClient, QueryClientProvider, useMutation, useQuery } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import axios from 'axios'
+import Index2 from './index2'
 
 const ReactQuery = () =>{
   const queryClient = new QueryClient()
@@ -16,24 +17,27 @@ const fetchPlanets = async () => {
   // const res = await fetch('https://swapi.dev/api/planets/')
   // return res.json()
   const { data } = await axios.get('https://swapi.dev/api/planets/')
-
-  console.log(data, 'data')
   
   return data
 }
+export const useTodos = () => useQuery(['userData'], fetchPlanets, {
+  enabled: false
+})
 
 const Example = () =>{
   const [page, setPage] = React.useState(1) 
   
-  const { data, isLoading, isError, isSuccess } = useQuery(
-    ['userData', page],
-    fetchPlanets, 
-  )
+  // const { data, isLoading, isError, isSuccess } = useQuery(
+  //   ['userData', page],
+  //   fetchPlanets, 
+  // )
 
-  console.log({ data, isLoading, isError }, 'axios')
-  if (isLoading) return 'Loading...'
+  const {  data, isLoading, isError, isSuccess, refetch } = useTodos()
 
-  if(isError) return 'Error...'
+  // console.log({ data, isLoading, isError }, 'axios')
+  // if (isLoading) return 'Loading...'
+
+  // if(isError) return 'Error...'
 
   // const mutation = useMutation(
   //   async (data)=>{
@@ -54,9 +58,15 @@ const Example = () =>{
   //   }
   // )
 
+  const handleButtonClick = () =>{
+    console.log('12')
+    refetch()
+    useTodos()
+  }
+
   return (
     <div>
-      {isSuccess &&
+      {/* {isSuccess &&
         data.results.map((planet) => {
           return (
             <div key={planet.name} style={{ width: '200px' }}>
@@ -67,7 +77,9 @@ const Example = () =>{
               </div>
             </div>
           )
-        })}
+        })} */}
+      <button type="button" onClick={()=>handleButtonClick()}>點擊</button>
+      <Index2 />
       {/* <button 
         type="button"
         onClick={mutation.mutate('David')}>
