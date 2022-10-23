@@ -58,6 +58,8 @@ import HandSign from '../../Demo/handSign'
 import JsPdf from '../../Demo/JsPdf'
 import SweetAlert from '../../Demo/SweetAlert'
 import Xstate from '../../Demo/xstate/react'
+import AutoComplete from '../../Demo/autoComplete'
+import InfinityScroll from '../../Demo/infinityScroll'
 
 const HeaderList = [
   {
@@ -344,6 +346,16 @@ const HeaderList = [
     to: 'react-xstate',
     name: 'react-xstate',
     component: Xstate
+  },
+  {
+    to: 'auto-complete',
+    name: 'auto-complete',
+    component: AutoComplete
+  },
+  {
+    to: 'infinity-scroll',
+    name: 'infinity-scroll',
+    component: InfinityScroll
   }
 ]
 
