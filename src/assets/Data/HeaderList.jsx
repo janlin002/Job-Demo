@@ -60,6 +60,7 @@ import SweetAlert from '../../Demo/SweetAlert'
 import Xstate from '../../Demo/xstate/react'
 import AutoComplete from '../../Demo/autoComplete'
 import InfinityScroll from '../../Demo/infinityScroll'
+import ReactDnD from '../../Demo/React-beautiful-dnd'
 
 const HeaderList = [
   {
@@ -356,6 +357,11 @@ const HeaderList = [
     to: 'infinity-scroll',
     name: 'infinity-scroll',
     component: InfinityScroll
+  },
+  {
+    to: 'react-dnd',
+    name: 'react-dnd',
+    component: ReactDnD
   }
 ]
 
