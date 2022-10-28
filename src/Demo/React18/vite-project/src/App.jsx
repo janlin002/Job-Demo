@@ -1,11 +1,11 @@
 import React from 'react'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
-import Test from './test.jsx'
+import Test from './Demo/test.jsx'
 
 const Header = () =>{
   return (
-    <div>123</div>
+    <Link to="/test">Test</Link>
   )
 }
 
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/test'" component={Test} />
+        <Route path="/test" element={<Test /> } />
       </Routes>
     </Router>
   )
