@@ -8,10 +8,13 @@
 
 ## Hooks
 
-- use
-- use
-- use
+- useTransition
+- useDeferredValue
+- useId
 - use
 - use
 
 P.S. 文章下方會留下參考文獻
+
+## useTransition vs useDeferredValue
+體驗下來感覺這兩個使用起來差不多，都是將事件狀態改成`Non-urgent`，不過可監聽的對象數量不一樣，`useTransition`可針對多個狀態一次改成`Non-urgent`，`useDeferredValue`感覺是針對單一狀態去改變
