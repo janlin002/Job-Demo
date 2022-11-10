@@ -61,6 +61,7 @@ import Xstate from '../../Demo/xstate/react'
 import AutoComplete from '../../Demo/autoComplete'
 import InfinityScroll from '../../Demo/infinityScroll'
 import ReactDnD from '../../Demo/React-beautiful-dnd'
+import ReactCondition from '../../Draft/React-Condition'
 
 const HeaderList = [
   {
@@ -362,6 +363,11 @@ const HeaderList = [
     to: 'react-dnd',
     name: 'react-dnd',
     component: ReactDnD
+  },
+  {
+    to: 'react-condition',
+    name: 'react-condition',
+    component: ReactCondition
   }
 ]
 
