@@ -2,7 +2,7 @@
 
 這邊的文章會跟 [Hackmd](https://hackmd.io/?nav=overview) 同步
 
-### 好文推薦
+### 文章推薦
 
 **React**
 
