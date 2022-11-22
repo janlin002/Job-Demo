@@ -10,3 +10,5 @@
 
 **優化**
 [CWV](https://awoo.ai/zh-hant/blog/core-web-vitals-guide/#%E4%BB%80%E9%BA%BC%E6%98%AF_Core_Web_Vitals%EF%BC%9F)
+
+[Web-vitals](https://gcdeng.com/blog/a-guidebook-to-optimize-web-vitals#%E8%BC%89%E5%85%A5%E9%80%9F%E5%BA%A6loading-performance)
