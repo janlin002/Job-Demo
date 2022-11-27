@@ -20,3 +20,5 @@
 [Hydration](https://hackmd.io/@SyqQnpPDTG-JiscjHKTJKA/BkNYAnQ8c#14-hydration-%E7%9A%84%E5%95%8F%E9%A1%8C)
 
 [React Hydrate](https://blog.saeloun.com/2021/12/16/hydration.html) -> 大推
+
+[SOLID](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898) -> 大推
