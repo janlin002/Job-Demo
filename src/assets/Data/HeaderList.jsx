@@ -16,6 +16,7 @@ const ReactClientValidation = lazy(()=>import('../../Demo/ReactClientValidation'
 const Swiper = lazy(()=>import('../../Demo/Swiper'))
 const HandWrite = lazy(()=>import('../../Demo/handWrite'))
 const ReactCheck = lazy(()=>import('../../Demo/ReactCheck'))
+const GoogleMapReact = lazy(()=>import('../../Demo/GoogleMapReact'))
 import ReactIntl from '../../Demo/React-intl/react-intl'
 import Chart from '../../Demo/Chart/chart'
 import Colspan from '../../Demo/colspan/colspan'
@@ -368,6 +369,11 @@ const HeaderList = [
     to: 'react-condition',
     name: 'react-condition',
     component: ReactCondition
+  },
+  {
+    to: 'google-map-react',
+    name: 'google-map-react',
+    component: GoogleMapReact
   }
 ]
 
