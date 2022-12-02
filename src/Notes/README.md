@@ -10,6 +10,9 @@
 
 [React-Hook-LifeCycle](https://blog.bhanuteja.dev/the-lifecycle-of-react-hooks-component) -> 大推
 
+**Next**
+[Next vs Remix](https://juejin.cn/post/7067454063708749860)
+
 **優化**
 
 [CWV](https://awoo.ai/zh-hant/blog/core-web-vitals-guide/#%E4%BB%80%E9%BA%BC%E6%98%AF_Core_Web_Vitals%EF%BC%9F)
@@ -18,6 +21,12 @@
 
 **Git**
 [Use Git like a senior engineer](https://levelup.gitconnected.com/use-git-like-a-senior-engineer-ef6d741c898e)
+
+**CORS**
+
+[what-is-cors](https://shubo.io/what-is-cors/)
+
+[cors](https://ithelp.ithome.com.tw/articles/10226262)
 
 **其他**
 [Rendering Pattern](https://pjchender.dev/react/note-react-rendering-pattern/#streaming-server-rendering-with-suspense)
