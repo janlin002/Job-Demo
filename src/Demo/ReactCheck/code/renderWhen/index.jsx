@@ -15,3 +15,5 @@ export function App() {
     </RenderWhen>
   )
 }
+
+// article: https://blog.bitsrc.io/react-beautiful-conditional-rendering-with-renderwhen-d8e4d5d962a2

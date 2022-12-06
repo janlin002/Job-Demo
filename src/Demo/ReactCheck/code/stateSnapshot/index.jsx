@@ -1,7 +1,11 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export default function Counter() {
   const [number, setNumber] = useState(0)
+
+  React.useEffect(()=>{
+    console.log('123')
+  }, [number])
 
   return (
     <>
