@@ -11,6 +11,7 @@
 [React-Hook-LifeCycle](https://blog.bhanuteja.dev/the-lifecycle-of-react-hooks-component) -> 大推
 
 **Next**
+
 [Next vs Remix](https://juejin.cn/post/7067454063708749860)
 
 **優化**
@@ -28,7 +29,16 @@
 
 [cors](https://ithelp.ithome.com.tw/articles/10226262)
 
+**前端面試**
+
+[前端面試總結，中國中小廠公司](https://juejin.cn/post/7146151385707315213)
+
+**面試心得**
+
+[日本東京](https://tigercosmos.xyz/post/2022/06/japan/new-grad-find-swe-job-in-japan/)
+
 **其他**
+
 [Rendering Pattern](https://pjchender.dev/react/note-react-rendering-pattern/#streaming-server-rendering-with-suspense)
 
 [Hydration](https://hackmd.io/@SyqQnpPDTG-JiscjHKTJKA/BkNYAnQ8c#14-hydration-%E7%9A%84%E5%95%8F%E9%A1%8C)

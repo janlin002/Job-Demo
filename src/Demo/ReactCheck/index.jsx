@@ -10,6 +10,7 @@ import BetaContext from './code/betaContext'
 import NestedReducer from './code/nestedReducer'
 import EventHandler from './code/EventHandler'
 import StateSnapchat from './code/stateSnapshot'
+// import RenderWhen from './code/renderWhen'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
