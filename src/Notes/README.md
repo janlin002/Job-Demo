@@ -4,6 +4,10 @@
 
 ### 文章推薦
 
+**JavaScript**
+
+[4 cool js](https://javascript.plainenglish.io/4-cool-modern-javascript-features-most-developers-dont-know-about-c2c45104427c)
+
 **React**
 
 [React useEffect & useLayoutEffect](https://blog.bhanuteja.dev/the-lifecycle-of-react-hooks-component)
