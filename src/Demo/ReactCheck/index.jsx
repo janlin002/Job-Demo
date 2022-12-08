@@ -11,6 +11,7 @@ import NestedReducer from './code/nestedReducer'
 import EventHandler from './code/EventHandler'
 import StateSnapchat from './code/stateSnapshot'
 // import RenderWhen from './code/renderWhen'
+import TwoEffectTest from './code/twpEffectTest'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -25,7 +26,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <StateSnapchat />
+      <TwoEffectTest />
       {/* <div>React-Check</div> */}
     </>
   )
