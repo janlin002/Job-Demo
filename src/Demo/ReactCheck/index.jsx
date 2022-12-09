@@ -12,6 +12,7 @@ import EventHandler from './code/EventHandler'
 import StateSnapchat from './code/stateSnapshot'
 // import RenderWhen from './code/renderWhen'
 import TwoEffectTest from './code/twpEffectTest'
+import JsxCondition from './code/jsxCondition'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -26,7 +27,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <TwoEffectTest />
+      <JsxCondition />
       {/* <div>React-Check</div> */}
     </>
   )
