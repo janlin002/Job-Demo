@@ -18,6 +18,8 @@
 
 [React-Hook-LifeCycle](https://blog.bhanuteja.dev/the-lifecycle-of-react-hooks-component) -> 大推
 
+[React 揭秘](https://react.iamkasong.com/)
+
 **Next**
 
 [Next vs Remix](https://juejin.cn/post/7067454063708749860)

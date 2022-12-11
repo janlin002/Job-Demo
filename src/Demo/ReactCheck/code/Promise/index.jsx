@@ -21,6 +21,7 @@ const index = () => {
     }, (fail) => {
       console.log(fail)
     })
+    
   return (
     <div>index</div>
   )

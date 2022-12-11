@@ -13,6 +13,9 @@ import StateSnapchat from './code/stateSnapshot'
 // import RenderWhen from './code/renderWhen'
 import TwoEffectTest from './code/twpEffectTest'
 import JsxCondition from './code/jsxCondition'
+import UbikeApiTest from './code/ubikeApiTest'
+import MusicDad from './code/musicDad'
+import Promise from './code/Promise'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -27,7 +30,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <JsxCondition />
+      <Promise />
       {/* <div>React-Check</div> */}
     </>
   )
