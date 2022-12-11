@@ -64,6 +64,8 @@ import InfinityScroll from '../../Demo/infinityScroll'
 import ReactDnD from '../../Demo/React-beautiful-dnd'
 import ReactCondition from '../../Draft/React-Condition'
 
+import WebDevSimplified from '../../WebDevSimplified'
+
 const HeaderList = [
   {
     to: 'formik',
@@ -374,6 +376,11 @@ const HeaderList = [
     to: 'google-map-react',
     name: 'google-map-react',
     component: GoogleMapReact
+  },
+  {
+    to: 'web-dev-simplified',
+    name: 'web-dev-simplified',
+    component: WebDevSimplified
   }
 ]
 
