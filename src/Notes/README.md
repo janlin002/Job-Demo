@@ -12,6 +12,10 @@
 
 [== vs === vs Object.is()](https://juejin.cn/post/6844903917176750088)
 
+[mutable vs immutable](https://ithelp.ithome.com.tw/articles/10234554)
+
+[JSON stringty vs parse 用法](https://medium.com/itsems-frontend/javascript-json-stringify-and-json-parse-7a1251d3824c) -> 大推
+
 **React**
 
 [React useEffect & useLayoutEffect](https://blog.bhanuteja.dev/the-lifecycle-of-react-hooks-component)
@@ -62,3 +66,5 @@
 [SOLID](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898) -> 大推
 
 [SOLID - 中文解說](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html) -> 大推
+
+[台灣的工程師分析](https://m.gamer.com.tw/forum/C.php?bsn=60076&snA=5444020) -> 大推
