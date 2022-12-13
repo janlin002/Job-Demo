@@ -16,6 +16,8 @@ import JsxCondition from './code/jsxCondition'
 import UbikeApiTest from './code/ubikeApiTest'
 import MusicDad from './code/musicDad'
 import Promise from './code/Promise'
+import ReactTableSpan from './code/reactTableSpan'
+import ReactTableHeaderGroup from './code/reactTableHeaderGroup'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -30,7 +32,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <Promise />
+      <ReactTableSpan />
       {/* <div>React-Check</div> */}
     </>
   )
