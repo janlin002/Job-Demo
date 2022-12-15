@@ -19,6 +19,8 @@ import Promise from './code/Promise'
 import ReactTableSpan from './code/reactTableSpan'
 import ReactTableHeaderGroup from './code/reactTableHeaderGroup'
 import Interview from './code/interview'
+import UseRef from './code/useRef'
+import SixHooksMistakes from './code/6HooksMistakes'
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -33,7 +35,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <Interview />
+      <SixHooksMistakes />
       {/* <div>React-Check</div> */}
     </>
   )

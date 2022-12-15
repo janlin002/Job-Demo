@@ -70,3 +70,5 @@
 [SOLID - 中文解說](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html) -> 大推
 
 [台灣的工程師分析](https://m.gamer.com.tw/forum/C.php?bsn=60076&snA=5444020) -> 大推
+
+[關注點分離](https://nissentech.org/frontend-soc-evolution/)
