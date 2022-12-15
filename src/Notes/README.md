@@ -16,6 +16,8 @@
 
 [JSON stringty vs parse 用法](https://medium.com/itsems-frontend/javascript-json-stringify-and-json-parse-7a1251d3824c) -> 大推
 
+[IIFE](https://ithelp.ithome.com.tw/articles/10250445)
+
 **React**
 
 [React useEffect & useLayoutEffect](https://blog.bhanuteja.dev/the-lifecycle-of-react-hooks-component)
