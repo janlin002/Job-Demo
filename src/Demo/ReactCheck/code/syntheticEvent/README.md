@@ -135,7 +135,115 @@ React 事件：父元素事件监听！
 3. 所以会先执行原生事件，然后处理 React 事件；
 4. 最后真正执行 document 上挂载的事件。
 
-## 事件委派(Event Delegation)
+## 綁定事件的方法
+1. 行內 HTML 事件綁定: js 和 html 代碼耦合了。
+```js
+<div onclick="handleClick()">
+  test
+</div>
+<script>
+  let handleClick = function(){
+    // 一些處理代碼..
+  }
+
+  handleClick = function(){}
+</script>
+```
+2. 事件處理器屬性: 作爲屬性使用，一次只能綁定一個事件，多次賦值會覆蓋，只能處理冒泡階段。
+```js
+<div id="test">
+  test
+</div>
+<script>
+  let target = document.getElementById('test')
+  // 綁定事件
+  target.onclick = function(){
+    // 一些處理代碼..
+  }
+  target.onclick = function(){
+    // 另外一些處理代碼...會覆蓋上面的
+  }
+  // 移除事件
+  target.onclick = null
+</script>
+```
+3. addEventListener: 就是爲了綁定事件而生的 api，拓展性最強
+```js
+<div id="test">
+  test
+</div>
+<script>
+  let target = document.getElementById('test')
+  // 綁定事件
+  let funcA = function(){
+    // 一些處理代碼..
+  }
+  let funcB = function(){
+    // 一些處理代碼..
+  }
+  // 添加冒泡階段監聽器
+  target.addEventListener('click',funcA,false)
+  // 添加捕獲階段監聽器
+  target.addEventListener('click',funcB,true)
+  // 移除監聽器
+  target.removeEventListener('click', funcA)
+</script>
+```
+
+## 事件委派
+當節點的數量較多時，如果給每個節點都進行事件綁定的話，內存消耗大，可將事件綁定到其父節點上統一處理，減少事件綁定的數量。
+
+**合成事件就是使用這個概念**
+
+> 事件委派是一種綁定事件的模式，將多個回呼邏輯綁定在同一個上層節點
+
+什麼時候使用?
+過多重複的監聽器 — 10*10的按鈕 掛載一百個重複的click事件
+掛載、移除事件是有成本的 — removeEventListener 超級麻煩
+
+```js
+<div class="parent">
+  <div class="child" data-name="a"></div>
+  <div class="child" data-name="b"></div>
+  <div class="child" data-name="c"></div>
+  <div class="subitem" data-name="d"></div>
+</div>
+
+$('.parent').on('click', '.child', function(){
+  console.log($(this).data('name'));
+});
+```
+將 click 事件綁在 parent 上，藉由 Event Bubbling 傳遞給 child，而非直接將事件綁定在 child 上。優點是可減少監聽器的數目，缺點是由於需要判斷哪些 child node 是我們有興趣的項目
+
+## 瀏覽器事件差異
+React透過合成事件去抹平瀏覽器事件差異
+
+```js
+// 阻止事件傳播
+function stopPropagation(e){
+  if(typeof e.stopPropagation === 'function'){
+    e.stopPropagation()
+  }else{
+    // 兼容ie
+    e.cancelBubble = true
+  }
+}
+// 阻止默認事件
+function preventDefault(e){
+  if(typeof e.preventDefault === 'function'){
+    e.preventDefault()
+  }else{
+    // 兼容ie
+    e.returnValue = false
+  }
+}
+// 獲取事件觸發元素
+function getEventTarget(e){
+  let target = e.target || e.srcElement || window;
+}
+// 還有事件的各種屬性如e.relatedTarget等等
+```
+
 
 ## 合成事件 event pool (16版以前，17版以後已不支持)
 
@@ -159,3 +267,7 @@ React 可透過 e.nativeEvent 属性获取 DOM 事件
 https://segmentfault.com/a/1190000038251163
 
 https://www.readfog.com/a/1685671250120249344
+
+https://www.readfog.com/a/1634367755893444608
+
+https://www.cythilya.tw/2015/07/08/javascript-event-delegation/
