@@ -65,7 +65,8 @@ const InfinityScroll = lazy(()=>import('../../Demo/infinityScroll'))
 const ReactDnD = lazy(()=>import('../../Demo/React-beautiful-dnd')) 
 const ReactCondition = lazy(()=>import('../../Draft/React-Condition')) 
 
-import WebDevSimplified from '../../WebDevSimplified'
+const WebDevSimplified = lazy(()=>import('../../WebDevSimplified'))
+const CssUnitTest = lazy(()=>import('../../Demo/cssUnitTest'))
 
 const HeaderList = [
   {
@@ -382,6 +383,11 @@ const HeaderList = [
     to: 'web-dev-simplified',
     name: 'web-dev-simplified',
     component: WebDevSimplified
+  },
+  {
+    to: 'css-unit',
+    name: 'css-unit',
+    component: CssUnitTest
   }
 ]
 

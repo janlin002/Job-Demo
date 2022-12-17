@@ -27,6 +27,10 @@ const ReactCheck = () => {
 
   const a = [100, 200, 300]
 
+  React.useEffect(()=>{
+    setCount('1')
+  }, [])
+
   // for(var i = 0; i < 3; i++){
   //   setTimeout(function(i){
   //     console.log(i, a[i])
