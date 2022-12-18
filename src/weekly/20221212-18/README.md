@@ -5,3 +5,11 @@
 3. JSON stringty vs JSON parse 進階用法: https://medium.com/itsems-frontend/javascript-json-stringify-and-json-parse-7a1251d3824c
 
 4. CSS 單位換算: https://ithelp.ithome.com.tw/articles/10222932
+
+5. 什麼是 DOM? : https://ithelp.ithome.com.tw/articles/10202689
+
+6. CSS display: https://ytclion.medium.com/css%E6%95%99%E5%AD%B8-%E9%97%9C%E6%96%BCdisplay-inline-inline-block-block%E7%9A%84%E5%B7%AE%E5%88%A5-1034f38eda82
+
+7. 前端必須知道的網路知識(推): https://progressbar.tw/posts/53
+
+8. javaScript GC機制(推): https://juejin.cn/post/7116443316094238751
