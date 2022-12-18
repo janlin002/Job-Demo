@@ -13,3 +13,5 @@
 7. 前端必須知道的網路知識(推): https://progressbar.tw/posts/53
 
 8. javaScript GC機制(推): https://juejin.cn/post/7116443316094238751
+
+9. useReducer vs redux: https://medium.com/hannah-lin/react-hook-%E7%AD%86%E8%A8%98-usereducer-%E7%9C%9F%E7%9A%84%E8%83%BD%E5%AE%8C%E5%85%A8%E5%8F%96%E4%BB%A3-redux-%E5%97%8E-fabcc1e9b400
