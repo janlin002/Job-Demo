@@ -6,9 +6,9 @@
 
 ## 2022
 
-[12/12-18]()
+[12/12-18](https://github.com/janlin002/Job-Demo/tree/master/src/weekly/20221212-18)
 
-[12/19-25]()
+[12/19-25](https://github.com/janlin002/Job-Demo/tree/master/src/weekly/20221219-25)
 
 [12/26-1/2]()
 
