@@ -1,0 +1,43 @@
+.outBlock {
+    position: relative;
+  }
+  
+  .textBlock {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .textBlock::before {
+    content: attr(data-content);
+    position: absolute;
+    top: -30px;
+    height: 40px;
+    overflow: hidden;
+    color: rgba(0,0,0,0.7)
+  }
+  
+  .textBlock::after {
+    content: attr(data-content);
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    height: 40px;
+    overflow: hidden;
+    color: rgba(0,0,0,0.2)
+  }
+
+  /* div {
+    color: #afa;
+  }
+  div::before{
+    content: '我是前面的偽元素';
+    color: #faa;
+  }
+  
+  div::after{
+    content: '我是後面的偽元素';
+    color: #aaf;
+  } */

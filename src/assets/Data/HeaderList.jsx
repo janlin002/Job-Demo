@@ -68,6 +68,10 @@ const ReactCondition = lazy(()=>import('../../Draft/React-Condition'))
 const WebDevSimplified = lazy(()=>import('../../WebDevSimplified'))
 const CssUnitTest = lazy(()=>import('../../Demo/cssUnitTest'))
 
+const CssPseudo = lazy(()=>import('../../Demo/cssPseudo'))
+const CssModule = lazy(()=>import('../../Demo/cssModule'))
+const StyledComponent = lazy(()=>import('../../Demo/styledComponent'))
+
 const HeaderList = [
   {
     to: 'formik',
@@ -388,6 +392,21 @@ const HeaderList = [
     to: 'css-unit',
     name: 'css-unit',
     component: CssUnitTest
+  },
+  {
+    to: 'css-pseudo',
+    name: 'css-pseudo',
+    component: CssPseudo
+  },
+  {
+    to: 'css-module',
+    name: 'css-module',
+    component: CssModule
+  },
+  {
+    to: 'styled-components',
+    name: 'styled-components',
+    component: StyledComponent
   }
 ]
 

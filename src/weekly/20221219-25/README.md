@@ -5,3 +5,9 @@
 3. npm vs yarn vs pnpm (寫得非常清楚): https://www.readfog.com/a/1673072431709917184
 
 4. vite vs webpack: https://hackmd.io/@Yan06/S1ENNtiUc
+
+5. URL 組成: https://blog.51cto.com/u_12020737/3090825
+
+6. Port 像是分機號碼: https://pala.tw/what-is-port/
+
+7. styled-components 的使用感受: https://juejin.cn/post/6968034561791885319

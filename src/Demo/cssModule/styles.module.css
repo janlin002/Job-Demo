@@ -1,0 +1,9 @@
+@value colors: "./colors.module.css";
+@value blue from colors;
+
+.textContent{
+    color: blue
+}
+/* .borderContent{
+    composes: borderColor form './border.module.css'
+} */

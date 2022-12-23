@@ -1,9 +1,10 @@
-### what is component?
+### what is Component?
 reusable UI elements for your app
 
 componentの概念: compose(組成) & reuse(重用)
 
 A React component is a JavaScript function that you can sprinkle with markup
+
 React 組件是一個 JavaScript 函數，您可以在其中添加標記
 
 

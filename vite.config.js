@@ -6,9 +6,23 @@ import eslint from 'vite-plugin-eslint'
 
 export default defineConfig({
   plugins: [
-    react(), 
+    // react(), 
     eslint(),
     viteTsconfigPaths(), 
-    svgrPlugin(), 
+    svgrPlugin(),
+    react({
+      babel: {
+        plugins: [
+          [
+            'babel-plugin-styled-components',
+            {
+              displayName: true,
+              fileName: false
+            }
+          ]
+        ]
+      }
+    }) 
   ],
+
 })
