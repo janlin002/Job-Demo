@@ -71,6 +71,7 @@ const CssUnitTest = lazy(()=>import('../../Demo/cssUnitTest'))
 const CssPseudo = lazy(()=>import('../../Demo/cssPseudo'))
 const CssModule = lazy(()=>import('../../Demo/cssModule'))
 const StyledComponent = lazy(()=>import('../../Demo/styledComponent'))
+const CssPosition = lazy(()=>import('../../Demo/cssPosition'))
 
 const HeaderList = [
   {
@@ -407,6 +408,11 @@ const HeaderList = [
     to: 'styled-components',
     name: 'styled-components',
     component: StyledComponent
+  },
+  {
+    to: 'css-position',
+    name: 'css-position',
+    component: CssPosition
   }
 ]
 

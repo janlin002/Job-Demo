@@ -1,0 +1,14 @@
+.absolute div{
+    border: 1px solid red
+}
+
+.absolute .b{
+    position: relative;
+}
+
+.absolute .c{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid blue
+}
