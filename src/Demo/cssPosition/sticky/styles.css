@@ -1,0 +1,23 @@
+.box{
+    height: 100vh;
+    display: flex;
+  }
+  .wrap .box:nth-of-type(odd){
+    background-color: #ddd;
+  }
+  .wrap .box:nth-of-type(even){
+    background-color: #aaa;
+  }
+  .sticky{
+    width: 100px;
+    font-size: 15px;
+    height: 100px;
+    background-color: red;
+    color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+  }
