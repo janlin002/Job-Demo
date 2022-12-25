@@ -1,0 +1,44 @@
+.relative{
+    
+}
+.relative div{
+    display: inline-block;
+    width: 30px;
+    background-color: red;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.relative .item3{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    background-color: blueviolet;
+}
+
+/* 7 8 z-index */
+/* 後面的 position: relative 會改到前面的位置，如果想要換上來需要加上 z-index: 1 */
+
+.relative .item7{
+    position: relative;
+    left: 30px;
+    background-color:darkgoldenrod;
+    /* z-index: 1 */
+}
+.relative .item8{
+    position: relative;
+    background-color:yellowgreen;
+}
+
+/* 10 11 互換位置*/
+
+.relative .item10{
+    position: relative;
+    left: 40px;
+    background-color:aqua;
+}
+.relative .item11{
+    position: relative;
+    left: -40px;
+    background-color:brown;
+}

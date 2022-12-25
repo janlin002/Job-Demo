@@ -39,5 +39,7 @@ export default Index
 
 /**
  * 永遠固定在視窗上
- * 如果沒有特別設定位置的話，位置會再以排版位置為準
+ * 如果沒有特別設定位置(top left right bottom )的話，位置會再以排版位置為準
+ * 
+ * 影片教學: https://www.youtube.com/watch?v=6jwl-XEpXLk
  */
