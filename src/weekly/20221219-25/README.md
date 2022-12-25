@@ -11,3 +11,5 @@
 6. Port 像是分機號碼: https://pala.tw/what-is-port/
 
 7. styled-components 的使用感受: https://juejin.cn/post/6968034561791885319
+
+8. 事件捕獲與冒泡: https://hackmd.io/@Heidi-Liu/note-fe201-dom

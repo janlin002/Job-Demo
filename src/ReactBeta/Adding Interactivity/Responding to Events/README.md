@@ -117,7 +117,7 @@ export default function Toolbar() {
 ```
 
 ## Preventing default behavior
-某些瀏覽器事件具有與之關聯的默認行為。例如，一個 <form> 提交事件，當它裡面的一個按鈕被點擊時發生，默認情況下會重新加載整個頁面，這時候我們會需要用到 `e.preventDefault()`，去阻止預設行為
+某些瀏覽器事件具有與之關聯的默認行為。例如，一個 `<form>` 提交事件，當它裡面的一個按鈕被點擊時發生，默認情況下會重新加載整個頁面，這時候我們會需要用到 `e.preventDefault()`，去阻止預設行為
 
 (記得原生 js 只需要加上 return 就好了)
 
@@ -137,4 +137,5 @@ export default function Signup() {
 ```
 
 > e.stopPropagation() stops the event handlers attached to the tags above from firing.
+
 > e.preventDefault() prevents the default browser behavior for the few events that have it.
