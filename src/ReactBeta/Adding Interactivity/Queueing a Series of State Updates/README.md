@@ -8,7 +8,7 @@
 
 > This might remind you of a waiter taking an order at the restaurant. A waiter doesn’t run to the kitchen at the mention of your first dish! Instead, they let you finish your order, let you make changes to it, and even take orders from other people at the table.
 
-翻成中文大概是: 當你還在點餐的時候，服務生不會一直去廚房說你的需求，會等你全部點完以後，才會一次跟主廚說，你要點什麼
+翻成中文大概是: 當你還在點餐的時候，服務生不會一直去廚房說你的需求，而是會等你全部點完以後，才會一次跟主廚說，你要點什麼
 
 > React does not batch across multiple intentional events like clicks
 
@@ -34,6 +34,7 @@ setNumber(n => n + 1);
 
 2. React processes state updates after event handlers have finished running. This is called batching.
 React 在 event handler 後處理狀態更新，叫做 batching
+(一個事件中多次呼叫 setState 時，會自動依序合併試算 state 的目標更新結果，並只統一呼叫一次 re-render 來完成畫面更新)
 
 3. To update some state multiple times in one event, you can use `setNumber(n => n + 1)` updater function.
 如果需對一個variable做多次的需改可以改成`setNumber(n => n + 1)`
