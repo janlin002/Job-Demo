@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, lazy } from 'react'
 
 // test components
 import BatchUpdate from './code/batchUpdate'
@@ -22,6 +22,8 @@ import Interview from './code/interview'
 import UseRef from './code/useRef'
 import SyntheticEvent from './code/syntheticEvent'
 
+const ReactQueue = lazy(()=>import('./code/reactQueue'))
+
 const ReactCheck = () => {
   let [count, setCount] = useState([])
 
@@ -39,7 +41,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <SyntheticEvent />
+      <ReactQueue />
       {/* <div>React-Check</div> */}
     </>
   )
