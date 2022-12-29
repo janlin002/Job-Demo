@@ -73,6 +73,8 @@ const CssModule = lazy(()=>import('../../Demo/cssModule'))
 const StyledComponent = lazy(()=>import('../../Demo/styledComponent'))
 const CssPosition = lazy(()=>import('../../Demo/cssPosition'))
 
+const Prototype = lazy(()=>import('../../Demo/prototype'))
+
 const HeaderList = [
   {
     to: 'formik',
@@ -413,6 +415,11 @@ const HeaderList = [
     to: 'css-position',
     name: 'css-position',
     component: CssPosition
+  },
+  {
+    to: 'prototype',
+    name: 'prototype',
+    component: Prototype
   }
 ]
 

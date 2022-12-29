@@ -7,3 +7,5 @@
 4. 深入理解 batch update: https://ithelp.ithome.com.tw/articles/10300091
 
 5. Js 記憶體驗證: https://www.casper.tw/development/2020/09/23/js-object/
+
+6. Js 原型鏈: https://maxleebk.com/2020/07/25/prototype/
