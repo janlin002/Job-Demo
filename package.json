@@ -61,6 +61,7 @@
     "source-map-explorer": "^2.5.2",
     "styled-components": "^5.3.6",
     "sweetalert2": "^11.4.38",
+    "swr": "^2.0.0",
     "use-immer": "^0.7.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-svgr": "^2.2.1",

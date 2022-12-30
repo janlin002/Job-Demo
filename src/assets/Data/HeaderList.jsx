@@ -74,6 +74,7 @@ const StyledComponent = lazy(()=>import('../../Demo/styledComponent'))
 const CssPosition = lazy(()=>import('../../Demo/cssPosition'))
 
 const Prototype = lazy(()=>import('../../Demo/prototype'))
+const SWR = lazy(()=>import('../../Demo/SWR'))
 
 const HeaderList = [
   {
@@ -420,6 +421,11 @@ const HeaderList = [
     to: 'prototype',
     name: 'prototype',
     component: Prototype
+  },
+  {
+    to: 'swr',
+    name: 'swr',
+    component: SWR
   }
 ]
 

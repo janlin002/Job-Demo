@@ -9,3 +9,5 @@
 5. Js 記憶體驗證: https://www.casper.tw/development/2020/09/23/js-object/
 
 6. Js 原型鏈: https://maxleebk.com/2020/07/25/prototype/
+
+7. Js 停止事件: https://ithelp.ithome.com.tw/articles/10198999
