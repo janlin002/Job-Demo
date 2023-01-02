@@ -1,0 +1,1 @@
+1. React-Query vs SWR: https://javascript.plainenglish.io/react-query-vs-swr-36743c14ba7e

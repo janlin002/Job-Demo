@@ -1,22 +1,19 @@
 import React from 'react'
-import { QueryClient, QueryClientProvider, useMutation, useQuery } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import axios from 'axios'
 import Index2 from './index2'
 
 const ReactQuery = () =>{
   const queryClient = new QueryClient()
   return (
-    <QueryClientProvider client={queryClient} contextSharing={true}>
-      <Example />
-      <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
+    <Example />
   )
 }
 const fetchPlanets = async () => {
   // const res = await fetch('https://swapi.dev/api/planets/')
   // return res.json()
-  const { data } = await axios.get('https://swapi.dev/api/planets/')
+  const { data } = await axios.get('https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_allavailable.json')
   
   return data
 }

@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import { QueryClient, QueryClientProvider, useMutation, useQuery } from 'react-query'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import { Provider } from "react-redux"
 // redux
@@ -15,8 +16,9 @@ const queryClient = new QueryClient()
 
 ReactDOM.render(
   <Provider store={store}>
-    <QueryClientProvider client={queryClient}>
+    <QueryClientProvider client={queryClient} contextSharing={true}>
       <App />
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </Provider>,
   // eslint-disable-next-line no-undef
