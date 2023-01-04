@@ -13,3 +13,11 @@
 7. 面不面试的，你都得懂原型和原型链: https://juejin.cn/post/6934498361475072014
 
 8. React useEffect: https://juejin.cn/post/7083308347331444750#heading-7
+
+9. JS 強制轉型: https://ithelp.ithome.com.tw/articles/10201512
+
+10. JavaScript.info - Promise: https://zh.javascript.info/promise-basics
+
+11. ES6 Promise笔试题: https://segmentfault.com/a/1190000020934020
+
+12. Array 介紹: https://notfalse.net/15/array-intro

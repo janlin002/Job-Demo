@@ -1,0 +1,1 @@
+[題目連結](https://medium.com/starbugs/%E9%9D%A2%E8%A9%A6-%E8%80%83%E9%A9%97%E4%BD%A0%E5%B0%8D-promise-%E7%9A%84%E7%86%9F%E5%BA%A6%E4%B9%8B%E9%80%B2%E9%9A%8E%E6%87%89%E7%94%A8%E9%A1%8C-6eda0dd0d767)

@@ -253,9 +253,13 @@ if (typeof window !== 'undefined') { // Check if we're running in the browser.
 
 ## Recap
 1. If you can calculate something during render, you don’t need an Effect.
+
 意思是說狀態如果會在 `re-render` 階段更新的話，就不用使用到 `useEffect`
 
 2. To cache expensive calculations, add useMemo instead of useEffect
+
 要緩存昂貴的計算，請添加 `useMemo` 而不是 `useEffect`
 
-3. 
+3. If you need to update the state of several components, it’s better to do it during a single event.
+
+如果您需要更新多個組件的狀態，最好在單個事件期間執行。
