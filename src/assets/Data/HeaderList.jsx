@@ -137,11 +137,11 @@ const HeaderList = [
     name: 'array-method',
     component: SelectorTest
   },
-  {
-    to: 'react-dnd',
-    name: 'React-dnd',
-    component: 'ReactDnd'
-  },
+  // {
+  //   to: 'react-dnd',
+  //   name: 'React-dnd',
+  //   component: 'ReactDnd'
+  // },
   {
     to: 'rt-job',
     name: 'React-table-job',
@@ -372,11 +372,11 @@ const HeaderList = [
     name: 'infinity-scroll',
     component: InfinityScroll
   },
-  {
-    to: 'react-dnd',
-    name: 'react-dnd',
-    component: ReactDnD
-  },
+  // {
+  //   to: 'react-dnd',
+  //   name: 'react-dnd',
+  //   component: ReactDnD
+  // },
   {
     to: 'react-condition',
     name: 'react-condition',
