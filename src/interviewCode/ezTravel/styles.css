@@ -1,0 +1,126 @@
+.box-wrapper{
+    border: 1px solid #55D040;
+    background-color: #FAFAFA;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px
+}
+
+h3.custom-black{
+    color: #3B3F4E;
+    text-align: center;
+}
+
+.child-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-text-input{
+    border: 3px solid #55D040;
+    border-radius: 3px;
+    width: 215px;
+    height: 40px;
+    font-size: 16px
+}
+.custom-text-input:focus{
+    outline: none;
+}
+
+.custom-edit-input{
+    border: 0;
+    border-bottom: 2px solid rgba(85,208,64,0.6);
+    background-color: #FAFAFA;
+    font-size: 20px;
+    /* opacity:60%; */
+    color: #c2c2c2
+}
+.custom-edit-input:focus{
+    outline: none;
+    background-color: #FAFAFA;
+    font-size: 20px;
+}
+
+.custom-unedit-input{
+    border: 0;
+    background-color: #FAFAFA;
+    font-size: 20px;
+}
+.custom-unedit-input:focus{
+    border: 0;
+    background-color: #FAFAFA;
+    font-size: 20px;
+}
+
+.custom-create-button{
+    background-color: #55D040;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 40px;
+    width: 60px;
+    margin: 10px
+}
+.custom-create-button:hover{
+    background-color: #0c9251;
+}
+
+.list-text{
+    font-size: 16px;
+    color: #3B3F4E
+}
+
+.custom-basic-button{
+    background-color: white;
+    color: #3B3F4E;
+    border: 1px solid #3B3F4E;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 35px;
+    width: 60px;
+    margin: 3px
+}
+
+.custom-checkbox-input{
+    margin-right: 10px;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    /* font-size: 12px; */
+    /* border: 1px solid #55D040 */
+}
+
+input[type=checkbox]::after {
+    position: absolute;
+    top: 0;
+    color: #55D040;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0px;
+    text-align: center;
+    content: ' ';
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=checkbox]:checked::after {
+    content: "✓";
+    color: #55D040;
+    font-size: 12px;
+    /* font-weight: bold; */
+    background-color: white;
+    border: 2px solid #55D040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
