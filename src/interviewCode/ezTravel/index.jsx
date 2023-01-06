@@ -1,4 +1,4 @@
-import React, { useState, useRef , useEffect } from 'react'
+import React, { useState , useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import './styles.css'
@@ -74,7 +74,7 @@ const TodoList = ({ todoList, setTodoList }) =>{
       {
         todoList.map((item)=>(
           <div key={item.id}>
-            <label htmlFor="">
+            <label style={{ display: 'flex', alignItems: 'center' }}>
               <input 
                 type="checkbox"
                 className="custom-checkbox-input"

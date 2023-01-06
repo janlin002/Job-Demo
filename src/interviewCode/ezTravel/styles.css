@@ -18,6 +18,7 @@ h3.custom-black{
 }
 
 .custom-text-input{
+    box-sizing: border-box;
     border: 3px solid #55D040;
     border-radius: 3px;
     width: 215px;
@@ -92,13 +93,11 @@ input[type=checkbox] {
     position: relative;
     width: 18px;
     height: 18px;
-    /* font-size: 12px; */
-    /* border: 1px solid #55D040 */
 }
 
 input[type=checkbox]::after {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     color: #55D040;
     width: 18px;
     height: 18px;
@@ -107,20 +106,18 @@ input[type=checkbox]::after {
     padding-left: 0px;
     text-align: center;
     content: ' ';
-    border-radius: 3px;
+    /* border-radius: 3px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 input[type=checkbox]:checked::after {
     content: "✓";
     color: #55D040;
     font-size: 12px;
-    /* font-weight: bold; */
+    font-weight: bold;
     background-color: white;
     border: 2px solid #55D040;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
 }
