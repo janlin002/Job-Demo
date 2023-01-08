@@ -1,7 +1,15 @@
 import React, { useState , useEffect } from 'react'
 import PropTypes from 'prop-types'
+import Swal from 'sweetalert2'
 
 import './styles.css'
+
+const ErrorModal = () => {
+  Swal.fire({
+    icon: "error",
+    text: "輸入欄位不得為空!"
+  })
+}
 
 const CustomButton = ({ 
   text, 
@@ -118,14 +126,19 @@ const Index = () => {
   const [editList, setEditList] = useState('')
 
   const handleCreateClick = () =>{
-    setTodoList([
-      ...todoList,
-      {
-        id: Math.random(),
-        value: editList
-      }
-    ])
-    setEditList('')
+    if(editList === ''){
+      ErrorModal()
+    }else {
+      setTodoList([
+        ...todoList,
+        {
+          id: Math.random(),
+          value: editList
+        }
+      ])
+      setEditList('')
+    }
+    
   }
 
   return (

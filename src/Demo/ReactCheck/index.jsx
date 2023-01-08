@@ -25,6 +25,7 @@ import SyntheticEvent from './code/syntheticEvent'
 const ReactQueue = lazy(()=>import('./code/reactQueue'))
 const NestComponent = lazy(()=>import('./code/nestedComponent'))
 const YouDontNeedAnEffect = lazy(()=>import('./code/YouDontNeedAnEffect'))
+const UseEffectDeeper = lazy(()=>import('./code/useEffectDeeper'))
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -43,7 +44,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <YouDontNeedAnEffect />
+      <UseEffectDeeper />
       {/* <div>React-Check</div> */}
     </>
   )
