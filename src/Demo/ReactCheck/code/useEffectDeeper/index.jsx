@@ -15,14 +15,6 @@ const Index = () => {
   }, [text])
 
   console.log(text, count, 'text')
-
-  /**
-   * text, 'text'
-   * DOM 被渲染了~~
-   * componentDidMount
-   * componentWillUnmount
-   */
-
   return (
     <div>
       <button
@@ -38,3 +30,10 @@ const Index = () => {
 }
 
 export default Index
+
+/**
+   * text, 'text'
+   * DOM 被渲染了~~
+   * componentDidMount
+   * componentWillUnmount
+   */

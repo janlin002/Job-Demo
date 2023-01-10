@@ -26,6 +26,7 @@ const ReactQueue = lazy(()=>import('./code/reactQueue'))
 const NestComponent = lazy(()=>import('./code/nestedComponent'))
 const YouDontNeedAnEffect = lazy(()=>import('./code/YouDontNeedAnEffect'))
 const UseEffectDeeper = lazy(()=>import('./code/useEffectDeeper'))
+const ViteTest = lazy(()=>import('./code/viteTest'))
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -44,7 +45,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <UseEffectDeeper />
+      <ViteTest />
       {/* <div>React-Check</div> */}
     </>
   )
