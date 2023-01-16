@@ -27,6 +27,9 @@ const NestComponent = lazy(()=>import('./code/nestedComponent'))
 const YouDontNeedAnEffect = lazy(()=>import('./code/YouDontNeedAnEffect'))
 const UseEffectDeeper = lazy(()=>import('./code/useEffectDeeper'))
 const ViteTest = lazy(()=>import('./code/viteTest'))
+const ReactSelect = lazy(()=>import('./code/ReactSelect'))
+const CustomHookTest = lazy(()=>import('./code/customHookTest'))
+const JsxControlStatement = lazy(()=>import('./code/jsxControlStatement'))
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -45,7 +48,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <ViteTest />
+      <JsxControlStatement />
       {/* <div>React-Check</div> */}
     </>
   )

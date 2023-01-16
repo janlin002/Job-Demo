@@ -28,7 +28,11 @@
 ## 原生
 
 原生瀏覽器事件: 事件捕获 -> 事件目标 -> 事件冒泡
+
+```js
 document.getElementById('item').addEventListener('click')
+```
+
 透過 getElementById 綁定在目標上，addEventListener來監聽事件
 
 可透過 e.stopPropagation() 來阻止冒泡事件

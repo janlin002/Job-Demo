@@ -76,6 +76,7 @@ const CssPosition = lazy(()=>import('../../Demo/cssPosition'))
 const Prototype = lazy(()=>import('../../Demo/prototype'))
 const SWR = lazy(()=>import('../../Demo/SWR'))
 const InterviewCode = lazy(()=>import('../../interviewCode'))
+const JsonWebToken = lazy(()=>import('../../Demo/JsonWebToken'))
 
 const HeaderList = [
   {
@@ -432,6 +433,11 @@ const HeaderList = [
     to: 'interview-code',
     name: 'interview-code',
     component: InterviewCode
+  },
+  {
+    to: 'jsonwebtoken',
+    name: 'jsonwebtoken',
+    component: JsonWebToken
   }
 ]
 
