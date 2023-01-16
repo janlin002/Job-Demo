@@ -77,6 +77,10 @@ const Prototype = lazy(()=>import('../../Demo/prototype'))
 const SWR = lazy(()=>import('../../Demo/SWR'))
 const InterviewCode = lazy(()=>import('../../interviewCode'))
 const JsonWebToken = lazy(()=>import('../../Demo/JsonWebToken'))
+const XSS = lazy(()=>import('../../Demo/xss'))
+
+const Oauth = lazy(()=>import('../../Demo/oauth'))
+const OauthLogin = lazy(()=>import('../../Demo/oauth/loginPage.jsx'))
 
 const HeaderList = [
   {
@@ -438,6 +442,21 @@ const HeaderList = [
     to: 'jsonwebtoken',
     name: 'jsonwebtoken',
     component: JsonWebToken
+  },
+  {
+    to: 'xss',
+    name: 'xss',
+    component: XSS
+  },
+  {
+    to: 'oauth',
+    name: 'oauth',
+    component: Oauth
+  },
+  {
+    to: 'oauth/login',
+    name: 'oauthLogin',
+    component: OauthLogin
   }
 ]
 

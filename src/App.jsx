@@ -1,6 +1,6 @@
 import './App.css'
 import React, { useState, useEffect, Suspense, lazy } from 'react'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
 import { useSelector } from 'react-redux'
 
@@ -27,14 +27,14 @@ function App() {
         <Router>
           <Header />
           <Suspense fallback={<p>Loading...</p>}>
-            <Switch>
+            <Routes>
               {
                 [...HeaderList].map((item)=> (
-                  <Route path={`/${item.to}`} component={item.component} key={item.to}></Route>
+                  <Route path={`/${item.to}`} element={<item.component />} key={item.to}></Route>
                 )
                 )
               }
-            </Switch>
+            </Routes>
           </Suspense>
         </Router>
       </IntlProvider>
