@@ -5,21 +5,29 @@ import { IntlProvider } from 'react-intl'
 import { useSelector } from 'react-redux'
 
 import HeaderList from './assets/Data/HeaderList'
+import AppLocale from './assets/lang'
 
 import Header from './Header'
 
+/**
+ * 
+ * en, zh, ch
+ */
+
 function App() {
-  const [locale, setLocale] = useState("en")
+  const [locale, setLocale] = useState("zh-TW")
   const lang = useSelector(state=>state.localeLanguage)
   // const locale = navigator.language;
   useEffect(async() => {
     // eslint-disable-next-line no-undef
     const resp = await fetch(`./lang/${lang}.json`)
     const data = await resp.json()
+
+    console.log(data, 'data')
     setLocale(data)
   },[lang])
 
-  // console.log(locale, 'locale')
+  // console.log(AppLocale[locale].language)
 
   return (
     <div>

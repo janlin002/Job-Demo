@@ -1,4 +1,5 @@
 import React, { useState, lazy } from 'react'
+import { useIntl } from 'react-intl'
 
 // test components
 import BatchUpdate from './code/batchUpdate'
@@ -33,6 +34,9 @@ const JsxControlStatement = lazy(()=>import('./code/jsxControlStatement'))
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
+  const intl = useIntl()
+
+  console.log(intl.formatMessage({ id: 'lanuage' }))
 
   const a = [100, 200, 300]
 
