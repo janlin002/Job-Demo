@@ -285,3 +285,7 @@ https://pjchender.dev/javascript/js-proxy/
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/Comparing_Reflect_and_Object_methods
 
+https://medium.com/jspoint/what-are-internal-slots-and-internal-methods-in-javascript-f2f0f6b38de
+
+https://medium.com/jspoint/introduction-to-proxy-api-for-metaprogramming-in-javascript-fa2781e360ba
+
