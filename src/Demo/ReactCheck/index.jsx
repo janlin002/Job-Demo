@@ -1,5 +1,6 @@
 import React, { useState, lazy } from 'react'
 import { useIntl } from 'react-intl'
+import { flushSync } from 'react-dom'
 
 // test components
 import BatchUpdate from './code/batchUpdate'
@@ -31,6 +32,7 @@ const ViteTest = lazy(()=>import('./code/viteTest'))
 const ReactSelect = lazy(()=>import('./code/ReactSelect'))
 const CustomHookTest = lazy(()=>import('./code/customHookTest'))
 const JsxControlStatement = lazy(()=>import('./code/jsxControlStatement'))
+const Proxy = lazy(()=>import('./code/proxy'))
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -44,6 +46,13 @@ const ReactCheck = () => {
     setCount('1')
   }, [])
 
+  const handleClick = () => {
+    flushSync(() => {
+      setCount(1)
+    })
+    console.log(count) //會得到0  期望值拿到1的話???
+  }
+
   // for(var i = 0; i < 3; i++){
   //   setTimeout(function(i){
   //     console.log(i, a[i])
@@ -52,7 +61,8 @@ const ReactCheck = () => {
 
   return (
     <>
-      <JsxControlStatement />
+      <Proxy />
+      <button onClick={handleClick}>點擊</button>
       {/* <div>React-Check</div> */}
     </>
   )

@@ -4,6 +4,7 @@ import viteTsconfigPaths from 'vite-tsconfig-paths'
 import svgrPlugin from 'vite-plugin-svgr'
 import eslint from 'vite-plugin-eslint'
 import reactRefresh from '@vitejs/plugin-react-refresh'
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const { resolve } = require('path')
 
@@ -14,6 +15,7 @@ export default defineConfig({
     eslint(),
     viteTsconfigPaths(), 
     svgrPlugin(),
+    // new BundleAnalyzerPlugin(),
     react({
       babel: {
         plugins: [
