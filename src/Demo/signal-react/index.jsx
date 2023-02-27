@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { signal, effect, computed, batch } from "@preact/signals-react"
 
 const Child = ({ number }) =>{
-  console.log(number ,'123')
+//   console.log(number ,'123')
 
   return (
     <div>
@@ -39,21 +39,21 @@ const Index = () => {
   const fullName = computed(() => name.value + " " + surname.value)
   //   const fullName = name.value + " " + surname.value
 
-  console.log(fullName.value, 'fullName')
+  //   console.log(fullName.value, 'fullName')
 
   name.value = 'John'
 
-  console.log(fullName.value, 'change')
+  //   console.log(fullName.value, 'change')
 
   effect(()=>{
-    console.log(counter.value, 'counter')
+    // console.log(counter.value, 'counter')
 
     // Whenever this effect is triggered, increase `effectCount`.
     // But we don't want this signal to react to `effectCount`
     effectCount.value = effectCount.peek() + 1
   })
 
-  console.log(effectCount, 'effectCount')
+  //   console.log(effectCount, 'effectCount')
 
   // 多個 update 合併為單一個 update
   batch(() => {
@@ -61,7 +61,7 @@ const Index = () => {
     surname.value = "Bar"
   })
 
-  console.log(name.value, surname.value)
+  //   console.log(name.value, surname.value)
   return (
     <>
       <Counter />
@@ -78,6 +78,3 @@ const Index = () => {
 }
 
 export default Index
-
-const count = signal(0)
-const Counter = () => <button onClick={() => count.value++}>{count}</button>
