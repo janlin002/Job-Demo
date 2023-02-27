@@ -83,6 +83,7 @@ const XSS = lazy(()=>import('Demo/xss'))
 
 const Oauth = lazy(()=>import('Demo/oauth'))
 const OauthLogin = lazy(()=>import('Demo/oauth/loginPage.jsx'))
+const SignalReact = lazy(()=>import('Demo/signal-react'))
 
 const HeaderList = [
   {
@@ -459,6 +460,11 @@ const HeaderList = [
     to: 'oauth/login',
     name: 'oauthLogin',
     component: OauthLogin
+  },
+  {
+    to: 'signal-react',
+    name: 'signalReact',
+    component: SignalReact
   }
 ]
 

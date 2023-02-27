@@ -5,7 +5,7 @@ const Index = () => {
   
   Reflect.set(list, 'name', 'jan')
 
-  console.log(Reflect.set(list, 'name', 'jan'), 'check')// true 這邊的 true 代表的是有沒有成功設定的意思
+  console.log(Reflect.set(list, 'name', 'jan'))// true 這邊的 true 代表的是有沒有成功設定的意思
 
   list['age'] = 24
 

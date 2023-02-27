@@ -19,6 +19,14 @@
 
 [Ref](https://ithelp.ithome.com.tw/articles/10238058) -> 推
 
+[JavaScript中的 "Internal Slots" 和 "Internal Methods" 到底是什么？](https://juejin.cn/post/7059344609473724430)
+
+## JavaScript 底層原理
+
+[教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)
+
+[浏览器是如何工作的：Chrome V8让你更懂JavaScript](https://segmentfault.com/a/1190000037435824)
+
 ## TypeScript
 [React 前端工程師的兩把刷子](https://ithelp.ithome.com.tw/users/20103315/ironman/4764?page=1)
 

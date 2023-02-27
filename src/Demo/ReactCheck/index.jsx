@@ -34,6 +34,7 @@ const CustomHookTest = lazy(()=>import('./code/customHookTest'))
 const JsxControlStatement = lazy(()=>import('./code/jsxControlStatement'))
 const Proxy = lazy(()=>import('./code/proxy'))
 const Reflect = lazy(()=>import('./code/reflect'))
+const ChildRender = lazy(()=>import('./code/childRender'))
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -62,7 +63,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <Reflect />
+      <ChildRender />
       <button onClick={handleClick}>點擊</button>
       {/* <div>React-Check</div> */}
     </>
