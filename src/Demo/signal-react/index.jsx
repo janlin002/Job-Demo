@@ -12,7 +12,7 @@ const Effect = lazy(()=>import('./effect'))
 
 const Index = () => {
   return (
-    <Effect />
+    <UseRef />
   )
 }
 

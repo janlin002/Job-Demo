@@ -35,6 +35,7 @@ const JsxControlStatement = lazy(()=>import('./code/jsxControlStatement'))
 const Proxy = lazy(()=>import('./code/proxy'))
 const Reflect = lazy(()=>import('./code/reflect'))
 const ChildRender = lazy(()=>import('./code/childRender'))
+const UseReducer = lazy(()=>import('./code/useReducer'))
 
 const ReactCheck = () => {
   let [count, setCount] = useState([])
@@ -63,7 +64,7 @@ const ReactCheck = () => {
 
   return (
     <>
-      <ChildRender />
+      <UseReducer />
       <button onClick={handleClick}>點擊</button>
       {/* <div>React-Check</div> */}
     </>
