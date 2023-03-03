@@ -32,6 +32,12 @@
 
 [讓 TypeScript 成為你全端開發的 ACE！](https://ithelp.ithome.com.tw/users/20120614/ironman/2685)
 
+## Webpack
+
+[Webpack5 federation plugin 實現 microFrontend](https://milkmidi.medium.com/webpack5-federation-plugin-841c680672ea)
+
+[Build Micro Frontends In React In 3 Easy Steps](https://blog.bitsrc.io/build-microfrontend-in-react-in-3-easy-steps-74790fd0c9fb)
+
 ## 其他
 [深入淺出 CSR、SSR 與 SSG](https://ithelp.ithome.com.tw/articles/10266781#response-324535)
 

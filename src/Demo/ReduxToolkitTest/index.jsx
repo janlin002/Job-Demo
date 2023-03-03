@@ -14,6 +14,10 @@ const ReduxToolkitTest = () =>{
   const dispatch = useDispatch()
   const states = useSelector(selectTodo)
 
+  const check = useSelector(state => state)
+
+  console.log(check, '我就確認')
+
   console.log(states, 'states')
 
   const handleChangeRedux = () =>{

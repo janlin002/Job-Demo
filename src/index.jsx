@@ -6,9 +6,9 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import { Provider } from "react-redux"
 // redux
-import store from "./Redux/store" 
+// import store from "./Redux/store" 
 // toolkit
-// import store from './store'
+import store from './store'
 
 import 'antd/dist/antd.css'
 

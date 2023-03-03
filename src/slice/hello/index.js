@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
-export const todoSlice = createSlice({
-  name: "todo",
+export const HelloSlice = createSlice({
+  name: "hello",
   initialState: {
     todolist: [
       { id: 1, name: "first todo on redux" },
@@ -17,8 +17,9 @@ export const todoSlice = createSlice({
 const a = (state) => console.log(state)
 
 export const selectTodo = (state) => state.todo
-export const { addTodo } = todoSlice.actions
-export default todoSlice.reducer
+// todo 指向 store 裡面的 todo
+export const { addTodo } = HelloSlice.actions
+export default HelloSlice.reducer
 
 // initialState：就是放所有狀態初始值
 // reducers：通常是放很多的函式，會有兩個參數state和action
