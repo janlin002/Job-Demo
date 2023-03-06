@@ -12,6 +12,13 @@
 
 [React Ref Api](https://medium.com/itsoktomakemistakes/react-ref-api-%E6%80%8E%E9%BA%BC%E7%94%A8-ea1f31cd0a7a)
 
+## React RSC
+[React 新概念 — Server Components](https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463)
+
+[[譯]React Server Component 如何運作深入解析](https://andyyou.github.io/2022/02/02/react-server-component-in-depth-guide/)
+
+[[note] React Server Component](https://pjchender.dev/react/note-react-server-component/)
+
 ## JavaScript
 [stack vs heap](https://roykwokcode.medium.com/%E6%99%AE%E9%80%9A%E9%A1%9E%E5%9E%8B%E5%92%8C%E5%B0%8D%E8%B1%A1%E7%9A%84%E5%8D%80%E5%88%A5-%E6%A3%A7%E5%85%A7%E5%AD%98-stack-%E5%A0%86%E5%85%A7%E5%AD%98-heap-44295724848c) -> 推
 
@@ -48,6 +55,8 @@
 [SOLID - 中文解說](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html) -> 大推
 
 [更好的選擇？用 JWT 取代 Session 的風險](https://medium.com/@ken00535/jwt-vs-session-44175f2f2656)
+
+[Getting Started with GitHub Actions - Basics](https://dev.to/this-is-learning/github-actions-basics-12em)
 
 ## 面試分享
 [台灣的工程師分析](https://m.gamer.com.tw/forum/C.php?bsn=60076&snA=5444020) -> 大推

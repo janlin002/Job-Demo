@@ -2,6 +2,8 @@
 
 ### 為什麼需要 Redux Toolkit?
 
+- 減少 Boilerplate => 現在的 redux 要創建太多東西: Store、Action、Action Type、Reducers ...
+
 
 ### install
 

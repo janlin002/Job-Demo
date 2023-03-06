@@ -23,7 +23,6 @@ import ReactTableHeaderGroup from './code/reactTableHeaderGroup'
 import Interview from './code/interview'
 import UseRef from './code/useRef'
 import SyntheticEvent from './code/syntheticEvent'
-
 const ReactQueue = lazy(()=>import('./code/reactQueue'))
 const NestComponent = lazy(()=>import('./code/nestedComponent'))
 const YouDontNeedAnEffect = lazy(()=>import('./code/YouDontNeedAnEffect'))
@@ -37,37 +36,14 @@ const Reflect = lazy(()=>import('./code/reflect'))
 const ChildRender = lazy(()=>import('./code/childRender'))
 const UseReducer = lazy(()=>import('./code/useReducer'))
 const ReactEmail = lazy(()=>import('./code/reactEmail'))
+const HOC = lazy(()=>import('./code/HOC'))
+const PropsTest = lazy(()=>import('./code/propTest'))
+const ReactSpring = lazy(()=>import('./code/reactSpring'))
 
 const ReactCheck = () => {
-  let [count, setCount] = useState([])
-  const intl = useIntl()
-
-  console.log(intl.formatMessage({ id: 'lanuage' }))
-
-  const a = [100, 200, 300]
-
-  React.useEffect(()=>{
-    setCount('1')
-  }, [])
-
-  const handleClick = () => {
-    flushSync(() => {
-      setCount(1)
-    })
-    console.log(count) //會得到0  期望值拿到1的話???
-  }
-
-  // for(var i = 0; i < 3; i++){
-  //   setTimeout(function(i){
-  //     console.log(i, a[i])
-  //   }, a[i])
-  // }
-
   return (
     <>
-      <ReactEmail />
-      <button onClick={handleClick}>點擊</button>
-      {/* <div>React-Check</div> */}
+      <ReactSpring />
     </>
   )
 }
