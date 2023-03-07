@@ -39,11 +39,12 @@ const ReactEmail = lazy(()=>import('./code/reactEmail'))
 const HOC = lazy(()=>import('./code/HOC'))
 const PropsTest = lazy(()=>import('./code/propTest'))
 const ReactSpring = lazy(()=>import('./code/reactSpring'))
+const JotaiTest = lazy(()=>import('./code/jotaiTest'))
 
 const ReactCheck = () => {
   return (
     <>
-      <ReactSpring />
+      <JotaiTest />
     </>
   )
 }
