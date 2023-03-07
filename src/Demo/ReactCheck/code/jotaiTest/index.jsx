@@ -13,9 +13,6 @@ const Index = () => {
   return (
     <div>
       <input type="text" onChange={(e)=>handleChange(e)}/>
-      {/* <button onClick={(e)=>setText(e.target.value)}> 
-        點擊
-      </button> */}
       <div>{text}</div>
     </div>
     
