@@ -9,3 +9,5 @@ export const TEST = 'TEST'
 
 export const REDUCER_TEST = 'REDUCER_TEST'
 export const CHANGE_REDUCER_TEST = 'CHANGE_REDUCER_TEST'
+
+export const REDUX_CHECK = 'REDUX_CHECK'

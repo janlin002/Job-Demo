@@ -8,6 +8,8 @@ import {
 
   REDUCER_TEST,
   CHANGE_REDUCER_TEST,
+
+  REDUX_CHECK,
 } from './actionType'
 
 const defaultState = {
@@ -22,7 +24,9 @@ const defaultState = {
     age: '',
     sex: '',
     job: ''
-  }
+  },
+
+  reduxCheckData: 0
 }
 
 export default (state = defaultState,action)=>{
@@ -73,6 +77,13 @@ export default (state = defaultState,action)=>{
         ...state.me,
         age: action.payload
       }
+    }
+
+  case REDUX_CHECK:
+    console.log(state.reduxCheckData, action.payload, 'reducer')
+    return {
+      ...state,
+      reduxCheckData: state.reduxCheckData+=1
     }
   
   default:

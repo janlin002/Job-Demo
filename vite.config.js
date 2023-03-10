@@ -37,6 +37,7 @@ export default defineConfig({
   resolve: {
     alias: {
       'Demo': resolve(__dirname, 'src/Demo'),
+      'Redux': resolve(__dirname, 'src/Redux')
     }
   },
 })

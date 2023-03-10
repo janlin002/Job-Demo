@@ -6,7 +6,9 @@ import {
 
   TEST,
   REDUCER_TEST,
-  CHANGE_REDUCER_TEST
+  CHANGE_REDUCER_TEST,
+
+  REDUX_CHECK
 } from './actionType'
 
 export const changeLang = ( value)=>{
@@ -43,5 +45,10 @@ export const reducerTest = (payload) =>({
 })
 export const changeReducerTest = (payload) =>({
   type: CHANGE_REDUCER_TEST,
+  payload
+})
+
+export const reduxCheck = (payload) =>({
+  type: REDUX_CHECK,
   payload
 })
