@@ -60,3 +60,12 @@
 
 ## 面試分享
 [台灣的工程師分析](https://m.gamer.com.tw/forum/C.php?bsn=60076&snA=5444020) -> 大推
+
+## Jotai
+[Jotai React - Better Global State Management](https://www.youtube.com/watch?v=ZcKzPZN7Ids)
+
+## Git
+
+[TBD Flow](https://blog.amowu.com/tbd-flow/)
+
+[『前端进阶』—— 代码管理方案之Trunk-based Flow](https://juejin.cn/post/6977942781209608200?ref=amos-blog)
