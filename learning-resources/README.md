@@ -20,7 +20,15 @@
 
 - [Others](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Other.md)
 
+- [前端展望]()
+
+- [網路知識]
+
 ### 套件類
 
 - [Jotai](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/%E5%A5%97%E4%BB%B6/Jotai.md)
+
+### 其他
+
+- [Blog博主]()
 
