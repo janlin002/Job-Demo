@@ -20,9 +20,9 @@
 
 - [Others](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Other.md)
 
-- [前端展望]()
+- [前端展望](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/%E5%89%8D%E7%AB%AF%E5%B1%95%E6%9C%9B.md)
 
-- [網路知識]
+- [網路知識](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/%E7%B6%B2%E8%B7%AF%E7%9F%A5%E8%AD%98.md)
 
 ### 套件類
 
@@ -30,5 +30,5 @@
 
 ### 其他
 
-- [Blog博主]()
+- [Blog博主](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Blog.md)
 
