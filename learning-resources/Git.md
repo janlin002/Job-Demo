@@ -23,3 +23,5 @@
 [建立可讀性高的 git 提交吧！](https://medium.com/@Rock070/%E8%AE%93%E6%8F%90%E4%BA%A4%E5%8F%AF%E8%AE%80%E6%9B%B4%E9%AB%98%E5%90%A7-495e2e68ffd1)
 
 [不知道 bug 躲在哪個 commit 嗎？來試試 Git bisect 吧！](https://medium.com/starbugs/use-git-bisect-to-find-the-buggy-commit-b35e12ddd26b)
+
+[Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案](https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/)

@@ -12,6 +12,8 @@
 
 [Data Fetching with React Server Components](https://www.youtube.com/watch?v=TQQPAU21ZUw)
 
+[Common Beginner Mistakes with React](https://www.joshwcomeau.com/react/common-beginner-mistakes/) -> 大推
+
 ## React RSC
 
 [React 新概念 — Server Components](https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463)
