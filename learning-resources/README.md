@@ -16,9 +16,9 @@
 
 - [Git](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Git.md)
 
-- [Leetcode]()
+- [Leetcode](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Leetcode.md)
 
-- [Design-Patterns]()
+- [Design-Patterns](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/design-patterns.md)
 
 - [Interview](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/interview.md)
 
@@ -28,7 +28,7 @@
 
 - [網路知識](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/%E7%B6%B2%E8%B7%AF%E7%9F%A5%E8%AD%98.md)
 
-- [底層原理]()
+- [底層原理](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/%E5%BA%95%E5%B1%A4%E5%8E%9F%E7%90%86.md)
 
 ### 套件類
 
@@ -38,7 +38,7 @@
 
 - [Blog博主](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Blog.md)
 
-- [架構]()
+- [架構](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/%E6%9E%B6%E6%A7%8B.md)
 
-- [CI/CD]()
+- [CI/CD](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/CICD.md)
 
