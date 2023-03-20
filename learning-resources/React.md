@@ -21,3 +21,7 @@
 [[譯]React Server Component 如何運作深入解析](https://andyyou.github.io/2022/02/02/react-server-component-in-depth-guide/)
 
 [[note] React Server Component](https://pjchender.dev/react/note-react-server-component/)
+
+## React Router
+
+[react路由新写法](https://zhuanlan.zhihu.com/p/430635190)

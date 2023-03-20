@@ -41,11 +41,12 @@ const PropsTest = lazy(()=>import('./code/propTest'))
 const ReactSpring = lazy(()=>import('./code/reactSpring'))
 const JotaiTest = lazy(()=>import('./code/jotaiTest'))
 const ReactChecks = lazy(()=>import('./code/reduxCheck'))
+const NestObject = lazy(()=>import('./code/nestObject'))
 
 const ReactCheck = () => {
   return (
     <>
-      <ReactChecks />
+      <NestObject />
     </>
   )
 }

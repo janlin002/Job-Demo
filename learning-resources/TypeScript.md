@@ -11,3 +11,9 @@
 [React + TypeScript实践](https://juejin.cn/post/6952696734078369828)
 
 [2022年了，我才开始学 typescript ，晚吗？（7.5k字总结）](https://juejin.cn/post/7124117404187099172)
+
+[interface vs type](https://juejin.cn/post/7093132160747438117)
+
+[Day15: 【TypeScript 學起來】Interface VS Type Aliases 用法與差別](https://ithelp.ithome.com.tw/articles/10275208)
+
+[React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/) -> 大推
