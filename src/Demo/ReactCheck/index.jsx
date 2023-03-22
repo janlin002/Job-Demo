@@ -46,7 +46,7 @@ const NestObject = lazy(()=>import('./code/nestObject'))
 const ReactCheck = () => {
   return (
     <>
-      <NestObject />
+      <JotaiTest />
     </>
   )
 }

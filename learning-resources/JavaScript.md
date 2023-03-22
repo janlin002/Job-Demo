@@ -13,3 +13,7 @@
 [教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)
 
 [浏览器是如何工作的：Chrome V8让你更懂JavaScript](https://segmentfault.com/a/1190000037435824)
+
+## JavaScript 奇怪的地方
+
+[JavaScript: why can't I chain Array.prototype.filter with .push()?](https://stackoverflow.com/questions/21933217/javascript-why-cant-i-chain-array-prototype-filter-with-push)
