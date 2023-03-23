@@ -1,3 +1,5 @@
+/** @jsxImportSource jotai-signal */
+
 import { atom } from 'jotai/vanilla'
 import { useAtom, useSetAtom } from 'jotai/react'
 import { $ } from 'jotai-signal'

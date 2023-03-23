@@ -7489,6 +7489,11 @@
     "safe-buffer" "^5.0.1"
     "sha.js" "^2.4.8"
 
+"create-react-signals@0.7.0":
+  "integrity" "sha512-DZmZTMExl9nyX/5PUTsPxw7w9HuI538h5ppxp85JXs/SMgABqDGJ5dVtuM0MLDVWyUmJZMx92f8QTnn3fP7yig=="
+  "resolved" "https://registry.npmjs.org/create-react-signals/-/create-react-signals-0.7.0.tgz"
+  "version" "0.7.0"
+
 "cross-spawn@^6.0.0":
   "integrity" "sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ=="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.5.tgz"
@@ -10476,7 +10481,7 @@
   "resolved" "https://registry.npmjs.org/image-size/-/image-size-0.6.3.tgz"
   "version" "0.6.3"
 
-"immer@^9.0.12", "immer@^9.0.16", "immer@>=2.0.0":
+"immer@^9.0.12", "immer@^9.0.16", "immer@>=2.0.0", "immer@>=9.0":
   "integrity" "sha512-eY+Y0qcsB4TZKwgQzLaE/lqYMlKhv5J9dyd2RhhtGhNo2njPXDqU9XPfcNfa3MIDsdtZt5KlkIsirlo4dHsWdQ=="
   "resolved" "https://registry.npmjs.org/immer/-/immer-9.0.19.tgz"
   "version" "9.0.19"
@@ -11870,7 +11875,14 @@
     "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
-"jotai@^2.0.3":
+"jotai-signal@^0.8.1":
+  "integrity" "sha512-W91Yw/9AtszVphXk6CzEixMJWA83Vwu17l33Xf2HYmrSJLhm2MfIqoXXUGbOleTaU1PltssNRKn5S4yxefX2uQ=="
+  "resolved" "https://registry.npmjs.org/jotai-signal/-/jotai-signal-0.8.1.tgz"
+  "version" "0.8.1"
+  dependencies:
+    "create-react-signals" "0.7.0"
+
+"jotai@^2.0.3", "jotai@>=1.11.0":
   "integrity" "sha512-MMjhSPAL3RoeZD9WbObufRT2quThEAEknHHridf2ma8Ml7ZVQmUiHk0ssdbR3F0h3kcwhYqSGJ59OjhPge7RRg=="
   "resolved" "https://registry.npmjs.org/jotai/-/jotai-2.0.3.tgz"
   "version" "2.0.3"
@@ -19092,7 +19104,7 @@
   "resolved" "https://registry.npmjs.org/use-memo-one/-/use-memo-one-1.1.3.tgz"
   "version" "1.1.3"
 
-"use-sync-external-store@^1.0.0", "use-sync-external-store@^1.2.0":
+"use-sync-external-store@^1.0.0", "use-sync-external-store@^1.2.0", "use-sync-external-store@1.2.0":
   "integrity" "sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA=="
   "resolved" "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
   "version" "1.2.0"
@@ -19962,6 +19974,13 @@
   "integrity" "sha512-PIJDIZKtokhof+9+60cpockVOq05sJzHCriyvaLBmEJixseQ1a5Kdov6fWZfWOu5SK9c+FhH1jU0tntLxRJYMA=="
   "resolved" "https://registry.npmjs.org/zustand/-/zustand-3.7.2.tgz"
   "version" "3.7.2"
+
+"zustand@^4.3.6":
+  "integrity" "sha512-6J5zDxjxLE+yukC2XZWf/IyWVKnXT9b9HUv09VJ/bwGCpKNcaTqp7Ws28Xr8jnbvnZcdRaidztAPsXFBIqufiw=="
+  "resolved" "https://registry.npmjs.org/zustand/-/zustand-4.3.6.tgz"
+  "version" "4.3.6"
+  dependencies:
+    "use-sync-external-store" "1.2.0"
 
 "zwitch@^1.0.0":
   "integrity" "sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw=="

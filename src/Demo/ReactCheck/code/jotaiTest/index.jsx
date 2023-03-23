@@ -7,7 +7,7 @@ import WithReact2 from './withReact2'
 
 const Index = () => {
   return (
-    <WithReact />
+    <WithReact2 />
   )
 }
 

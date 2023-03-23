@@ -42,11 +42,12 @@ const ReactSpring = lazy(()=>import('./code/reactSpring'))
 const JotaiTest = lazy(()=>import('./code/jotaiTest'))
 const ReactChecks = lazy(()=>import('./code/reduxCheck'))
 const NestObject = lazy(()=>import('./code/nestObject'))
+const DragandDrop = lazy(()=>import('./code/DragandDrop'))
 
 const ReactCheck = () => {
   return (
     <>
-      <JotaiTest />
+      <DragandDrop />
     </>
   )
 }

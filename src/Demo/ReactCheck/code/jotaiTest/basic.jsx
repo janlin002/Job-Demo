@@ -64,7 +64,7 @@ const Index = () => {
   return (
     <div>
       <input type="text" onChange={(e)=>handleChange(e)} />
-      <div>{text}</div>
+      <div>text: {text}</div>
       <button onClick={decrement}>點擊-1</button>
       <div>{count}</div>
       <button onClick={()=>seTest(1)}>測試</button>
