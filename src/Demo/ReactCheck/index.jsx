@@ -43,11 +43,12 @@ const JotaiTest = lazy(()=>import('./code/jotaiTest'))
 const ReactChecks = lazy(()=>import('./code/reduxCheck'))
 const NestObject = lazy(()=>import('./code/nestObject'))
 const DragandDrop = lazy(()=>import('./code/DragandDrop'))
+const EmptyState = lazy(()=>import('./code/emptyState'))
 
 const ReactCheck = () => {
   return (
     <>
-      <DragandDrop />
+      <EmptyState />
     </>
   )
 }

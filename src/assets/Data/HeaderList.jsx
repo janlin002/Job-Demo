@@ -85,6 +85,7 @@ const Oauth = lazy(()=>import('Demo/oauth'))
 const OauthLogin = lazy(()=>import('Demo/oauth/loginPage.jsx'))
 const SignalReact = lazy(()=>import('Demo/signal-react'))
 const LearnJotai = lazy(()=>import('Demo/learnJotai'))
+const Loadable = lazy(()=>import('Demo/loadable'))
 
 const HeaderList = [
   {
@@ -471,6 +472,11 @@ const HeaderList = [
     to: 'learn-jotai',
     name: 'learn-jotai',
     component: LearnJotai
+  },
+  {
+    to: 'loadable',
+    name: 'loadable',
+    component: Loadable
   }
 ]
 
