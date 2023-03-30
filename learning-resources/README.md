@@ -42,3 +42,5 @@
 
 - [CI/CD](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/CICD.md)
 
+- [一些心路歷程]()
+

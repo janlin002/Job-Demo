@@ -48,7 +48,7 @@ const EmptyState = lazy(()=>import('./code/emptyState'))
 const ReactCheck = () => {
   return (
     <>
-      <EmptyState />
+      <JotaiTest />
     </>
   )
 }
