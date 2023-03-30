@@ -220,7 +220,47 @@
 
 [MDH Weekly](https://mdhweekly.com/weekly)
 
+[React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
+
 ### 待看文章
+
+#### 演算法
+
+https://www.techinterviewhandbook.org/grind75
+
+https://mp.weixin.qq.com/s/DWGWK4yAlfEYO1Ynv1CMfg
+
+https://medium.com/starbugs/%E4%BE%86%E5%BE%81%E6%9C%8D%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B%E8%88%87%E6%BC%94%E7%AE%97%E6%B3%95%E5%90%A7-%E9%80%A3-google-%E9%9D%A2%E8%A9%A6%E9%83%BD%E5%9C%A8%E8%80%83%E7%9A%84-binary-tree-ae63c27f5969
+
+https://blog.techbridge.cc/2017/08/19/sotring-algorithm/
+
+https://medium.com/starbugs/%E4%BE%86%E5%BE%81%E6%9C%8D%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B%E8%88%87%E6%BC%94%E7%AE%97%E6%B3%95%E5%90%A7-%E9%97%9C%E6%96%BC-linked-list-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%B4%B9-feat-javascript-ff0ed89c326d
+
+https://chupai.github.io/series/javascript-%E5%AD%B8%E6%BC%94%E7%AE%97%E6%B3%95/
+
+https://juejin.cn/post/6844903971270688781
+
+https://pjchender.blogspot.com/search/label/Algorithm
+
+https://medium.com/frontend-canteen/algorithms-for-front-end-interviews-4aa329bb2ce4
+
+### TS
+
+https://www.youtube.com/watch?v=PL1NUl7fQ2I&list=PLG-Mk4wQm9_LyKE5EwoZz2_GGXR-zJ5Ml
+
+### Others
+
+https://reacttraining.com/blog/hooks-you-probably-dont-need
+
+https://juejin.cn/post/6918602124804915208
+
+https://juejin.cn/post/7175468840476737592
+
+https://kusakawazeusu.medium.com/%E7%94%A8-typescript-%E5%AF%AB-express-route-%E8%88%87-controller-%E7%AF%87-40db4850a8f2
+
+https://juejin.cn/post/6844903830887366670#heading-53
+
+https://juejin.cn/post/6945319439772434469
 
 
 
