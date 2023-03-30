@@ -1,4 +1,4 @@
-''`js
+```js
 import {
   GET_FIRST_ACTION,
   GET_FIRST_ACTION_SUCCESS,

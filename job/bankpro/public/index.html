@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>陽信企業網路銀行</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-store, max-age=0, must-revalidate">
+  <meta http-equiv="expires" content="0">
+  <!-- <link
+    href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap&subset=chinese-traditional"
+    rel="stylesheet"> -->
+  <script>
+    window.console.log('%c為了您的使用安全，請關閉開發者工具再進入網站!', 'color: #04e1a6;font-size: 24px;font-weight: bold;');
+    window.document.addEventListener('contextmenu', (e) => e.preventDefault() )
+    window.document.addEventListener('keydown', (e) => {
+      if ( e.key === 'F12' || 
+          (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+          (e.ctrlKey && e.shiftKey && e.key === 'J') || 
+          (e.ctrlKey && e.shiftKey && e.key === 'C') ||
+          (e.ctrlKey && e.key === 'U')
+      ) e.preventDefault()
+    })
+
+    // setInterval(function() {
+    //   block()
+    // }, 4000);
+    // const block = () => {
+    //   const doBlock =(times)=> {
+    //     if (("" + times/times)["length"] !== 1 || times % 20 === 0) {
+    //       (function() {}
+    //       ["constructor"]("debugger")())
+    //     } else {
+    //       (function() {}
+    //       ["constructor"]("debugger")())
+          
+    //     }
+    //     doBlock(++times)
+    //   } 
+    //   try {
+    //     doBlock(0)
+    //   } catch (err) {}
+    // };
+    // block();
+  </script>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .page-loading {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: block;
+      position: fixed;
+      z-index: 9999;
+    }
+
+    .spinner-wrapper,
+    .spinner-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .spinner-border {
+      width: 4.5rem;
+      height: 4.5rem;
+      vertical-align: text-bottom;
+      border: 0.3em solid currentColor;
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s ease-in-out infinite;
+      -webkit-animation: spin 0.75s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="page-loading">
+      <div class="spinner-wrapper">
+        <div class="spinner-border text-light" role="status"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

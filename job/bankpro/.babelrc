@@ -1,0 +1,27 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7",
+            ]
+          }
+        }
+      ],
+      "@babel/react",
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-proposal-private-methods",
+      // "@babel/plugin-proposal-export-default-from",
+      "@babel/syntax-dynamic-import",
+      "jsx-control-statements",
+    ],
+    "ignore": [
+      "./src/assets/webfonts"
+    ],
+  }
