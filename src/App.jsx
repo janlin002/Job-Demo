@@ -38,8 +38,7 @@ function App() {
               {
                 [...HeaderList].map((item)=> (
                   <Route path={`/${item.to}`} element={<item.component />} key={item.to}></Route>
-                )
-                )
+                ))
               }
             </Routes>
           </Suspense>
