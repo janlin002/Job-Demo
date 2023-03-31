@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useState, useEffect, Suspense, lazy } from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
 import { useSelector } from 'react-redux'
