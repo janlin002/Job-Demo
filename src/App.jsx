@@ -10,7 +10,6 @@ import AppLocale from './assets/lang'
 import Header from './Header'
 
 /**
- * 
  * en, zh, ch
  */
 
@@ -27,7 +26,7 @@ function App() {
     setLocale(data)
   },[lang])
 
-  // console.log(AppLocale[locale].language)
+  // AppLocale[locale].language
 
   return (
     <div>
