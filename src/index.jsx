@@ -5,9 +5,11 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import { Provider } from "react-redux"
-// redux
+
+// redux 配置
 import store from "./Redux/store" 
-// toolkit
+
+// toolkit 配置
 // import store from './store'
 
 import 'antd/dist/antd.css'
