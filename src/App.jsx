@@ -5,7 +5,7 @@ import { IntlProvider } from 'react-intl'
 import { useSelector } from 'react-redux'
 
 import HeaderList from './assets/Data/HeaderList'
-import AppLocale from './assets/lang'
+// import AppLocale from './assets/lang'
 
 import Header from './Header'
 
