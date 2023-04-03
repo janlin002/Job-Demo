@@ -17,3 +17,7 @@
 [Day15: 【TypeScript 學起來】Interface VS Type Aliases 用法與差別](https://ithelp.ithome.com.tw/articles/10275208)
 
 [React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/) -> 大推
+
+[TypeScript 中 import type 与 import 的区别](https://blog.csdn.net/VoisSurTonChemin/article/details/122508528)
+
+[你不知道的 「 import type 」](https://segmentfault.com/a/1190000039800522)

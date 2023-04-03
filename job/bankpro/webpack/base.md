@@ -6,32 +6,25 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 const API_HOST = (() => {
   switch (process.env.HOST) {
-    // case 'sunnybank':
-    //   return JSON.stringify('https://isunnytrain.sunnybank.com.tw/api')
-    // case 'sunnybanktest':
-    //   return JSON.stringify('https://www.esunnybank.com.tw/api')
-    // case 'sunnybankmachine':
-    //   return JSON.stringify('http://10.99.99.32:8080/api')
-
     // local
     case 'local':
       return JSON.stringify('http://localhost:8080/api')
     // 因為直接call api有cors問題，使用node啟動一個proxy server轉接，就可以call api
     // node為單獨啟動的資料夾，詳細可看node資料夾內附的readme
     case 'local-sunnybank-test-proxy':
-      return JSON.stringify('http://localhost:8080/api')
+      return JSON.stringify('')
     // stg
     case 'bankpro':
-      return JSON.stringify('http://BK-SUNNYBK01:8080/api')
+      return JSON.stringify('')
     // pre-release
     case 'sunnybank-test':
-      return JSON.stringify('https://b2bank-t.sunnybank.com.tw/api')
+      return JSON.stringify('')
     case 'sunnybank-uat':
-      return JSON.stringify('https://b2bank-u.sunnybank.com.tw/api')
+      return JSON.stringify('')
     case 'sunnybank-prod':
-      return JSON.stringify('https://b2bank.sunnybank.com.tw/api')
+      return JSON.stringify('')
     default:
-      return JSON.stringify('http://localhost:8080/api')
+      return JSON.stringify('i')
   }
 })()
 
