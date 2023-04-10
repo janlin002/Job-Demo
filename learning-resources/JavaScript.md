@@ -8,6 +8,8 @@
 
 [JavaScript中的 "Internal Slots" 和 "Internal Methods" 到底是什么？](https://juejin.cn/post/7059344609473724430)
 
+[淺入淺出 Generator Function](https://denny.qollie.com/2016/05/08/es6-generator-func/)
+
 ## JavaScript 底層原理
 
 [教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)
