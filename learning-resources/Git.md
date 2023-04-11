@@ -25,3 +25,5 @@
 [不知道 bug 躲在哪個 commit 嗎？來試試 Git bisect 吧！](https://medium.com/starbugs/use-git-bisect-to-find-the-buggy-commit-b35e12ddd26b)
 
 [Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案](https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/)
+
+[Git - submodule 使用教學](https://blog.kennycoder.io/2020/06/14/Git-submodule-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8/)

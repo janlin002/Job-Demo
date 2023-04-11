@@ -35,6 +35,7 @@
     "express": "^4.17.2",
     "firebase": "^9.15.0",
     "flat": "^5.0.2",
+    "form-render": "^2.1.9",
     "formik": "^2.2.9",
     "google-map-react": "^2.2.0",
     "http-proxy-middleware": "^2.0.1",

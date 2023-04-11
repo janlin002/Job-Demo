@@ -87,6 +87,7 @@ const SignalReact = lazy(()=>import('Demo/signal-react'))
 const LearnJotai = lazy(()=>import('Demo/learnJotai'))
 const Loadable = lazy(()=>import('Demo/loadable'))
 const CustomSignal = lazy(()=>import('Demo/Custom-Signal'))
+const Xrender = lazy(()=>import('Demo/xrender'))
 
 const HeaderList = [
   {
@@ -483,6 +484,11 @@ const HeaderList = [
     to: 'cus-signal',
     name: 'cus-signal',
     component: CustomSignal
+  },
+  {
+    to: 'xrender',
+    name: 'xrender',
+    component: Xrender
   }
 ]
 
