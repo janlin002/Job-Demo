@@ -80,7 +80,7 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.formatOnSave": true,
-  "terminal.integrated.gpuAcceleration": "off",
+  // "terminal.integrated.gpuAcceleration": "off",
   "vetur.validation.template": false,
   "eslint.format.enable": true, // 使用Eslint作为文件的一种格式规范 bamkpro\
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],

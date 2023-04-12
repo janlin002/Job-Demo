@@ -27,3 +27,7 @@
 [Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案](https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/)
 
 [Git - submodule 使用教學](https://blog.kennycoder.io/2020/06/14/Git-submodule-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8/)
+
+[Git 版本控制教學 - submodule](https://myapollo.com.tw/blog/git-tutorial-submodule/)
+
+[什么是 .gitkeep？如何让 Git 追踪空文件夹](https://www.freecodecamp.org/chinese/news/what-is-gitkeep/)
