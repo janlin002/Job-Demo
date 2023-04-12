@@ -19,3 +19,7 @@
 ## JavaScript 奇怪的地方
 
 [JavaScript: why can't I chain Array.prototype.filter with .push()?](https://stackoverflow.com/questions/21933217/javascript-why-cant-i-chain-array-prototype-filter-with-push)
+
+## JavaScript 特殊用法
+
+[ES6之import * as 用法 & import { default as & export { default as用法——as-重命名](https://blog.csdn.net/weixin_44867717/article/details/124142489)

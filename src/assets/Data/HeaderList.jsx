@@ -89,6 +89,7 @@ const Loadable = lazy(()=>import('Demo/loadable'))
 const CustomSignal = lazy(()=>import('Demo/Custom-Signal'))
 const Xrender = lazy(()=>import('Demo/xrender'))
 // const PackageTest = lazy(()=>import('Demo/packageTest'))
+const Ahooks = lazy(()=>import('Demo/ahooks'))
 
 const HeaderList = [
   {
@@ -491,11 +492,11 @@ const HeaderList = [
     name: 'xrender',
     component: Xrender
   },
-  // {
-  //   to: 'package-test',
-  //   name: 'package-test',
-  //   component: PackageTest
-  // }
+  {
+    to: 'ahooks',
+    name: 'ahooks',
+    component: Ahooks
+  }
 ]
 
 export default HeaderList
