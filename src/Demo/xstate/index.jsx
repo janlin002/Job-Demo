@@ -1,31 +1,13 @@
-import { createMachine, interpret } from 'xstate'
+import React, { lazy } from 'react'
 
-const promiseMachine = createMachine({
-  id: 'promise',
-  initial: 'pending',
-  states: {
-    pending: {
-      on: {
-        RESOLVE: { target: 'resolved' },
-        REJECT: { target: 'rejected' }
-      }
-    },
-    resolved: {
-      type: 'final'
-    },
-    rejected: {
-      type: 'final'
-    }
-  }
-})
+const Learn = lazy(()=>import('./learn'))
+const OneClassLearn = lazy(()=>import('./oneClassXstateLearn'))
 
-const promiseService = interpret(promiseMachine).onTransition((state) =>
-  console.log(state.value)
-)
+const Index = () => {
+  return (
+    // <OneClassLearn />
+    <Learn />
+  )
+}
 
-// Start the service
-promiseService.start()
-// => 'pending'
-
-promiseService.send({ type: 'RESOLVE' })
-// => 'resolved'
+export default Index
