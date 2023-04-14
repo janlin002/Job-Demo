@@ -31,3 +31,5 @@
 [Git 版本控制教學 - submodule](https://myapollo.com.tw/blog/git-tutorial-submodule/)
 
 [什么是 .gitkeep？如何让 Git 追踪空文件夹](https://www.freecodecamp.org/chinese/news/what-is-gitkeep/)
+
+[在 package.json 中使用 git url 作為 dependencies 與語意化版本管理](https://ray0427.medium.com/using-git-url-as-npm-dependencies-and-semantic-versioning-82b27a3245a5)

@@ -90,6 +90,7 @@ const CustomSignal = lazy(()=>import('Demo/Custom-Signal'))
 const Xrender = lazy(()=>import('Demo/xrender'))
 // const PackageTest = lazy(()=>import('Demo/packageTest'))
 const Ahooks = lazy(()=>import('Demo/ahooks'))
+const Antd = lazy(()=>import('Demo/antdPlayground'))
 
 const HeaderList = [
   {
@@ -496,6 +497,11 @@ const HeaderList = [
     to: 'ahooks',
     name: 'ahooks',
     component: Ahooks
+  },
+  {
+    to: 'antd-playground',
+    name: 'antd-playground',
+    component: Antd
   }
 ]
 
