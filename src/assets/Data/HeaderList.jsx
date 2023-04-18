@@ -91,6 +91,7 @@ const Xrender = lazy(()=>import('Demo/xrender'))
 // const PackageTest = lazy(()=>import('Demo/packageTest'))
 const Ahooks = lazy(()=>import('Demo/ahooks'))
 const Antd = lazy(()=>import('Demo/antdPlayground'))
+const Lodash = lazy(()=>import('../../lodashPlayground'))
 
 const HeaderList = [
   {
@@ -502,6 +503,11 @@ const HeaderList = [
     to: 'antd-playground',
     name: 'antd-playground',
     component: Antd
+  },
+  {
+    to: 'lodash-playground',
+    name: 'odash-playground',
+    component: Lodash
   }
 ]
 
