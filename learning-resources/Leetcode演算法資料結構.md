@@ -7,3 +7,5 @@
 [LeetCode with Javascript](https://skyyen999.gitbooks.io/-leetcode-with-javascript/content/) -> 推
 
 [Don’t Just LeetCode; Follow the Coding Patterns Instead](https://levelup.gitconnected.com/dont-just-leetcode-follow-the-coding-patterns-instead-4beb6a197fdb)
+
+[(1.8w字)负重前行，前端工程师如何系统练习数据结构和算法？](https://juejin.cn/post/6844904061947346957)

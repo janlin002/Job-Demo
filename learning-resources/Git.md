@@ -35,3 +35,10 @@
 [在 package.json 中使用 git url 作為 dependencies 與語意化版本管理](https://ray0427.medium.com/using-git-url-as-npm-dependencies-and-semantic-versioning-82b27a3245a5)
 
 [Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案](https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/)
+
+### adjust commit message
+
+[【狀況題】修改 Commit 紀錄](https://gitbook.tw/chapters/using-git/amend-commit1) => --amend
+
+[【狀況題】修改歷史訊息](https://gitbook.tw/chapters/rewrite-history/change-commit-message) => git rebase
+

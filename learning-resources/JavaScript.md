@@ -10,6 +10,10 @@
 
 [淺入淺出 Generator Function](https://denny.qollie.com/2016/05/08/es6-generator-func/)
 
+[[Javascript] 關閉瀏覽器或分頁事件: beforeunload](https://firsemisphere.blogspot.com/2019/07/javascript-beforeunload.html)
+
+[重新認識 JavaScript 番外篇 (6) - 網頁的生命週期](https://ithelp.ithome.com.tw/articles/10197335) => 推
+
 ## JavaScript 底層原理
 
 [教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)
