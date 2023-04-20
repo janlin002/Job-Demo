@@ -8,6 +8,7 @@ const Notification = lazy(()=>import('./Notification'))
 const Progress = lazy(()=>import('./Progress'))
 const Spin = lazy(()=>import('./Spin'))
 const Tooltip = lazy(()=>import('./Tooltip'))
+const Popover = lazy(()=>import('./Popover'))
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Progress />
       <Spin />
       <Tooltip />
+      <Popover />
     </>
   )
 }

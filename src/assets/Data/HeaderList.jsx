@@ -1,15 +1,15 @@
 import { lazy } from 'react'
 import lazyWithRetry from '../../lazyWithRetry'
 
-const Formik = lazyWithRetry(()=>import(/* webpackChunkName: "Formik" */'Demo/Formik-Yup/Formik'))
-const ReactTable = lazy(()=>import(/* webpackChunkName: "ReactTable" */'Demo/Recat-table/ReactTable'))
-const FormikYup = lazy(()=>import(/* webpackChunkName: "FormikYup" */'Demo/Formik-Yup/FormikYup.jsx'))
-const FrostedGlass = lazy(()=>import(/* webpackChunkName: "FrostedGlass" */ 'Demo/FrostedGlass'))
-const ReactQuery = lazy(()=>import(/* webpackChunkName: "ReactQuery" */ 'Demo/React-query'))
-const Immer = lazy(()=>import(/* webpackChunkName: "immer" */ 'Demo/immer'))
-const ReduxToolkitTest = lazy(()=>import(/* webpackChunkName: "immer" */ 'Demo/ReduxToolkitTest'))
-const DriveJs = lazy(()=>import(/* webpackChunkName: "DriveJs" */ 'Demo/Drivejs'))
-const ReactPlx = lazy(()=>import(/* webpackChunkName: "ReactPlx" */ 'Demo/React-plx'))
+const Formik = lazyWithRetry(()=>import('Demo/Formik-Yup/Formik'))
+const ReactTable = lazy(()=>import('Demo/Recat-table/ReactTable'))
+const FormikYup = lazy(()=>import('Demo/Formik-Yup/FormikYup.jsx'))
+const FrostedGlass = lazy(()=>import('Demo/FrostedGlass'))
+const ReactQuery = lazy(()=>import('Demo/React-query'))
+const Immer = lazy(()=>import('Demo/immer'))
+const ReduxToolkitTest = lazy(()=>import('Demo/ReduxToolkitTest'))
+const DriveJs = lazy(()=>import('Demo/Drivejs'))
+const ReactPlx = lazy(()=>import('Demo/React-plx'))
 const jsDoc = lazy(()=>import('Demo/JSDOC'))
 const ReactLoadingSkeleton = lazy(()=>import('Demo/ReactLoadingSkeleton'))
 const GoogleOauthLogin = lazy(()=>import('Demo/Google-auth'))
@@ -92,6 +92,7 @@ const Xrender = lazy(()=>import('Demo/xrender'))
 const Ahooks = lazy(()=>import('Demo/ahooks'))
 const Antd = lazy(()=>import('Demo/antdPlayground'))
 const Lodash = lazy(()=>import('../../lodashPlayground'))
+const Ramda = lazy(()=>import('../../ramdaPlayground'))
 
 const HeaderList = [
   {
@@ -506,8 +507,13 @@ const HeaderList = [
   },
   {
     to: 'lodash-playground',
-    name: 'odash-playground',
+    name: 'lodash-playground',
     component: Lodash
+  },
+  {
+    to: 'ramda-playground',
+    name: 'ramda-playground',
+    component: Ramda
   }
 ]
 
