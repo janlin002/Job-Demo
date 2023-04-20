@@ -93,6 +93,7 @@ const Ahooks = lazy(()=>import('Demo/ahooks'))
 const Antd = lazy(()=>import('Demo/antdPlayground'))
 const Lodash = lazy(()=>import('../../lodashPlayground'))
 const Ramda = lazy(()=>import('../../ramdaPlayground'))
+const Echarts = lazy(()=>import('Demo/echarts'))
 
 const HeaderList = [
   {
@@ -514,6 +515,11 @@ const HeaderList = [
     to: 'ramda-playground',
     name: 'ramda-playground',
     component: Ramda
+  },
+  {
+    to: 'echarts',
+    name: 'echarts',
+    component: Echarts
   }
 ]
 

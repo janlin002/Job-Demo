@@ -14,6 +14,8 @@
 
 [重新認識 JavaScript 番外篇 (6) - 網頁的生命週期](https://ithelp.ithome.com.tw/articles/10197335) => 推
 
+[不会这10个Web API，你还好意思说你是前端开发者？](https://juejin.cn/post/7221813031813054501)
+
 ## JavaScript 底層原理
 
 [教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)
