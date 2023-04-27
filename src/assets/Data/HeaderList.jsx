@@ -94,6 +94,7 @@ const Antd = lazy(()=>import('Demo/antdPlayground'))
 const Lodash = lazy(()=>import('../../lodashPlayground'))
 const Ramda = lazy(()=>import('../../ramdaPlayground'))
 const Echarts = lazy(()=>import('Demo/echarts'))
+const Oneclass = lazy(()=>import('Demo/oneclass'))
 
 const HeaderList = [
   {
@@ -520,6 +521,11 @@ const HeaderList = [
     to: 'echarts',
     name: 'echarts',
     component: Echarts
+  },
+  {
+    to: 'oneclass',
+    name: 'oneclass',
+    component: Oneclass
   }
 ]
 

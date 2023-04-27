@@ -16,6 +16,8 @@
 
 [不会这10个Web API，你还好意思说你是前端开发者？](https://juejin.cn/post/7221813031813054501)
 
+[Javascript｜閉包 Closure 的介紹及應用。閉包跟 FP 的關係是什麼？](https://molly1024.medium.com/javascript-%E9%96%89%E5%8C%85-closure-%E7%9A%84%E4%BB%8B%E7%B4%B9%E5%8F%8A%E6%87%89%E7%94%A8-%E9%96%89%E5%8C%85%E8%B7%9F-fp-%E7%9A%84%E9%97%9C%E4%BF%82%E6%98%AF%E4%BB%80%E9%BA%BC-d9f598c432b7)
+
 ## JavaScript 底層原理
 
 [教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)
