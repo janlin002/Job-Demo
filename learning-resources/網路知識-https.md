@@ -11,3 +11,7 @@
 [HTTP隧道与Proxy-Tunnel技术](https://blog.csdn.net/Z_suger7/article/details/114890054)
 
 [新手坑：讓人又愛又恨的 HTTP Caching](https://medium.com/frochu/http-caching-3382037ab06f#8291)
+
+[你所不知道的 query string 小細節](https://medium.com/starbugs/%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84-query-string-%E5%B0%8F%E7%B4%B0%E7%AF%80-56498dc0645)
+
+[Request 額外補充](https://saffranblog.coderbridge.io/2021/02/06/more-about-request/)

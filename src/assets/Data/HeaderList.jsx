@@ -95,6 +95,7 @@ const Lodash = lazy(()=>import('../../lodashPlayground'))
 const Ramda = lazy(()=>import('../../ramdaPlayground'))
 const Echarts = lazy(()=>import('Demo/echarts'))
 const Oneclass = lazy(()=>import('Demo/oneclass'))
+const MUI = lazy(()=>import('Demo/MUI'))
 
 const HeaderList = [
   {
@@ -526,6 +527,11 @@ const HeaderList = [
     to: 'oneclass',
     name: 'oneclass',
     component: Oneclass
+  },
+  {
+    to: 'mui',
+    name: 'mui',
+    component: MUI
   }
 ]
 

@@ -2,6 +2,7 @@ import React from 'react'
 
 const Get = () => {
   const object = { a: [{ b: { c: 3 } }] }
+  const castPathObject = ['a', '0', 'b', 'c']
 
   const lodashGet = (object, path, defaultValue)=> {
     // 先確認傳進來的 object 不是 null，如果是則直接回傳 defaultValue
@@ -11,8 +12,6 @@ const Get = () => {
   
     let count = 0
     const length = path.length
-
-    console.log(length, 'length')
   
     // 依循路徑一層層走過該物件，以上面的例子來說，會是
     // path[0] 為 'a'，所以第一次迴圈 object 會變成 object['a'] 也就是 [{ b: { c: 3 } }]
@@ -25,7 +24,6 @@ const Get = () => {
     // 這時 count 為 4，由於 length 也是 4，因為 4 不小於 4，所以跳出迴圈
     while (object != null && count < length) {
       object = object[path[count++]]
-      console.log(object, path[count++], count, object[path[count++]], 'object')
     }
   
     // 因為上面如果 object 是 null 的話，在走完 length 長度前，就會跳出 while 迴圈
@@ -37,15 +35,17 @@ const Get = () => {
   
     // 如果 result 是 undefined，代表依循該路徑，會找不到值，所以回傳預設值
     // 如果依循路徑有找到值，就回傳 result
-
-    console.log(result)
     return result === undefined ? defaultValue : result
   }
 
-  lodashGet(object, 'a[0].b.c')
+  // 1. object['a'] => [{ b: { c: 3 } }]
+  // 2. object['0'] => { b: { c: 3 } }
+  // 3. object['b'] => { c: 3 }
+  // 4. object['c'] => 3
+  // 長度超過跳出迴圈
+  
+  lodashGet(object, castPathObject)
 
-  //=> 3
-  //   console.log(lodashGet(object, 'a[0].b.c'))
   return (
     <div>
         Get
