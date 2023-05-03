@@ -31,3 +31,7 @@
 ## React Router
 
 [react路由新写法](https://zhuanlan.zhihu.com/p/430635190)
+
+## Hooks
+
+[React hooks: How do I update state on a nested object with useState()?](https://stackoverflow.com/questions/56802815/react-hooks-how-do-i-update-state-on-a-nested-object-with-usestate)
