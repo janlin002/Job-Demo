@@ -20,6 +20,8 @@
 
 [JavaScript 內 substr, substring 和 slice 方法的分別](https://www.foolegg.com/post/what-is-the-difference-between-substr-substring-and-slice-in-javascript/)
 
+[JavaScript reduce 在做什麼？](https://w3c.hexschool.com/blog/a2cb755f)
+
 ## JavaScript 底層原理
 
 [教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)
