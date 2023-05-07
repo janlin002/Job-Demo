@@ -22,6 +22,8 @@
 
 [JavaScript reduce 在做什麼？](https://w3c.hexschool.com/blog/a2cb755f)
 
+[关于前端实现上传文件这个功能，我只能说so easy！](https://juejin.cn/post/7224402365452238906)
+
 ## JavaScript 底層原理
 
 [教女朋友学前端之深入理解JS引擎](https://segmentfault.com/a/1190000040519211)

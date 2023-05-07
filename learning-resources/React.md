@@ -16,6 +16,8 @@
 
 [Data Binding in React](https://www.joshwcomeau.com/react/data-binding/) -> 推
 
+[How React Works Under the Hood](https://medium.com/@zipy-ai/how-react-works-under-the-hood-d2af692e8be0)
+
 ## React RSC
 
 [React 新概念 — Server Components](https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463)

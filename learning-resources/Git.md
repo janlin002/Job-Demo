@@ -36,6 +36,8 @@
 
 [Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案](https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/)
 
+[add、commit...👀git就会这几个操作吗？进来涨点新姿势～](https://juejin.cn/post/7228869305549537336)
+
 ### adjust commit message
 
 [【狀況題】修改 Commit 紀錄](https://gitbook.tw/chapters/using-git/amend-commit1) => --amend
