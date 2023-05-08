@@ -96,6 +96,7 @@ const Ramda = lazy(()=>import('../../ramdaPlayground'))
 const Echarts = lazy(()=>import('Demo/echarts'))
 const Oneclass = lazy(()=>import('Demo/oneclass'))
 const MUI = lazy(()=>import('Demo/MUI'))
+const InterviewHandWrite = lazy(()=>import('../../interviewHandWrite'))
 
 const HeaderList = [
   {
@@ -532,6 +533,11 @@ const HeaderList = [
     to: 'mui',
     name: 'mui',
     component: MUI
+  },
+  {
+    to: 'InterviewHandWrite',
+    name: 'InterviewHandWrite',
+    component: InterviewHandWrite
   }
 ]
 
