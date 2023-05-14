@@ -38,9 +38,16 @@
 
 [add、commit...👀git就会这几个操作吗？进来涨点新姿势～](https://juejin.cn/post/7228869305549537336)
 
+
 ### adjust commit message
 
 [【狀況題】修改 Commit 紀錄](https://gitbook.tw/chapters/using-git/amend-commit1) => --amend
 
 [【狀況題】修改歷史訊息](https://gitbook.tw/chapters/rewrite-history/change-commit-message) => git rebase
+
+### 開源
+
+[git remote add - 添加遠端數據庫](https://w3c.hexschool.com/git/fd426d5a)
+
+[發 PR？貢獻開源專案？GitHub協作？](https://yfr-huang.medium.com/%E7%99%BC-pr-%E8%B2%A2%E7%8D%BB%E9%96%8B%E6%BA%90%E5%B0%88%E6%A1%88-github%E5%8D%94%E4%BD%9C-884f78cf4219)
 

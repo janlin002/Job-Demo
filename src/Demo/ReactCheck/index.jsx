@@ -46,11 +46,13 @@ const DragandDrop = lazy(()=>import('./code/DragandDrop'))
 const EmptyState = lazy(()=>import('./code/emptyState'))
 const WindowedObservable = lazy(()=>import('./code/windowedObservable'))
 const CustomEvents = lazy(()=>import('./code/customEvent'))
+const MuiAutoComplete = lazy(()=>import('./code/muiAutoComplete'))
 
 const ReactCheck = () => {
+
   return (
     <>
-      <CustomEvents />
+      <MuiAutoComplete />
     </>
   )
 }

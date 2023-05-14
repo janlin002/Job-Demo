@@ -13,3 +13,5 @@
 [在 React Create-React-App 引入 SVG 圖檔的方法，並使用 Styled-Components 來調整 SVG Icon 在不同狀態下的色彩改變](https://medium.com/itsoktomakemistakes/react-create-react-app-svg-icons-styled-component-570b4e9f07b)
 
 [How to use SVGs in React](https://blog.logrocket.com/how-to-use-svgs-react/)
+
+[align-self 屬性介紹](https://w3c.hexschool.com/flexbox/c3847835)

@@ -17,3 +17,5 @@
 [Request 額外補充](https://saffranblog.coderbridge.io/2021/02/06/more-about-request/)
 
 [[第八週]網頁資料儲存 — cookie、local Storage、Session Storage](https://miahsuwork.medium.com/%E7%AC%AC%E5%85%AB%E9%80%B1-%E7%B6%B2%E9%A0%81%E8%B3%87%E6%96%99%E5%84%B2%E5%AD%98-cookie-local-storage-session-storage-a3f40013da37)
+
+[Window.History 对象](https://wangdoc.com/javascript/bom/history)
