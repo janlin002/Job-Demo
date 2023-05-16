@@ -37,3 +37,7 @@
 ## JavaScript 特殊用法
 
 [ES6之import * as 用法 & import { default as & export { default as用法——as-重命名](https://blog.csdn.net/weixin_44867717/article/details/124142489)
+
+## 新語法
+
+[ES2023 introduces new array copying methods to JavaScript](https://www.sonarsource.com/blog/es2023-new-array-copying-methods-javascript/?fbclid=IwAR2eelBnYb4zH_M5rdM1rkqUivRvFjhn04GhKPBf04TDpPG2eSAAg6Xyh24) -> 大推(新語法跟舊語法一樣，唯一的差異就是他不會更改到原本的array，會複製一份出來改)
