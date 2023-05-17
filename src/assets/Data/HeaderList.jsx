@@ -97,6 +97,7 @@ const Echarts = lazy(()=>import('Demo/echarts'))
 const Oneclass = lazy(()=>import('Demo/oneclass'))
 const MUI = lazy(()=>import('Demo/MUI'))
 const InterviewHandWrite = lazy(()=>import('../../interviewHandWrite'))
+const FullCalendar = lazy(()=>import('Demo/fullCalendar'))
 
 const HeaderList = [
   {
@@ -538,6 +539,11 @@ const HeaderList = [
     to: 'InterviewHandWrite',
     name: 'InterviewHandWrite',
     component: InterviewHandWrite
+  },
+  {
+    to: 'fullCalendar',
+    name: 'fullCalendar',
+    component: FullCalendar
   }
 ]
 
