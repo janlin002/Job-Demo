@@ -6,11 +6,11 @@
 
 [十分鐘帶你了解 TypeScript Decorator](https://oldmo860617.medium.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B8%B6%E4%BD%A0%E4%BA%86%E8%A7%A3-typescript-decorator-48c2ae9e246d)
 
-[ts保姆级教程，别再说你不会ts了](https://juejin.cn/post/7092415149809598500)
+[ts 保姆级教程，别再说你不会 ts 了](https://juejin.cn/post/7092415149809598500)
 
-[React + TypeScript实践](https://juejin.cn/post/6952696734078369828)
+[React + TypeScript 实践](https://juejin.cn/post/6952696734078369828)
 
-[2022年了，我才开始学 typescript ，晚吗？（7.5k字总结）](https://juejin.cn/post/7124117404187099172)
+[2022 年了，我才开始学 typescript ，晚吗？（7.5k 字总结）](https://juejin.cn/post/7124117404187099172)
 
 [interface vs type](https://juejin.cn/post/7093132160747438117)
 
@@ -21,3 +21,7 @@
 [TypeScript 中 import type 与 import 的区别](https://blog.csdn.net/VoisSurTonChemin/article/details/122508528)
 
 [你不知道的 「 import type 」](https://segmentfault.com/a/1190000039800522)
+
+## with React
+
+[好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)

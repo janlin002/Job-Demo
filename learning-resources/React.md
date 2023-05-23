@@ -28,11 +28,13 @@
 
 [從 Next.js 13 認識 React Server Components](https://oldmo860617.medium.com/%E5%BE%9E-next-js-13-%E8%AA%8D%E8%AD%98-react-server-components-37c2bad96d90)
 
-[【react】初探server component](https://juejin.cn/post/6918602124804915208)
+[【react】初探 server component](https://juejin.cn/post/6918602124804915208)
 
 ## React Router
 
-[react路由新写法](https://zhuanlan.zhihu.com/p/430635190)
+[react 路由新写法](https://zhuanlan.zhihu.com/p/430635190)
+
+[react 通过 history.location.state 来携带参数](https://blog.csdn.net/m0_60823684/article/details/121445877)
 
 ## Hooks
 
