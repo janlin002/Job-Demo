@@ -18,6 +18,10 @@
 
 [How React Works Under the Hood](https://medium.com/@zipy-ai/how-react-works-under-the-hood-d2af692e8be0)
 
+[React 中優雅使用網址參數 Query String](https://medium.com/itsoktomakemistakes/react-%E4%B8%AD%E5%84%AA%E9%9B%85%E4%BD%BF%E7%94%A8%E7%B6%B2%E5%9D%80%E5%8F%83%E6%95%B8-query-string-540bacd08486)
+
+[React 如何抓取 URL 網址中的參數。How to Get URL Parameters and Query Strings?](https://molly1024.medium.com/react-%E5%A6%82%E4%BD%95%E6%8A%93%E5%8F%96url%E7%B6%B2%E5%9D%80%E4%B8%AD%E7%9A%84%E5%8F%83%E6%95%B8-how-to-get-params-in-url-f8902a4256ca)
+
 ## React RSC
 
 [React 新概念 — Server Components](https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463)

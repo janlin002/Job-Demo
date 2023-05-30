@@ -22,6 +22,8 @@
 
 [你不知道的 「 import type 」](https://segmentfault.com/a/1190000039800522)
 
+[Day16:【TypeScript 學起來】新增任意屬性的好方法：Index Signatures 索引簽名](https://ithelp.ithome.com.tw/articles/10275784)
+
 ## with React
 
 [好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)
