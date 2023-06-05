@@ -9,18 +9,20 @@ const Progress = lazy(()=>import('./Progress'))
 const Spin = lazy(()=>import('./Spin'))
 const Tooltip = lazy(()=>import('./Tooltip'))
 const Popover = lazy(()=>import('./Popover'))
+const Tree = lazy(()=>import('./Tree'))
 
 const Index = () => {
   return (
     <>
-      <Badge />
-      <DatePicker />
-      <Drawer />
-      <Notification />
-      <Progress />
-      <Spin />
-      <Tooltip />
-      <Popover />
+      {/* <Badge /> */}
+      {/* <DatePicker /> */}
+      {/* <Drawer /> */}
+      {/* <Notification /> */}
+      {/* <Progress /> */}
+      {/* <Spin /> */}
+      {/* <Tooltip /> */}
+      {/* <Popover /> */}
+      <Tree />
     </>
   )
 }

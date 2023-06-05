@@ -25,3 +25,5 @@
 [JavaScript 取得 QueryString 方式](https://israynotarray.com/javascript/20190724/834556007/)
 
 [JavaScript 取得 Url 的 Query String](https://shunnien.github.io/2017/07/03/Get-Query-String-Parameters-with-JavaScript/)
+
+[js中window。location.search的用法和作用。](https://blog.csdn.net/qq_27093465/article/details/50731087)

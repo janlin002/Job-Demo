@@ -24,6 +24,14 @@
 
 [Day16:【TypeScript 學起來】新增任意屬性的好方法：Index Signatures 索引簽名](https://ithelp.ithome.com.tw/articles/10275784)
 
-## with React
+
+
+### with React
 
 [好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)
+
+[Your First React Typescript Project: a Todo List App](https://typeofnan.dev/your-first-react-typescript-project-todo-app/)
+
+### with axios
+
+[Writing a custom Axios hook in TypeScript for API calls in your React application](https://blog.sreejit.dev/custom-axios-hook-useaxios-in-typescript-react)
