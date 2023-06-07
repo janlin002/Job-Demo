@@ -34,6 +34,8 @@
 
 [JavaScript: why can't I chain Array.prototype.filter with .push()?](https://stackoverflow.com/questions/21933217/javascript-why-cant-i-chain-array-prototype-filter-with-push)
 
+[當 JavaScript 的 forEach 遇到 async 時該怎麼解決](https://israynotarray.com/javascript/20211029/2739130728/)
+
 ## JavaScript 特殊用法
 
 [ES6 之 import \* as 用法 & import { default as & export { default as 用法——as-重命名](https://blog.csdn.net/weixin_44867717/article/details/124142489)
