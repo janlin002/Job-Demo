@@ -17,7 +17,7 @@
     "@material-ui/lab": "^4.0.0-alpha.61",
     "@mui/icons-material": "^5.11.16",
     "@mui/lab": "^5.0.0-alpha.133",
-    "@mui/material": "^5.13.0",
+    "@mui/material": "^5.13.4",
     "@mui/styles": "^5.13.2",
     "@preact/compat": "^17.1.2",
     "@preact/signals-react": "^1.2.2",
