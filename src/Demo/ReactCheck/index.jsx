@@ -48,12 +48,13 @@ const WindowedObservable = lazy(()=>import('./code/windowedObservable'))
 const CustomEvents = lazy(()=>import('./code/customEvent'))
 const MuiAutoComplete = lazy(()=>import('./code/muiAutoComplete'))
 const ImageLazyImport = lazy(()=>import('./code/ImageLazyImport'))
+const MuiTreeTest = lazy(()=>import('./code/muiTreeTest'))
 
 const ReactCheck = () => {
 
   return (
     <>
-      <ImageLazyImport />
+      <MuiTreeTest />
     </>
   )
 }

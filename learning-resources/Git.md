@@ -40,6 +40,8 @@
 
 [為什麼我不用 Squash and merge](https://medium.com/@gliyao/%E7%82%BA%E4%BB%80%E9%BA%BC%E6%88%91%E4%B8%8D%E7%94%A8-squash-65a2ddaa83fc)
 
+[git merge rebase cherry-pick 分别什么时候用？一文解惑](https://juejin.cn/post/7034793065340796942)
+
 ### adjust commit message
 
 [【狀況題】修改 Commit 紀錄](https://gitbook.tw/chapters/using-git/amend-commit1) => --amend
