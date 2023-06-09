@@ -101,21 +101,20 @@ const useStyles = makeStyles(theme => ({
 //   },
 }))
 
+// expanded => 選取的內容
+// selectedNodes => 全部的節點
+
 export default function ControlledTreeView() {
   const [isSingleItem, setIsSingleItem] = useState(false) // 是否為所有範圍
-  const classes = useStyles({ isSingleItem })
-  const [expanded, setExpanded] = React.useState([])
+  const [expanded, setExpanded] = useState([])
   const [selectedNodes, setSelectedNodes] = useState([])
-  const [data, setData] = useState({})
+  const [data, setData] = useState({}) // tree 的資料
 
-  console.log(selectedNodes, 'selectedNodes')
+  const classes = useStyles({ isSingleItem })
 
   useEffect(()=>{
     setData([chapterOptions(OnelinkData.data)])
   }, [])
-
-  // expanded => 選取的內容
-  // selectedNodes => 全部的節點
 
   const handleChange = (event, nodes) => {
     setExpanded(nodes)
@@ -150,7 +149,6 @@ export default function ControlledTreeView() {
 
   // Get IDs of all children from specific node
   const getAllChild = (id) => {
-    console.log(id, 'ididid')
     return getAllIds(bfsSearch(data, id))
   }
 
@@ -177,12 +175,9 @@ export default function ControlledTreeView() {
   }
 
   const handleNodeSelect = (event, nodeId) => {
-    console.log(event, nodeId, 'event')
     event.stopPropagation()
     const allChild = getAllChild(nodeId)
     const fathers = getAllFathers(nodeId)
-
-    console.log(allChild, 'allChild')
 
     if (selectedNodes.includes(nodeId)) {
       // Need to de-check
@@ -260,14 +255,10 @@ export default function ControlledTreeView() {
         }
       }
     }
-
-    console.log(jsonObj, "jsonObj")
     return jsonObj
   }
 
   chapterOptions(OnelinkData.data)
-
-  console.log([chapterOptions(OnelinkData.data)], data, 'check')
 
   useEffect(()=>{
     if([chapterOptions(OnelinkData.data)].length === 1){
@@ -276,8 +267,6 @@ export default function ControlledTreeView() {
       setIsSingleItem(false)
     }
   }, [])
-
-  console.log(isSingleItem, 'isSingle')
 
   return (
     <>
@@ -322,11 +311,13 @@ export default function ControlledTreeView() {
   )
 }
 
-// 中間需要調整
+// 中間需要調整 => ok
 // input 框的 border 要調整
-// id 不能是 null => 如果不行的話，MUI就不能用了
-// 所有範圍 跟 為歸類範圍 是否可以獨立出來
+// id 不能是 null => 如果不行的話，MUI就不能用了，要改用 antd
+// 所有範圍 跟 未歸類範圍 是否可以獨立出來
 // id: 1 => 等同全部(選)
+// 如果後端可以將所有範圍，寫成跟第一冊同層，就可以解決以上問題
+// 前端手動加上 id
 
 // 舊的資料
 // {

@@ -62,10 +62,10 @@ const Index = () => {
     
   const [selectedNodes, setSelectedNodes] = useState([])
   
-  useEffect(() => {
-    console.log("Selected Nodes:")
-    console.log(JSON.stringify(selectedNodes, null, 4))
-  }, [selectedNodes])
+  // useEffect(() => {
+  //   console.log("Selected Nodes:")
+  //   console.log(JSON.stringify(selectedNodes, null, 4))
+  // }, [selectedNodes])
 
   // Retrieve all ids from node to his children's
   function getAllIds(node, idList = []) {
