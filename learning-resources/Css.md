@@ -24,6 +24,10 @@
 
 [用 CSS 完成單行與多行省略號功能！](https://netivism.com.tw/blog/492)
 
+[[CSS] 選擇器表 (Selectors)](https://ithelp.ithome.com.tw/articles/10243699)
+
+[CSS選擇器, xy, x>y, x+y, x~y](https://www.tpisoftware.com/tpu/articleDetails/2401)
+
 ### styled-components
 
 [How to use media queries with styled components](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)

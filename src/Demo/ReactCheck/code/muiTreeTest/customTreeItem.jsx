@@ -13,6 +13,10 @@ import Button from '@mui/material/Button'
 
 import normalData from './data.json'
 import OnelinkData from './oneLinkData.json'
+import OneLinkSameLayerData from './oneLinkSameLayer.json'
+import OneLinkSameLayerData2 from './oneLinkSameLayer2.json'
+
+const SELECT_ALL = '1'
 
 // const useTreeItemStyles = makeStyles(theme => ({
 //   content: {
@@ -101,21 +105,29 @@ const useStyles = makeStyles(theme => ({
 //   },
 }))
 
-// expanded => 選取的內容
-// selectedNodes => 全部的節點
+// expanded => ??
+// selectedNodes => 選取的內容
 
 export default function ControlledTreeView() {
   const [isSingleItem, setIsSingleItem] = useState(false) // 是否為所有範圍
   const [expanded, setExpanded] = useState([])
   const [selectedNodes, setSelectedNodes] = useState([])
   const [data, setData] = useState({}) // tree 的資料
+  const [isSelectAll, setIsSelectAll] = useState(false)
 
   const classes = useStyles({ isSingleItem })
 
+  console.log(expanded, selectedNodes, 'data Check')
+
+  // useEffect(()=>{
+  //   setData([chapterOptions(OnelinkData.data)])
+  // }, [])
+
   useEffect(()=>{
-    setData([chapterOptions(OnelinkData.data)])
+    setData(chapterOptions(OneLinkSameLayerData2.data))
   }, [])
 
+  // 展開選單
   const handleChange = (event, nodes) => {
     setExpanded(nodes)
   }
@@ -174,36 +186,94 @@ export default function ControlledTreeView() {
     )
   }
 
+  const extractIds = (data) =>{
+    let ids = []
+  
+    for (const item of data) {
+      ids.push(item.id)
+  
+      if (item.children && item.children.length > 0) {
+        ids = ids.concat(extractIds(item.children))
+      }
+    }
+  
+    return ids
+  }
+  
+  const idsArray = extractIds(OneLinkSameLayerData2.data)
+
+  console.log(idsArray, 'idsArray')
+
+  // 點擊選取
   const handleNodeSelect = (event, nodeId) => {
+    console.log(event, nodeId, 'nodeItem')
     event.stopPropagation()
     const allChild = getAllChild(nodeId)
     const fathers = getAllFathers(nodeId)
 
     if (selectedNodes.includes(nodeId)) {
-      // Need to de-check
-      setSelectedNodes((prevSelectedNodes) =>
-        prevSelectedNodes.filter((id) => !allChild.concat(fathers).includes(id))
-      )
-    } else {
-      // Need to check
-      const ToBeChecked = allChild
-      for (let i = 0; i < fathers.length; ++i) {
-        if (isAllChildrenChecked(bfsSearch(data, fathers[i]), ToBeChecked)) {
-          ToBeChecked.push(fathers[i])
-        }
+      // 取消勾選
+      if(nodeId === SELECT_ALL){
+        setSelectedNodes([])
+        setIsSelectAll(false)
+      }else {
+        setSelectedNodes((prevSelectedNodes) =>
+          prevSelectedNodes.filter((id) => !allChild.concat(fathers).includes(id))
+        )
       }
-      setSelectedNodes((prevSelectedNodes) =>
-        [...prevSelectedNodes].concat(ToBeChecked)
-      )
+      
+    } else {
+      // 勾選
+      if(nodeId === SELECT_ALL){
+        setSelectedNodes(idsArray)
+        setIsSelectAll(true)
+      }else {
+        const ToBeChecked = allChild
+        for (let i = 0; i < fathers.length; ++i) {
+          if (isAllChildrenChecked(bfsSearch(data, fathers[i]), ToBeChecked)) {
+            ToBeChecked.push(fathers[i])
+          }
+        }
+        setSelectedNodes((prevSelectedNodes) =>
+          [...prevSelectedNodes].concat(ToBeChecked)
+        )
+      }
+      
     }
   }
+
+  console.log(selectedNodes, idsArray, isSelectAll, 'selectedNodes')
+
+  // 其他選項全部勾選的話，要將 selectAll 勾起
+  useEffect(()=>{
+    if(selectedNodes.includes(SELECT_ALL)){
+      if(selectedNodes.length !== idsArray.length){
+        // 把 所有範圍 checkbox 取消勾選
+        const newNode = [...selectedNodes]
+        let index = newNode.indexOf(SELECT_ALL)
+
+        newNode.splice(index, 1)
+
+        console.log(newNode, selectedNodes, index, 'indexxxx')
+
+        // newNode.splice(index, 1)
+
+        setSelectedNodes(newNode)
+      }
+    }
+
+    if(selectedNodes.length === idsArray.length - 1){
+      // 全部勾選，要將 所有範圍 checkbox 補回去
+      setSelectedNodes(idsArray)
+    }
+  }, [selectedNodes])
 
   const renderTree = (nodes) => {
     console.log(nodes, 'nodes')
     return (
       <TreeItem
-        key={nodes.id}
-        nodeId={nodes.id}
+        key={nodes?.id}
+        nodeId={nodes?.id}
         onClick={handleExpandClick}
         classes={{
           content: classes.content
@@ -255,10 +325,20 @@ export default function ControlledTreeView() {
         }
       }
     }
+    console.log(jsonObj, 'jsonObj')
     return jsonObj
   }
 
-  chapterOptions(OnelinkData.data)
+  // const changeIdName = (arrItem) =>{
+  //   const newArr = arrItem.map((item)=>{
+  //     console.log(item, 'itemitem')
+  //     if("rangeId" in item){
+  //       item["id"] = item["rangeId"]
+  //     }
+  //   })
+
+  //   console.log(newArr, 'newArr')
+  // }
 
   useEffect(()=>{
     if([chapterOptions(OnelinkData.data)].length === 1){
@@ -271,7 +351,7 @@ export default function ControlledTreeView() {
   return (
     <>
       <div>
-        <Button
+        {/* <Button
           style={{ border: '1px solid #E4E7EC', width: '571px', borderRadius: '10px' }}
         >
             所有範圍
@@ -289,7 +369,7 @@ export default function ControlledTreeView() {
           style={{ border: '1px solid #E4E7EC', width: '571px', borderRadius: '10px' }}
         >
             未歸類範圍
-        </Button>
+        </Button> */}
         {/* <Button>未歸類範圍</Button> */}
       </div>
       
@@ -302,10 +382,22 @@ export default function ControlledTreeView() {
           expanded={expanded}
           onNodeToggle={handleChange}
         >
-          {[chapterOptions(OnelinkData.data)].map((node) => renderTree(node))}
+          {chapterOptions(OneLinkSameLayerData2.data).map((node) => renderTree(node))}
         </TreeView>
       </div>
-      
+      <hr />
+
+      {/* <div style={{ padding: '20px' }}>
+        <TreeView
+          className={classes.root}
+          defaultCollapseIcon={<ExpandMoreIcon />}
+          defaultExpandIcon={<ChevronRightIcon />}
+          expanded={expanded}
+          onNodeToggle={handleChange}
+        >
+          {[chapterOptions(OnelinkData.data)].map((node) => renderTree(node))}
+        </TreeView>
+      </div> */}
     </>
     
   )
@@ -318,6 +410,8 @@ export default function ControlledTreeView() {
 // id: 1 => 等同全部(選)
 // 如果後端可以將所有範圍，寫成跟第一冊同層，就可以解決以上問題
 // 前端手動加上 id
+
+// 即使畫面調整，但是一樣會是上層
 
 // 舊的資料
 // {
