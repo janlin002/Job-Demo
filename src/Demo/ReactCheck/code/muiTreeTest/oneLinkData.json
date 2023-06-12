@@ -7,13 +7,13 @@
     "data": {
       "total": 133,
       "name": "所有範圍",
-      "rangeId": "所有範圍",
+      "rangeId": "root",
       "versionCode": null,
       "children": [
         {
           "total": 121,
           "name": "第一冊",
-          "rangeId": "111",
+          "rangeId": "1",
           "versionCode": null,
           "children": [
             {

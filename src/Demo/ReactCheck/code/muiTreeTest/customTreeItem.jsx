@@ -15,6 +15,7 @@ import normalData from './data.json'
 import OnelinkData from './oneLinkData.json'
 import OneLinkSameLayerData from './oneLinkSameLayer.json'
 import OneLinkSameLayerData2 from './oneLinkSameLayer2.json'
+import OfficialData from './officialData.json'
 
 const SELECT_ALL = '1'
 
@@ -98,11 +99,6 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexDirection: "row-reverse"
   },
-//   test: { 
-//     "& > .MuiTreeItem-root": {
-//       border: '1px solid black'
-//     }
-//   },
 }))
 
 // expanded => ??
@@ -117,15 +113,13 @@ export default function ControlledTreeView() {
 
   const classes = useStyles({ isSingleItem })
 
-  console.log(expanded, selectedNodes, 'data Check')
-
-  // useEffect(()=>{
-  //   setData([chapterOptions(OnelinkData.data)])
-  // }, [])
-
   useEffect(()=>{
-    setData(chapterOptions(OneLinkSameLayerData2.data))
+    setData([chapterOptions(OnelinkData.data)])
   }, [])
+
+  //   useEffect(()=>{
+  //     setData(chapterOptions(OneLinkSameLayerData2.data))
+  //   }, [])
 
   // 展開選單
   const handleChange = (event, nodes) => {
@@ -186,6 +180,7 @@ export default function ControlledTreeView() {
     )
   }
 
+  // 取得全部資料的id，組成一個新的 Arr
   const extractIds = (data) =>{
     let ids = []
   
@@ -202,11 +197,8 @@ export default function ControlledTreeView() {
   
   const idsArray = extractIds(OneLinkSameLayerData2.data)
 
-  console.log(idsArray, 'idsArray')
-
   // 點擊選取
   const handleNodeSelect = (event, nodeId) => {
-    console.log(event, nodeId, 'nodeItem')
     event.stopPropagation()
     const allChild = getAllChild(nodeId)
     const fathers = getAllFathers(nodeId)
@@ -242,8 +234,6 @@ export default function ControlledTreeView() {
     }
   }
 
-  console.log(selectedNodes, idsArray, isSelectAll, 'selectedNodes')
-
   // 其他選項全部勾選的話，要將 selectAll 勾起
   useEffect(()=>{
     if(selectedNodes.includes(SELECT_ALL)){
@@ -253,8 +243,6 @@ export default function ControlledTreeView() {
         let index = newNode.indexOf(SELECT_ALL)
 
         newNode.splice(index, 1)
-
-        console.log(newNode, selectedNodes, index, 'indexxxx')
 
         // newNode.splice(index, 1)
 
@@ -268,21 +256,57 @@ export default function ControlledTreeView() {
     }
   }, [selectedNodes])
 
+  // stackOverflow solution
+  //
+  //   const renderTree = (nodes) => {
+  //     return (
+  //       <TreeItem
+  //         key={nodes?.id}
+  //         nodeId={nodes?.id}
+  //         onClick={handleExpandClick}
+  //         classes={{
+  //           content: classes.content
+  //         }}
+  //         // expanded={expanded.includes(nodes.id)} 
+  //         label={
+  //           <>
+  //             <div className={classes.labelRoot}>
+  //               {/* <LabelIcon color="action" className={classes.labelIcon} /> */}
+  //               <Typography variant="body2" className={classes.labelText}>
+  //                 <Checkbox
+  //                   checked={selectedNodes.indexOf(nodes.id) !== -1}
+  //                   tabIndex={-1}
+  //                   disableRipple
+  //                   onClick={(event) => handleNodeSelect(event, nodes.id)}
+  //                   style={{ color: '#121232' }}
+  //                 />
+  //                 {nodes.name} ({nodes.total}題)
+  //               </Typography>
+  //             </div>
+  //           </>
+  //         }
+  //       >
+  //         {Array.isArray(nodes.children)
+  //           ? nodes.children.map((node) => renderTree(node))
+  //           : null}
+  //       </TreeItem>
+  //     )
+  //   }
+
+  // official solution
+  //
   const renderTree = (nodes) => {
-    console.log(nodes, 'nodes')
+    console.log(nodes, nodes.id, 'nodesnodesnodes')
+
     return (
-      <TreeItem
-        key={nodes?.id}
-        nodeId={nodes?.id}
-        onClick={handleExpandClick}
-        classes={{
-          content: classes.content
-        }}
+      <TreeItem 
+        key={nodes.id} 
+        nodeId={nodes.id} 
         label={
           <>
-            <div className={classes.labelRoot}>
+            <div >
               {/* <LabelIcon color="action" className={classes.labelIcon} /> */}
-              <Typography variant="body2" className={classes.labelText}>
+              <Typography variant="body2">
                 <Checkbox
                   checked={selectedNodes.indexOf(nodes.id) !== -1}
                   tabIndex={-1}
@@ -295,7 +319,9 @@ export default function ControlledTreeView() {
             </div>
           </>
         }
-      >
+        classes={{
+          content: classes.content
+        }}>
         {Array.isArray(nodes.children)
           ? nodes.children.map((node) => renderTree(node))
           : null}
@@ -325,7 +351,6 @@ export default function ControlledTreeView() {
         }
       }
     }
-    console.log(jsonObj, 'jsonObj')
     return jsonObj
   }
 
@@ -373,7 +398,7 @@ export default function ControlledTreeView() {
         {/* <Button>未歸類範圍</Button> */}
       </div>
       
-      <hr />
+      {/* <hr />
       <div style={{ padding: '20px' }}>
         <TreeView
           className={classes.root}
@@ -384,20 +409,24 @@ export default function ControlledTreeView() {
         >
           {chapterOptions(OneLinkSameLayerData2.data).map((node) => renderTree(node))}
         </TreeView>
-      </div>
+      </div> */}
       <hr />
 
-      {/* <div style={{ padding: '20px' }}>
+      <div style={{ padding: '20px' }}>
         <TreeView
           className={classes.root}
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpandIcon={<ChevronRightIcon />}
-          expanded={expanded}
+          //   expanded={expanded}
           onNodeToggle={handleChange}
+          defaultExpanded={['root']}
+          //   defaultExpanded={['root', '1', '2', '5', '-1']}
         >
-          {[chapterOptions(OnelinkData.data)].map((node) => renderTree(node))}
+          {/* {[chapterOptions(OnelinkData.data)].map((node) => renderTree(node))} */}
+          {renderTree(chapterOptions(OnelinkData.data))}
+          {/* {renderTree(OfficialData)} */}
         </TreeView>
-      </div> */}
+      </div>
     </>
     
   )
