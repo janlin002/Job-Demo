@@ -89,7 +89,7 @@ const useStyles = makeStyles(theme => ({
       },
       ".MuiTypography-root": {
         backgroundColor: '#FFF',
-        padding: '0px'
+        padding: '0px',
       },
       ".Mui-selected": {
         backgroundColor: '#fff'

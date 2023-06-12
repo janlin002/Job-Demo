@@ -13,36 +13,39 @@ const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
     maxWidth: '50%',
+    backgroundColor: 'transparent',
 
     "& > .MuiTreeItem-root": {
       border: '1px solid black',
-      borderRadius: '10px'
+      borderRadius: '10px',
     },
     "& > .MuiTreeItem-root > .MuiCollapse-root": {
       borderTop: '1px solid black',
-      marginLeft: '0px'
+      marginLeft: '0px',
     },
     "& > .MuiTreeItem-root > .MuiCollapse-root > .MuiCollapse-wrapper > .MuiCollapse-wrapperInner > .MuiTreeItem-root": {
       borderBottom: '1px solid black',
     },
     "& > .MuiTreeItem-root > .MuiCollapse-root > .MuiCollapse-wrapper > .MuiCollapse-wrapperInner > .MuiTreeItem-root:last-child": {
-      borderBottom: 'none'
+      borderBottom: 'none',
     },
     
-    "@global": {
-      ".MuiSvgIcon-root": {
-        justifyContent: 'flex-end'
-      },
-      ".MuiTypography-root": {
-        backgroundColor: '#fff',
-        padding: '0px',
-        color: 'red',
-
-      },
-      ".Mui-selected": {
-        backgroundColor: '#fff'
-      }
-    },
+    // "@global": {
+    //   ".MuiSvgIcon-root": {
+    //     justifyContent: 'flex-end'
+    //   },
+    //   ".MuiTypography-root": {
+    //     backgroundColor: '#fff',
+    //     padding: '0px',
+    //   },
+    //   ".Mui-selected": {
+    //     backgroundColor: '#fff'
+    //   },
+    //   ".MuiTreeItem-iconContainer":{
+    //     backgroundColor: '#fff',
+    //     padding: '0px'
+    //   }
+    // },
   },
   content: {
     flexDirection: "row-reverse"
@@ -61,7 +64,7 @@ export default function RichObjectTreeView() {
       key={nodes.rangeId} 
       nodeId={nodes.rangeId} 
       //   label={nodes.name}
-      style={{ marginLeft: '0px' }}
+      style={{ marginLeft: '0px', backgroundColor: 'transparent' }}
       classes={{
         content: classes.content
       }}
@@ -90,17 +93,20 @@ export default function RichObjectTreeView() {
   )
 
   return (
-    <TreeView
-      className={classes.root}
-      aria-label="rich object"
-      defaultCollapseIcon={<ExpandMoreIcon />}
-      //   defaultExpanded={['所有範圍']}
-      defaultExpanded={['root']}
-      defaultExpandIcon={<ChevronRightIcon />}
-    //   sx={{ height: 110, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
-    >
-      {renderTree(fetchData.data)}
-    </TreeView>
+    <div style={{ margin: '50px' }}>
+      <TreeView
+        className={classes.root}
+        aria-label="rich object"
+        defaultCollapseIcon={<ExpandMoreIcon />}
+        //   defaultExpanded={['所有範圍']}
+        defaultExpanded={['root']}
+        defaultExpandIcon={<ChevronRightIcon />}
+        //   sx={{ height: 110, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
+        multiSelect={true}
+      >
+        {renderTree(fetchData.data)}
+      </TreeView>
+    </div>
   )
 }
 
