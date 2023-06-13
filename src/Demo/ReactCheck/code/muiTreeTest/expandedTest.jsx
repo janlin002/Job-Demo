@@ -3,9 +3,9 @@ import TreeView from '@mui/lab/TreeView'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import TreeItem from '@mui/lab/TreeItem'
-import Typography from "@material-ui/core/Typography"
-import Checkbox from "@material-ui/core/Checkbox"
-import { makeStyles } from "@material-ui/core/styles"
+import Typography from '@mui/material/Typography'
+import Checkbox from '@mui/material/Checkbox'
+import { makeStyles } from '@mui/styles'
 
 import fetchData from './oneLinkData.json'
 
@@ -110,4 +110,19 @@ export default function RichObjectTreeView() {
   )
 }
 
-// MuiCollapse-root MuiCollapse-vertical MuiTreeItem-group MuiCollapse-entered css-g0jugy-MuiCollapse-root-MuiTreeItem-group
+// const renderTree = (nodes: RenderTree, level: number = 1) => {
+//     console.log(nodes)
+//     console.log(level)
+//     return (
+//       <TreeItem key={nodes.id} nodeId={nodes.id} label={nodes.name}
+//       sx={{
+//           ‘.MuiTreeItem-group’: { ml: 0 },
+//           ‘.MuiTreeItem-content’: { pl: `${level * 15}px` }
+//         }}
+//       >
+//         {Array.isArray(nodes.children)
+//           ? nodes.children.map((node) => renderTree(node, level + 1))
+//           : null}
+//       </TreeItem>
+//     )
+//   };

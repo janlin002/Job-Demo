@@ -296,7 +296,6 @@ export default function ControlledTreeView() {
   // official solution
   //
   const renderTree = (nodes) => {
-    console.log(nodes, nodes.id, 'nodesnodesnodes')
 
     return (
       <TreeItem 
@@ -418,7 +417,7 @@ export default function ControlledTreeView() {
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpandIcon={<ChevronRightIcon />}
           //   expanded={expanded}
-          onNodeToggle={handleChange}
+          // onNodeToggle={handleChange}
           defaultExpanded={['root']}
           //   defaultExpanded={['root', '1', '2', '5', '-1']}
         >
@@ -458,6 +457,7 @@ export default function ControlledTreeView() {
 //     name: "第一章_整數運算與科學記號",
 // }
 
+// 原始資料
 {/* <StyledTreeItem nodeId="1" labelText="RSMSSB" labelIcon={FolderIcon}>
       <StyledTreeItem nodeId="2" labelText="Science" labelIcon={FolderIcon} />
       <StyledTreeItem

@@ -6,7 +6,7 @@ const ExpandedTest = lazy(()=>import('./expandedTest'))
 
 const Index = () => {
   return (
-    <ExpandedTest />
+    <CustomTreeItem />
   )
 }
 
