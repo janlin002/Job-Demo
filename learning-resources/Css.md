@@ -26,8 +26,12 @@
 
 [[CSS] 選擇器表 (Selectors)](https://ithelp.ithome.com.tw/articles/10243699)
 
-[CSS選擇器, xy, x>y, x+y, x~y](https://www.tpisoftware.com/tpu/articleDetails/2401)
+[CSS 選擇器, xy, x>y, x+y, x~y](https://www.tpisoftware.com/tpu/articleDetails/2401)
 
 ### styled-components
 
 [How to use media queries with styled components](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
+
+### scss/sass
+
+[新手也可以輕鬆玩轉 SASS - @mixin and @include](https://5xruby.tw/posts/play-sass-mixin-and-include)
