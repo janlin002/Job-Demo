@@ -24,7 +24,11 @@
 
 [Day16:【TypeScript 學起來】新增任意屬性的好方法：Index Signatures 索引簽名](https://ithelp.ithome.com.tw/articles/10275784)
 
+[[TypeScript] Types 十全大補中 — Generics & Utility Types](https://medium.com/hannah-lin/typescript-types-%E5%8D%81%E5%85%A8%E5%A4%A7%E8%A3%9C%E4%B8%8B-generics-utility-types-7e73ddbc58eb)
 
+[7 Utility Types that Every TypeScript Developer Should Know](https://javascript.plainenglish.io/7-utility-types-that-every-typescript-developer-should-know-788fe73421f1) -> 大推
+
+[【筆記】Type 難了 (1) - 進階 TypeScript 型別應用](https://leewanhsuan.github.io/2022/07/12/03-typeScript-utility/)
 
 ### with React
 
