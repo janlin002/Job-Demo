@@ -30,6 +30,8 @@
 
 [【筆記】Type 難了 (1) - 進階 TypeScript 型別應用](https://leewanhsuan.github.io/2022/07/12/03-typeScript-utility/)
 
+[十个你必须要会的 TypeScript 技巧](https://juejin.cn/post/7246453307736145980)
+
 ### with React
 
 [好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)
