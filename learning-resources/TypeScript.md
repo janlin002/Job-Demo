@@ -32,6 +32,8 @@
 
 [十个你必须要会的 TypeScript 技巧](https://juejin.cn/post/7246453307736145980)
 
+[TypeScript | 善用 Enum 提高程式的可讀性 - 基本用法 feat. JavaScript](https://medium.com/enjoy-life-enjoy-coding/typescript-%E5%96%84%E7%94%A8-enum-%E6%8F%90%E9%AB%98%E7%A8%8B%E5%BC%8F%E7%9A%84%E5%8F%AF%E8%AE%80%E6%80%A7-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-feat-javascript-b20d6bbbfe00) -> 推
+
 ### with React
 
 [好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)
