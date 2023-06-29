@@ -1,6 +1,6 @@
 # 學習資源分享
 
-主要是因為學過或看過很多好的文章，不過沒有記錄下來，下次要找會很麻煩，所以開了一個file作紀錄
+主要是因為學過或看過很多寫得很好的文章，不過因為沒有記錄下來，下次要找會很麻煩，所以開了一個 file 作紀錄
 
 ## TABLE OF CONTENTS
 
@@ -36,11 +36,10 @@
 
 ### 其他
 
-- [Blog博主](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Blog.md)
+- [Blog 博主](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/Blog.md)
 
 - [架構](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/%E6%9E%B6%E6%A7%8B.md)
 
 - [CI/CD](https://github.com/janlin002/Job-Demo/blob/master/learning-resources/CICD.md)
 
 - [一些心路歷程]()
-

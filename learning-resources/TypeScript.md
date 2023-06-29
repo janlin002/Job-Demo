@@ -34,6 +34,8 @@
 
 [TypeScript | 善用 Enum 提高程式的可讀性 - 基本用法 feat. JavaScript](https://medium.com/enjoy-life-enjoy-coding/typescript-%E5%96%84%E7%94%A8-enum-%E6%8F%90%E9%AB%98%E7%A8%8B%E5%BC%8F%E7%9A%84%E5%8F%AF%E8%AE%80%E6%80%A7-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-feat-javascript-b20d6bbbfe00) -> 推
 
+[TypeScript 入门教程](https://ts.xcatliu.com/)
+
 ### with React
 
 [好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)
@@ -43,3 +45,7 @@
 ### with axios
 
 [Writing a custom Axios hook in TypeScript for API calls in your React application](https://blog.sreejit.dev/custom-axios-hook-useaxios-in-typescript-react)
+
+### interview
+
+[TypeScript TS「面试题及答案」不断更新](https://juejin.cn/post/6999985372440559624)

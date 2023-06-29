@@ -24,7 +24,7 @@
 
 [能把队友气死的 8 种屎山代码(React 版)](https://juejin.cn/post/7235663093748138021) -> 推
 
-## React RSC
+## React RSC (React Server Component)
 
 [React 新概念 — Server Components](https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463)
 
@@ -35,6 +35,10 @@
 [從 Next.js 13 認識 React Server Components](https://oldmo860617.medium.com/%E5%BE%9E-next-js-13-%E8%AA%8D%E8%AD%98-react-server-components-37c2bad96d90)
 
 [【react】初探 server component](https://juejin.cn/post/6918602124804915208)
+
+[React Server Components：我們即將和 API 告別？](https://www.readfog.com/a/1683183010031177728)
+
+[快速入門 Next.Js 13 App Router, RSC(React Server Component)](https://blog.typeart.cc/nextjs13-quick-guide/)
 
 ## React Router
 
@@ -51,3 +55,11 @@
 [React Global State as Local State](https://webup.org/blog/react-global-state-as-local-state/)
 
 [Understanding useRef and useState for Tracking Component Render Count in React](https://peterkellner.net//2023/05/05/Understanding-useRef-and-useState-for-Tracking-Component-Render-Count-in-React/) -> 透過 useEffect 不帶上 dep array 會每次 render 都觸發的特性。去計算 component 到底 render 了幾次
+
+[Comparing useState and useReducer](https://react.dev/learn/extracting-state-logic-into-a-reducer#comparing-usestate-and-usereducer) -> 簡單來說 useState 就是處理間單的狀態，反之就用 useReducer
+
+[React Hooks | 既生 useState 何生 useReducer ?](https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/react-hooks-usestate-vs-usereducer-b14966ad37dd)
+
+## Redux
+
+[利用 React Context API + useReducer 實作 Redux](https://www.cythilya.tw/2023/05/25/implement-redux-by-react-context-api-and-useReducer/)
