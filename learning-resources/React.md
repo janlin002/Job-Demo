@@ -24,6 +24,8 @@
 
 [能把队友气死的 8 种屎山代码(React 版)](https://juejin.cn/post/7235663093748138021) -> 推
 
+[几天不写 React，已经看不懂语法了](https://juejin.cn/post/7249933985563459640)
+
 ## React RSC (React Server Component)
 
 [React 新概念 — Server Components](https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463)
@@ -59,6 +61,8 @@
 [Comparing useState and useReducer](https://react.dev/learn/extracting-state-logic-into-a-reducer#comparing-usestate-and-usereducer) -> 簡單來說 useState 就是處理間單的狀態，反之就用 useReducer
 
 [React Hooks | 既生 useState 何生 useReducer ?](https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/react-hooks-usestate-vs-usereducer-b14966ad37dd)
+
+[New React Hook, React.use](https://milkmidi.medium.com/new-react-hook-react-use-ee2e2449bbce)
 
 ## Redux
 
