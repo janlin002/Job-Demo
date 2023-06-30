@@ -50,12 +50,13 @@ const MuiAutoComplete = lazy(()=>import('./code/muiAutoComplete'))
 const ImageLazyImport = lazy(()=>import('./code/ImageLazyImport'))
 const MuiTreeTest = lazy(()=>import('./code/muiTreeTest'))
 const SelfPackage  = lazy(()=>import('./code/selfPackage'))
+const ScssExport = lazy(()=>import('./code/scssExport'))
 
 const ReactCheck = () => {
 
   return (
     <>
-      <SelfPackage />
+      <ScssExport />
     </>
   )
 }

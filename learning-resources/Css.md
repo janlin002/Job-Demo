@@ -26,7 +26,7 @@
 
 [[CSS] 選擇器表 (Selectors)](https://ithelp.ithome.com.tw/articles/10243699)
 
-[CSS 選擇器, xy, x>y, x+y, x~y](https://www.tpisoftware.com/tpu/articleDetails/2401)
+[CSS 選擇器, xy, x>y, x+y, x~y](https://www.tpisoftware.com/tpu/articleDetails/2401) -> 推
 
 ### styled-components
 
@@ -35,3 +35,7 @@
 ### scss/sass
 
 [新手也可以輕鬆玩轉 SASS - @mixin and @include](https://5xruby.tw/posts/play-sass-mixin-and-include)
+
+[SASS 教學 ＋ SCSS：CSS 再進化，掌握語法攻略！](https://frankknow.com/sass-tutorial/) -> 大推
+
+[SASS ： @import 讓 css 模組化](https://ithelp.ithome.com.tw/articles/10193891)
