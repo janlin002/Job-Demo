@@ -36,6 +36,10 @@
 
 [TypeScript 入门教程](https://ts.xcatliu.com/)
 
+[你也對開始使用 typescript 感到無力嗎？我也是 - 30 天初探 typescript](https://ithelp.ithome.com.tw/users/20140522/ironman/5083) -> 推
+
+[TypeScript 新手指南](https://willh.gitbook.io/typescript-tutorial/) -> 新手推
+
 ### with React
 
 [好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)
@@ -49,3 +53,11 @@
 ### interview
 
 [TypeScript TS「面试题及答案」不断更新](https://juejin.cn/post/6999985372440559624)
+
+### 特殊型別
+
+[型別介紹 part4 - 一些特殊的型別](https://ithelp.ithome.com.tw/articles/10295962)
+
+[【Day 15】TypeScript 資料型別 - 特殊型別(上)- Never](https://ithelp.ithome.com.tw/articles/10222916)
+
+[【Day 16】TypeScript 資料型別 - 特殊型別(下)- Any & Unknown](https://ithelp.ithome.com.tw/articles/10223315但)

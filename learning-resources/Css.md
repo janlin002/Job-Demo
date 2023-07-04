@@ -28,6 +28,8 @@
 
 [CSS 選擇器, xy, x>y, x+y, x~y](https://www.tpisoftware.com/tpu/articleDetails/2401) -> 推
 
+[重新認識 CSS - Inheritance (繼承)](https://titangene.github.io/article/css-inheritance.html)
+
 ### styled-components
 
 [How to use media queries with styled components](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
