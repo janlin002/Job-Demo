@@ -126,8 +126,7 @@ Promise.race = function(promiseArr) {
 
 for (let i = 0; i < 10; i++) {
   console.log('hi')
-  setTimeout(function printValue() { 
-    console.log(`The number is ${i}`) 
-  }, 1000) 
+  setTimeout(function printValue() {
+    console.log(`The number is ${i}`)
+  }, 1000)
 }
-    

@@ -37,7 +37,7 @@ const Index = () => {
   }
 
   pop(arr4)
-  
+
   // shift
   const arr5 = [10, 5, 3, 8, 2]
 
@@ -178,7 +178,7 @@ const Index = () => {
 
     end = end < 0 ? end + len : end
     end = Math.min(end, len) // 算取最小值
-    
+
     // 截取[start,end)这个区间的元素
     for (let i = start; i < end; i++) {
       res.push(this[i])
@@ -231,8 +231,8 @@ const Index = () => {
     }
     window.requestAnimationFrame(loop)
   }
-  
-  function showName(){ 
+
+  function showName(){
     console.log("Hello")
   }
   let timerID = setTimeout(showName, 1000)
@@ -269,7 +269,7 @@ const Index = () => {
   }
 
   // mysetInterval(showName, 1000)
-  
+
   return (
     <div>ARRAY_METHOD</div>
   )

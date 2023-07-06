@@ -30,6 +30,8 @@
 
 [重新認識 CSS - Inheritance (繼承)](https://titangene.github.io/article/css-inheritance.html)
 
+[CSS 设计模式与架构一次性了解到位](https://juejin.cn/post/7252344306190188581) -> 推
+
 ### styled-components
 
 [How to use media queries with styled components](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
