@@ -52,12 +52,13 @@ const MuiTreeTest = lazy(()=>import('./code/muiTreeTest'))
 const SelfPackage  = lazy(()=>import('./code/selfPackage'))
 const ScssExport = lazy(()=>import('./code/scssExport'))
 const PartyTown = lazy(()=>import('./code/partyTown'))
+const ReactMention = lazy(()=>import('./code/reactMention'))
 
 const ReactCheck = () => {
 
   return (
     <>
-      <PartyTown />
+      <ReactMention />
     </>
   )
 }
