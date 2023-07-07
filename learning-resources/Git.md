@@ -42,6 +42,8 @@
 
 [git merge rebase cherry-pick 分别什么时候用？一文解惑](https://juejin.cn/post/7034793065340796942)
 
+[Renaming Git Commit Messages: A Quick and Easy Guide](https://dev.to/pradumnasaraf/renaming-git-commit-messages-a-quick-and-easy-guide-1an8)
+
 ### adjust commit message
 
 [【狀況題】修改 Commit 紀錄](https://gitbook.tw/chapters/using-git/amend-commit1) => --amend
