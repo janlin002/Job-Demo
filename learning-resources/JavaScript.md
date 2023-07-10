@@ -24,11 +24,15 @@
 
 [关于前端实现上传文件这个功能，我只能说 so easy！](https://juejin.cn/post/7224402365452238906)
 
+<<<<<<< Updated upstream
 [Demystifying JavaScript Operators: What Does That Symbol Mean?](https://www.sitepoint.com/javascript-operators/) -> JS 常見的運算符(推)
 
 [为什么 0.1+0.2≠0.3](https://juejin.cn/post/7253453908038746173) -> 本文是在解決項目中數字精准度問題的部分(小小推)
 
 [【學習筆記】JavaScript 浮點數計算：Math ceil()、floor()、round()、toFixed()](https://hackmd.io/@Heidi-Liu/javascript-floating-number) -> 大大推
+=======
+[13 Amazing And UseFul New JavaScript Features From ES2021 to ES2023](https://javascript.plainenglish.io/13-amazing-and-useful-new-javascript-features-from-es2021-to-es2023-5aefc99718e4)
+>>>>>>> Stashed changes
 
 ## JavaScript 底層原理
 
