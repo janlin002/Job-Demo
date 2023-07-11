@@ -24,10 +24,6 @@
 
 [Day16:【TypeScript 學起來】新增任意屬性的好方法：Index Signatures 索引簽名](https://ithelp.ithome.com.tw/articles/10275784)
 
-[[TypeScript] Types 十全大補中 — Generics & Utility Types](https://medium.com/hannah-lin/typescript-types-%E5%8D%81%E5%85%A8%E5%A4%A7%E8%A3%9C%E4%B8%8B-generics-utility-types-7e73ddbc58eb)
-
-[7 Utility Types that Every TypeScript Developer Should Know](https://javascript.plainenglish.io/7-utility-types-that-every-typescript-developer-should-know-788fe73421f1) -> 大推
-
 [【筆記】Type 難了 (1) - 進階 TypeScript 型別應用](https://leewanhsuan.github.io/2022/07/12/03-typeScript-utility/)
 
 [十个你必须要会的 TypeScript 技巧](https://juejin.cn/post/7246453307736145980)
@@ -61,3 +57,55 @@
 [【Day 15】TypeScript 資料型別 - 特殊型別(上)- Never](https://ithelp.ithome.com.tw/articles/10222916)
 
 [【Day 16】TypeScript 資料型別 - 特殊型別(下)- Any & Unknown](https://ithelp.ithome.com.tw/articles/10223315但)
+
+### as const
+
+[讓 TypeScript 的 as const 救你一命](https://ngseke.me/blog/typescript-as-const)
+
+[详细介绍 TypeScript 中的 'as const'](https://www.jiyik.com/tm/xwzj/prolan_1286.html)
+
+### Utility Types
+
+[[TypeScript] Types 十全大補中 — Generics & Utility Types](https://medium.com/hannah-lin/typescript-types-%E5%8D%81%E5%85%A8%E5%A4%A7%E8%A3%9C%E4%B8%8B-generics-utility-types-7e73ddbc58eb)
+
+[7 Utility Types that Every TypeScript Developer Should Know](https://javascript.plainenglish.io/7-utility-types-that-every-typescript-developer-should-know-788fe73421f1) -> 大推
+
+### keyof & typeof
+
+[TypeScript - 简单易懂的 keyof typeof 分析](https://juejin.cn/post/7023238396931735583) -> 推
+
+**keyof vs keyof typeof**
+
+keyof 單獨使用時，是在於已知型別的情況下，keyof typeof 是在於未知型別的情況下做使用
+
+- keyof
+
+```ts
+const bmw = {
+  make: "BMW",
+  model: "X5",
+  year: 2021,
+};
+
+type CarLiteralType = keyof typeof bmw;
+
+CarLiteralType = "make" | "model" | "year";
+```
+
+- keyof typeof
+
+```ts
+type Person = {
+  name: string;
+  age: number;
+  address: string;
+};
+
+type SomeNewType = keyof Person;
+
+SomeNewType = "name" | "age" | "address";
+```
+
+### 個人部落格
+
+[[typescript] TypeScript 基礎 (使用 Vite 建立環境)](https://weiyun0912.github.io/Wei-Docusaurus/docs/TypeScript/TypeScript-Basic#interface--extends)
