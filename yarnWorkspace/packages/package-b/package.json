@@ -1,0 +1,9 @@
+{
+  "name": "@yarn-wks-ex/package-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@yarn-wks-ex/package-a": "^1.0.0"
+  }
+}
