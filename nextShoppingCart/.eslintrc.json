@@ -1,0 +1,12 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "import/no-named-as-default": 0,
+    "react/jsx-filename-extension": [
+        "error",
+        {
+        "extensions": [".js", ".jsx", ".tsx", ".ts"]
+        }
+    ]
+  }
+}

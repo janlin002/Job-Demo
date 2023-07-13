@@ -24,7 +24,9 @@
 
 - live server
 
--  Bracket Pair Colorizer
+- Bracket Pair Colorizer
+
+- code spell checker
 
 ### vscode 設定
 
@@ -162,8 +164,8 @@
     "editor.formatOnType": true
   }
 }
-
 ```
+
 ### 電腦相關的套件(for mac)
 
 - brew
@@ -172,7 +174,7 @@
 
 - iterm
 
-- 
+-
 
 ### chrome 相關擴充
 
@@ -261,6 +263,3 @@ https://kusakawazeusu.medium.com/%E7%94%A8-typescript-%E5%AF%AB-express-route-%E
 https://juejin.cn/post/6844903830887366670#heading-53
 
 https://juejin.cn/post/6945319439772434469
-
-
-
