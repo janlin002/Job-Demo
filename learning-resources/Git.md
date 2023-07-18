@@ -4,19 +4,11 @@
 
 [『前端进阶』—— 代码管理方案之 Trunk-based Flow](https://juejin.cn/post/6977942781209608200?ref=amos-blog)
 
-[Git | 我以為的 Git Rebase 與和 Git Merge 做合併分支的差異](https://medium.com/starbugs/git-%E6%88%91%E4%BB%A5%E7%82%BA%E7%9A%84-git-rebase-%E8%88%87%E5%92%8C-git-merge-%E5%81%9A%E5%90%88%E4%BD%B5%E5%88%86%E6%94%AF%E7%9A%84%E5%B7%AE%E7%95%B0-cacd3f45294d)
-
-[送 PR 前，使用 Git rebase 來整理你的 commit 吧！](https://medium.com/starbugs/use-git-interactive-rebase-to-organize-commits-85e692b46dd)
-
-[使用 git rebase 避免無謂的 merge](https://ihower.tw/blog/archives/3843)
-
 [【狀況題】聽說 git push -f 這個指令很可怕，什麼情況可以使用它呢？](https://gitbook.tw/chapters/github/using-force-push)
 
 [【狀況題】怎麼跟上當初 fork 專案的進度？](https://gitbook.tw/chapters/github/syncing-a-fork)
 
 [GIT 查看/匯出差異檔案](https://hank7891.github.io/2021/08/11/GIT%E6%9F%A5%E7%9C%8B:%E5%8C%AF%E5%87%BA%E5%B7%AE%E7%95%B0%E6%AA%94%E6%A1%88/)
-
-[git|面试字节时，老师问：合并分支中 rebase 和 merge 的区别](https://juejin.cn/post/7123826435357147166)
 
 [git 匯出差異清單和檔案](https://medium.com/jiingler/git-%E5%8C%AF%E5%87%BA%E5%B7%AE%E7%95%B0%E6%B8%85%E5%96%AE%E5%92%8C%E6%AA%94%E6%A1%88-42b6ab9c7594)
 
@@ -40,8 +32,6 @@
 
 [為什麼我不用 Squash and merge](https://medium.com/@gliyao/%E7%82%BA%E4%BB%80%E9%BA%BC%E6%88%91%E4%B8%8D%E7%94%A8-squash-65a2ddaa83fc)
 
-[git merge rebase cherry-pick 分别什么时候用？一文解惑](https://juejin.cn/post/7034793065340796942)
-
 [Renaming Git Commit Messages: A Quick and Easy Guide](https://dev.to/pradumnasaraf/renaming-git-commit-messages-a-quick-and-easy-guide-1an8)
 
 ### adjust commit message
@@ -59,3 +49,19 @@
 ### Git bisect
 
 [使用 Git Bisect 快速找到第一個有問題的 Commit](https://www.gss.com.tw/blog/%E4%BD%BF%E7%94%A8-git-bisect-%E5%BF%AB%E9%80%9F%E6%89%BE%E5%88%B0%E7%AC%AC%E4%B8%80%E5%80%8B%E6%9C%89%E5%95%8F%E9%A1%8C%E7%9A%84-commit)
+
+### Git rebase
+
+[Git 版本控制系統 - rebase 合併分支與 pull --rebase 同步提交](https://awdr74100.github.io/2020-05-04-git-rebase/) -> 推
+
+[Git | 我以為的 Git Rebase 與和 Git Merge 做合併分支的差異](https://medium.com/starbugs/git-%E6%88%91%E4%BB%A5%E7%82%BA%E7%9A%84-git-rebase-%E8%88%87%E5%92%8C-git-merge-%E5%81%9A%E5%90%88%E4%BD%B5%E5%88%86%E6%94%AF%E7%9A%84%E5%B7%AE%E7%95%B0-cacd3f45294d)
+
+[送 PR 前，使用 Git rebase 來整理你的 commit 吧！](https://medium.com/starbugs/use-git-interactive-rebase-to-organize-commits-85e692b46dd)
+
+[使用 git rebase 避免無謂的 merge](https://ihower.tw/blog/archives/3843)
+
+[git|面试字节时，老师问：合并分支中 rebase 和 merge 的区别](https://juejin.cn/post/7123826435357147166)
+
+[git merge rebase cherry-pick 分别什么时候用？一文解惑](https://juejin.cn/post/7034793065340796942)
+
+[git config pull.rebase false](https://juejin.cn/s/git%20config%20pull.rebase%20false) -> false: merge, true: rebase
