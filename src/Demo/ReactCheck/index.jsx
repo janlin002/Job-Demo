@@ -49,24 +49,18 @@ const CustomEvents = lazy(()=>import('./code/customEvent'))
 const MuiAutoComplete = lazy(()=>import('./code/muiAutoComplete'))
 const ImageLazyImport = lazy(()=>import('./code/ImageLazyImport'))
 const MuiTreeTest = lazy(()=>import('./code/muiTreeTest'))
-<<<<<<< Updated upstream
 const SelfPackage  = lazy(()=>import('./code/selfPackage'))
 const ScssExport = lazy(()=>import('./code/scssExport'))
 const PartyTown = lazy(()=>import('./code/partyTown'))
 const ReactMention = lazy(()=>import('./code/reactMention'))
-=======
 const MuiTreeSelect = lazy(()=>import('./code/muiTreeSelect'))
->>>>>>> Stashed changes
+const Zedux = lazy(()=>import('./code/zedux'))
 
 const ReactCheck = () => {
 
   return (
     <>
-<<<<<<< Updated upstream
-      <ReactMention />
-=======
-      <MuiTreeSelect />
->>>>>>> Stashed changes
+      <Zedux />
     </>
   )
 }
