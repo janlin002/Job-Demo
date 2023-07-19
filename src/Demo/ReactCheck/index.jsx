@@ -55,12 +55,13 @@ const PartyTown = lazy(()=>import('./code/partyTown'))
 const ReactMention = lazy(()=>import('./code/reactMention'))
 const MuiTreeSelect = lazy(()=>import('./code/muiTreeSelect'))
 const Zedux = lazy(()=>import('./code/zedux'))
+const MuiTableWithDbd = import('./code/muiTableWithDnd')
 
 const ReactCheck = () => {
 
   return (
     <>
-      <Zedux />
+      <MuiTreeSelect />
     </>
   )
 }

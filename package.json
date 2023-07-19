@@ -67,6 +67,7 @@
     "jotai-signal": "^0.8.1",
     "jsonwebtoken": "^9.0.0",
     "jspdf": "^2.5.1",
+    "material-react-table": "^1.14.0",
     "medium-npm": "^1.0.0",
     "namor": "^2.0.4",
     "npm": "^9.2.0",
