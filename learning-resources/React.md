@@ -26,6 +26,8 @@
 
 [几天不写 React，已经看不懂语法了](https://juejin.cn/post/7249933985563459640)
 
+[「好文翻译」React key 属性：高性能列表的最佳实践](https://juejin.cn/post/7257022428194521145)
+
 ## React RSC (React Server Component)
 
 [React 新概念 — Server Components](https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463)
