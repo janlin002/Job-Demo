@@ -58,7 +58,7 @@
 
 [【Day 16】TypeScript 資料型別 - 特殊型別(下)- Any & Unknown](https://ithelp.ithome.com.tw/articles/10223315但)
 
-### as const
+### as const -> 簡單來說就是不讓你有重新賦值的機會
 
 [讓 TypeScript 的 as const 救你一命](https://ngseke.me/blog/typescript-as-const)
 
