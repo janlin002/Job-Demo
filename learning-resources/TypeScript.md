@@ -42,6 +42,10 @@
 
 [Your First React Typescript Project: a Todo List App](https://typeofnan.dev/your-first-react-typescript-project-todo-app/)
 
+[React 官網 TypeScript 教學](https://react.dev/learn/typescript) -> 推
+
+[TypeScript 语言简介](https://wangdoc.com/typescript/intro) -> 阮一峰所寫，推
+
 ### with axios
 
 [Writing a custom Axios hook in TypeScript for API calls in your React application](https://blog.sreejit.dev/custom-axios-hook-useaxios-in-typescript-react)
