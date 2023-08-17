@@ -82,32 +82,54 @@
 
 keyof 單獨使用時，是在於已知型別的情況下，keyof typeof 是在於未知型別的情況下做使用
 
-- keyof
+- typeof
+
+typeof 就是將對象的型別抓過來使用
 
 ```ts
-const bmw = {
-  make: "BMW",
-  model: "X5",
-  year: 2021,
+const conference: {
+  name: string;
+  year: number;
+  isAddToCalendar: boolean;
+  website: string;
 };
+```
 
-type CarLiteralType = keyof typeof bmw;
+```ts
+type Conference = typeof conference;
+```
 
-CarLiteralType = "make" | "model" | "year";
+Conference 就會繼承 conference 所有的型別
+
+- keyof
+
+透過 keyof 我們可以取出 Object 型別的 key
+
+```ts
+interface Person {
+  name: string;
+  age: number;
+  location: string;
+}
+
+type CarLiteralType = keyof Person;
+
+CarLiteralType = "name" | "age" | "location";
 ```
 
 - keyof typeof
 
+透過 keyof typeof 我們可以將一個正常的 Object 轉乘型別的形式，然後將 key 取出
+
 ```ts
-type Person = {
-  name: string;
-  age: number;
-  address: string;
-};
+const bmw = { name: "BMW", power: "1000hp" };
 
-type SomeNewType = keyof Person;
+type CarLiteralType = keyof typeof bmw;
 
-SomeNewType = "name" | "age" | "address";
+let carPropertyLiteral: CarLiteralType;
+carPropertyLiteral = "name"; // OK
+carPropertyLiteral = "power"; // OK
+carPropertyLiteral = "anyOther"; // Error
 ```
 
 ### 個人部落格
