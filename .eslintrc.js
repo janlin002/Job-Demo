@@ -74,8 +74,8 @@ module.exports = {
     },
   },
   rules: {
-    semi: ["error", "always"],
-    //   'semi': 'off',
+    // semi: ["error", "always"],
+    // 'semi': 'off',
     "react/react-in-jsx-scope": "off",
     // 縮排限制
     "react/jsx-filename-extension": [

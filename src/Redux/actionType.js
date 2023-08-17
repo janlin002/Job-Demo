@@ -1,13 +1,13 @@
-export const CHANGE_LANG = 'CHANGE_LANG'
-export const FETCH_DATA = 'FETCH_DATA'
-export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS'
+export const CHANGE_LANG = 'CHANGE_LANG';
+export const FETCH_DATA = 'FETCH_DATA';
+export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS';
 
-export const GTE_SAGA_TEST = 'GTE_SAGA_TEST'
-export const GTE_SAGA_TEST_SUCCESS = 'GTE_SAGA_TEST_SUCCESS'
+export const GTE_SAGA_TEST = 'GTE_SAGA_TEST';
+export const GTE_SAGA_TEST_SUCCESS = 'GTE_SAGA_TEST_SUCCESS';
 
-export const TEST = 'TEST'
+export const TEST = 'TEST';
 
-export const REDUCER_TEST = 'REDUCER_TEST'
-export const CHANGE_REDUCER_TEST = 'CHANGE_REDUCER_TEST'
+export const REDUCER_TEST = 'REDUCER_TEST';
+export const CHANGE_REDUCER_TEST = 'CHANGE_REDUCER_TEST';
 
-export const REDUX_CHECK = 'REDUX_CHECK'
+export const REDUX_CHECK = 'REDUX_CHECK';
