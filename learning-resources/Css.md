@@ -32,6 +32,10 @@
 
 [CSS 设计模式与架构一次性了解到位](https://juejin.cn/post/7252344306190188581) -> 推
 
+[Sass / SCSS 預處理器 - Nesting 巢狀結構與 Parent 父選擇器](https://awdr74100.github.io/2020-05-21-scss-nesting/) -> 推
+
+[Sass/SCSS 入門：變數、巢狀、混入、繼承](https://hackmd.io/@Heidi-Liu/sass-css-preprocessor)
+
 ### styled-components
 
 [How to use media queries with styled components](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
