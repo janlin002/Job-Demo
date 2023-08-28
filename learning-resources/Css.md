@@ -35,6 +35,9 @@
 [Sass / SCSS 預處理器 - Nesting 巢狀結構與 Parent 父選擇器](https://awdr74100.github.io/2020-05-21-scss-nesting/) -> 推
 
 [Sass/SCSS 入門：變數、巢狀、混入、繼承](https://hackmd.io/@Heidi-Liu/sass-css-preprocessor)
+[忘記了規則的請跟我來|CSS Selector 選擇器|進階篇](https://medium.com/%E7%8B%97%E5%A5%B4%E5%B7%A5%E7%A8%8B%E5%B8%AB/%E5%BF%98%E8%A8%98%E4%BA%86%E8%A6%8F%E5%89%87%E7%9A%84%E8%AB%8B%E8%B7%9F%E6%88%91%E4%BE%86-css-selector-%E9%81%B8%E6%93%87%E5%99%A8-%E9%80%B2%E9%9A%8E%E7%AF%87-8383dc5da4a6) -> 推
+
+[CSS 最新的強大 :has() 父層選取器來了！](https://www.tpisoftware.com/tpu/articleDetails/2883)
 
 ### styled-components
 

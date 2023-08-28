@@ -8,7 +8,7 @@
 
 [請解釋 HTTP caching 機制](https://www.explainthis.io/zh-hant/interview-guides/browser/http-caching)
 
-[HTTP隧道与Proxy-Tunnel技术](https://blog.csdn.net/Z_suger7/article/details/114890054)
+[HTTP 隧道与 Proxy-Tunnel 技术](https://blog.csdn.net/Z_suger7/article/details/114890054)
 
 [新手坑：讓人又愛又恨的 HTTP Caching](https://medium.com/frochu/http-caching-3382037ab06f#8291)
 
@@ -20,10 +20,12 @@
 
 [Window.History 对象](https://wangdoc.com/javascript/bom/history)
 
+[[教學] Preload, Prefetch 和 Preconnect 的差異](https://shubo.io/preload-prefetch-preconnect/)
+
 ## Query string
 
 [JavaScript 取得 QueryString 方式](https://israynotarray.com/javascript/20190724/834556007/)
 
 [JavaScript 取得 Url 的 Query String](https://shunnien.github.io/2017/07/03/Get-Query-String-Parameters-with-JavaScript/)
 
-[js中window。location.search的用法和作用。](https://blog.csdn.net/qq_27093465/article/details/50731087)
+[js 中 window。location.search 的用法和作用。](https://blog.csdn.net/qq_27093465/article/details/50731087)
