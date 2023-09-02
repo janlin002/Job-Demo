@@ -11,3 +11,5 @@ base vs components vs utilities 差異
 - The components layer is for class-based styles that you want to be able to override with utilities.
 - The utilities layer is for small, single-purpose classes that should always take precedence over any other styles.
 ```
+
+[Tailwind CSS 大全](https://powerkaifu.github.io/2020/09/24/lesson-tailwind-css/)
