@@ -57,12 +57,13 @@ const MuiTreeSelect = lazy(() => import("./code/muiTreeSelect"));
 const Zedux = lazy(() => import("./code/zedux"));
 const MuiTableWithDbd = import("./code/muiTableWithDnd");
 const FakeTrello = lazy(() => import("./code/fakeTrello"));
-const Calculator = lazy(()=>import('./code/calculator'));
+const Calculator = lazy(() => import("./code/calculator"));
+const FormikCheck = lazy(() => import("./code/formikCheck"));
 
 const ReactCheck = () => {
   return (
     <>
-      <Calculator />
+      <FormikCheck />
     </>
   );
 };
