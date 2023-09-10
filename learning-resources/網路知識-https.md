@@ -22,6 +22,8 @@
 
 [[教學] Preload, Prefetch 和 Preconnect 的差異](https://shubo.io/preload-prefetch-preconnect/)
 
+[HTTP headers 簡介: 一些常用的headers](https://homuchen.com/posts/http-headers/)
+
 ## Query string
 
 [JavaScript 取得 QueryString 方式](https://israynotarray.com/javascript/20190724/834556007/)

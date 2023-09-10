@@ -79,7 +79,7 @@
     "ramda": "^0.29.0",
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.1",
-    "react-chartjs-2": "^3.0.4",
+    "react-chartjs-2": "^5.2.0",
     "react-dnd": "^14.0.4",
     "react-dnd-html5-backend": "^14.0.2",
     "react-dom": "^17.0.2",

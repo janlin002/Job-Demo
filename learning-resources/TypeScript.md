@@ -36,6 +36,8 @@
 
 [TypeScript 新手指南](https://willh.gitbook.io/typescript-tutorial/) -> 新手推
 
+[Array Types in TypeScript](https://tkdodo.eu/blog/array-types-in-type-script) -> 推
+
 ### with React
 
 [好想用 Typescript+React hooks 开发啊!（嘴对嘴解释）](https://juejin.cn/post/6844904085024407566)
@@ -73,6 +75,8 @@
 [[TypeScript] Types 十全大補中 — Generics & Utility Types](https://medium.com/hannah-lin/typescript-types-%E5%8D%81%E5%85%A8%E5%A4%A7%E8%A3%9C%E4%B8%8B-generics-utility-types-7e73ddbc58eb)
 
 [7 Utility Types that Every TypeScript Developer Should Know](https://javascript.plainenglish.io/7-utility-types-that-every-typescript-developer-should-know-788fe73421f1) -> 大推
+
+[Typescript高级类型Record](https://zhuanlan.zhihu.com/p/356662885)
 
 ### keyof & typeof
 
@@ -135,3 +139,7 @@ carPropertyLiteral = "anyOther"; // Error
 ### 個人部落格
 
 [[typescript] TypeScript 基礎 (使用 Vite 建立環境)](https://weiyun0912.github.io/Wei-Docusaurus/docs/TypeScript/TypeScript-Basic#interface--extends)
+
+### 套件
+
+[加強你的 TypeScript 驗證：Type Guard？或許該試試 Zod](https://medium.com/ikala-tech/enhance-typescript-validation-by-zod-8f52837a58a1)
