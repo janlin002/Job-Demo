@@ -59,12 +59,13 @@ const MuiTableWithDbd = import("./code/muiTableWithDnd");
 const FakeTrello = lazy(() => import("./code/fakeTrello"));
 const Calculator = lazy(() => import("./code/calculator"));
 const FormikCheck = lazy(() => import("./code/formikCheck"));
-const ChartJs = lazy(()=>import('./code/chartjs'))
+const ChartJs = lazy(() => import("./code/chartjs"));
+const ReactPdf = lazy(() => import("./code/reactPdf"));
 
 const ReactCheck = () => {
   return (
     <>
-      <ChartJs />
+      <ReactPdf />
     </>
   );
 };
