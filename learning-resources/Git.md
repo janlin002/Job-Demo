@@ -34,6 +34,8 @@
 
 [Renaming Git Commit Messages: A Quick and Easy Guide](https://dev.to/pradumnasaraf/renaming-git-commit-messages-a-quick-and-easy-guide-1an8)
 
+[详细介绍git clone --depth=1的用法](https://blog.csdn.net/yexudengzhidao/article/details/121798008)
+
 ### adjust commit message
 
 [【狀況題】修改 Commit 紀錄](https://gitbook.tw/chapters/using-git/amend-commit1) => --amend

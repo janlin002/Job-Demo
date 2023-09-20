@@ -62,11 +62,12 @@ const FormikCheck = lazy(() => import("./code/formikCheck"));
 const ChartJs = lazy(() => import("./code/chartjs"));
 const ReactPdf = lazy(() => import("./code/reactPdf"));
 const Html2canvas = lazy(() => import("./code/html2canvas"));
+const MovieContext = lazy(()=>import('./code/MovieContextCheck/App'))
 
 const ReactCheck = () => {
   return (
     <>
-      <Html2canvas />
+      <MovieContext />
     </>
   );
 };
