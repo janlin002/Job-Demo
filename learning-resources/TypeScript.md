@@ -78,6 +78,8 @@
 
 [Typescript高级类型Record](https://zhuanlan.zhihu.com/p/356662885)
 
+[[學習筆記] TypeScript Omit 的用法](https://blog.marsen.me/2022/09/12/2022/TypeScript_Omit/)
+
 ### keyof & typeof
 
 [TypeScript - 简单易懂的 keyof typeof 分析](https://juejin.cn/post/7023238396931735583) -> 推
