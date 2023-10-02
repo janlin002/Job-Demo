@@ -69,3 +69,8 @@
 ## Redux
 
 [利用 React Context API + useReducer 實作 Redux](https://www.cythilya.tw/2023/05/25/implement-redux-by-react-context-api-and-useReducer/)
+
+## context
+
+[https://www.youtube.com/watch?v=16yMmAJSGek](https://www.youtube.com/watch?v=16yMmAJSGek) => react context 會導致在同一個 provider 的內容更改，會全部 re-render，不過改成children可以解決
+
