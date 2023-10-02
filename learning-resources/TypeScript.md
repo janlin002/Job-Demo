@@ -145,3 +145,7 @@ carPropertyLiteral = "anyOther"; // Error
 ### 套件
 
 [加強你的 TypeScript 驗證：Type Guard？或許該試試 Zod](https://medium.com/ikala-tech/enhance-typescript-validation-by-zod-8f52837a58a1)
+
+### config
+
+[The TSConfig Cheat Sheet](https://www.totaltypescript.com/tsconfig-cheat-sheet) -> 大推
