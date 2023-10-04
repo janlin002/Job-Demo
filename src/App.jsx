@@ -2,10 +2,11 @@ import './App.css';
 import React, { useState, useEffect, Suspense } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
-import { useSelector } from 'react-redux';
+import { useSelector , Provider } from 'react-redux';
 
 import HeaderList from './assets/Data/HeaderList';
 import Header from './Header';
+import store from './store';
 // import AppLocale from './assets/lang'
 
 /**
@@ -29,20 +30,22 @@ function App() {
 
   return (
     <div>
-      <IntlProvider locale={locale} key={locale} messages={locale}>
-        <Router>
-          <Header />
-          <Suspense fallback={<p>Loading...</p>}>
-            <Routes>
-              {
-                [...HeaderList].map((item)=> (
-                  <Route path={`/${item.to}`} element={<item.component />} key={item.to}></Route>
-                ))
-              }
-            </Routes>
-          </Suspense>
-        </Router>
-      </IntlProvider>
+      <Provider store={store}>
+        <IntlProvider locale={locale} key={locale} messages={locale}>
+          <Router>
+            <Header />
+            <Suspense fallback={<p>Loading...</p>}>
+              <Routes>
+                {
+                  [...HeaderList].map((item)=> (
+                    <Route path={`/${item.to}`} element={<item.component />} key={item.to}></Route>
+                  ))
+                }
+              </Routes>
+            </Suspense>
+          </Router>
+        </IntlProvider>
+      </Provider>
     </div>
   );
 }

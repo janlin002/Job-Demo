@@ -28,9 +28,9 @@ const ReduxToolkitTest = () =>{
 
   return (
     <ul>
-      {states.todolist.map((i) => (
+      {/* {states.todolist.map((i) => (
         <li key={i.id}>{i.name}</li>
-      ))}
+      ))} */}
       <button 
         type="button"
         onClick={handleChangeRedux}

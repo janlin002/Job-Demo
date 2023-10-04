@@ -14,8 +14,6 @@ export const todoSlice = createSlice({
   },
 })
 
-const a = (state) => console.log(state)
-
 export const selectTodo = (state) => state.todo
 export const { addTodo } = todoSlice.actions
 export default todoSlice.reducer
