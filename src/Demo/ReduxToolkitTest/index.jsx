@@ -9,8 +9,8 @@ import {
 } from '../../slice/todo'
 import {
   useGetTodoQuery,
-  useAddTodoMutation
-} from '../../ReduxToolkitApiSlice/todoApiSlice'
+  useAddTodoMutation,
+  todoApiSlice } from '../../ReduxToolkitApiSlice/todoApiSlice'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faTrash, faUpload } from '@fortawesome/free-solid-svg-icons'
 
@@ -20,6 +20,12 @@ const ReduxToolkitTest = () =>{
   const states = useSelector(selectTodo)
 
   const check = useSelector(state => state)
+
+  console.log(check, 'check')
+
+  console.log(todoApiSlice.endpoints.getTodo.useQueryState().data, 'todoApiSlice')
+
+  // console.log(check.todoApi.queries.getTodo(undefined).data, 'check')
 
   const handleChangeRedux = () =>{
     dispatch(

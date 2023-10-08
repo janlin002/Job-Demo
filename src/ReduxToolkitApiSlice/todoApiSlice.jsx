@@ -8,7 +8,6 @@ export const todoApiSlice = createApi({
     getTodo: builder.query({
       query: () => '/todos',
       providesTags: ['Todos']
-    //   transformResponse: res => res.sort((a, b) => b.id - a.id),
     }),
     addTodo: builder.mutation({
       query: (todo) => ({
@@ -22,3 +21,4 @@ export const todoApiSlice = createApi({
 })
 
 export const { useGetTodoQuery, useAddTodoMutation } = todoApiSlice
+
