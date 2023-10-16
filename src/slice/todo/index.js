@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createSelector } from "@reduxjs/toolkit";
 import { todoApiSlice } from "../../ReduxToolkitApiSlice/todoApiSlice";
 
 export const todoSlice = createSlice({
@@ -19,12 +19,16 @@ export const todoSlice = createSlice({
     builder.addMatcher(
       todoApiSlice.endpoints.getTodo.matchFulfilled,
       (state, action) => {
-        console.log(action, "action");
         state.todoTest = action.payload;
       }
     );
   },
 });
+
+export const getStudentStatus = createSelector(
+  (state) => state.todo.studentRecord, // 這邊的 todo 就是 configureStore 裡面的 todo
+  (todoItem) => todoItem
+);
 
 export const selectTodo = (state) => state.todo;
 export const { addTodo } = todoSlice.actions;
