@@ -76,9 +76,11 @@
 
 [7 Utility Types that Every TypeScript Developer Should Know](https://javascript.plainenglish.io/7-utility-types-that-every-typescript-developer-should-know-788fe73421f1) -> 大推
 
-[Typescript高级类型Record](https://zhuanlan.zhihu.com/p/356662885)
+[Typescript 高级类型 Record](https://zhuanlan.zhihu.com/p/356662885)
 
 [[學習筆記] TypeScript Omit 的用法](https://blog.marsen.me/2022/09/12/2022/TypeScript_Omit/)
+
+[TypeScript 之 Record](https://www.jianshu.com/p/ff5ee22b2053)
 
 ### keyof & typeof
 

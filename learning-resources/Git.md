@@ -34,7 +34,9 @@
 
 [Renaming Git Commit Messages: A Quick and Easy Guide](https://dev.to/pradumnasaraf/renaming-git-commit-messages-a-quick-and-easy-guide-1an8)
 
-[详细介绍git clone --depth=1的用法](https://blog.csdn.net/yexudengzhidao/article/details/121798008)
+[详细介绍 git clone --depth=1 的用法](https://blog.csdn.net/yexudengzhidao/article/details/121798008)
+
+[Git checkout reset revert rebase 的差別](https://www.puritys.me/docs-blog/article-365-Git-checkout-reset-revert-rebase-%E7%9A%84%E5%B7%AE%E5%88%A5.html)
 
 ### adjust commit message
 

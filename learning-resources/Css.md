@@ -39,6 +39,10 @@
 
 [CSS 最新的強大 :has() 父層選取器來了！](https://www.tpisoftware.com/tpu/articleDetails/2883)
 
+[CSS3 的區塊填滿設定- object-fit 與 object-position](https://tools.wingzero.tw/article/sn/61)
+
+[aspect-ratio 屬性介紹](https://www.tpisoftware.com/tpu/articleDetails/2932) -> 縱橫比
+
 ### styled-components
 
 [How to use media queries with styled components](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
