@@ -38,6 +38,8 @@
 
 [Git checkout reset revert rebase 的差別](https://www.puritys.me/docs-blog/article-365-Git-checkout-reset-revert-rebase-%E7%9A%84%E5%B7%AE%E5%88%A5.html)
 
+[git 合并多次 commit](https://juejin.cn/post/7052255285108277279)
+
 ### adjust commit message
 
 [【狀況題】修改 Commit 紀錄](https://gitbook.tw/chapters/using-git/amend-commit1) => --amend
