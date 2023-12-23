@@ -44,6 +44,8 @@
 
 [快速入門 Next.Js 13 App Router, RSC(React Server Component)](https://blog.typeart.cc/nextjs13-quick-guide/)
 
+[你应该在 React 中传递 Promise](https://mp.weixin.qq.com/s/OAlOn1Cz4ju9rPmsZVW48w)
+
 ## React Router
 
 [react 路由新写法](https://zhuanlan.zhihu.com/p/430635190)
@@ -72,5 +74,4 @@
 
 ## context
 
-[https://www.youtube.com/watch?v=16yMmAJSGek](https://www.youtube.com/watch?v=16yMmAJSGek) => react context 會導致在同一個 provider 的內容更改，會全部 re-render，不過改成children可以解決
-
+[https://www.youtube.com/watch?v=16yMmAJSGek](https://www.youtube.com/watch?v=16yMmAJSGek) => react context 會導致在同一個 provider 的內容更改，會全部 re-render，不過改成 children 可以解決
